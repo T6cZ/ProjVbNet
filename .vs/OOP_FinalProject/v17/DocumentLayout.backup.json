@@ -1,0 +1,67 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aimvr\\Documents\\GitHub\\OOP--VB.NET-\\OOPFinalProj\\OOP_FinalProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\documents\\github\\oop--vb.net-\\oopfinalproj\\oop_finalproject\\oop_finalproject\\loginpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\OOP--VB.NET-\\OOPFinalProj\\OOP_FinalProject\\oop_finalproject\\loginpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 623,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPage.vb",
+              "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\OOP--VB.NET-\\OOPFinalProj\\OOP_FinalProject\\OOP_FinalProject\\LoginPage.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\LoginPage.vb",
+              "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\OOP--VB.NET-\\OOPFinalProj\\OOP_FinalProject\\OOP_FinalProject\\LoginPage.vb",
+              "RelativeToolTip": "OOP_FinalProject\\LoginPage.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-12T10:14:37.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\OOP--VB.NET-\\OOPFinalProj\\OOP_FinalProject\\OOP_FinalProject\\LoginPage.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\LoginPage.vb",
+              "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\OOP--VB.NET-\\OOPFinalProj\\OOP_FinalProject\\OOP_FinalProject\\LoginPage.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\LoginPage.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-11-12T10:06:19.377Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 43,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
