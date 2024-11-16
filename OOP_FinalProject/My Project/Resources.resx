@@ -118,14 +118,59 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Paman_upscayl_4x_remacri" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Paman_upscayl_4x_remacri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SeettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeettingsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LogIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="UploadIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UploadIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cropped-logo120_upscayl_4x_realesrgan-x4plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cropped-logo120_upscayl_4x_realesrgan-x4plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paman_upscayl_4x_remacri" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paman_upscayl_4x_remacri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GMSicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GMSicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GradeManagementTxt_upscayl_4x_RealESRGAN_General_x4_v3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GradeManagementTxt_upscayl_4x_RealESRGAN_General_x4_v3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blob1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blob1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="width_1404" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\width_1404.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="f157ff6b-5c6a-49b8-a49d-24f9877fa4f8_upscayl_4x_ultramix_balanced" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\f157ff6b-5c6a-49b8-a49d-24f9877fa4f8_upscayl_4x_ultramix_balanced.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditInfoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditInfoIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blob2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blob2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PfpIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PfpIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dashboard LayoutIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dashboard LayoutIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paman_upscayl_4x_remacri1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paman_upscayl_4x_remacri1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LoginLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoginLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,28 +178,19 @@
   <data name="Password Key" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Password Key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LogIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pamantasan-ng-lungsod-ng-pasig-high-resolution-logo-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pamantasan-ng-lungsod-ng-pasig-high-resolution-logo-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="blob2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blob2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NotifIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NotifIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="blob1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blob1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HomeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="f157ff6b-5c6a-49b8-a49d-24f9877fa4f8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\f157ff6b-5c6a-49b8-a49d-24f9877fa4f8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="f157ff6b-5c6a-49b8-a49d-24f9877fa4f8_upscayl_4x_ultramix_balanced" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\f157ff6b-5c6a-49b8-a49d-24f9877fa4f8_upscayl_4x_ultramix_balanced.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Paman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Paman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Paman_upscayl_4x_remacri1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Paman_upscayl_4x_remacri1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LoginOutIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoginOutIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

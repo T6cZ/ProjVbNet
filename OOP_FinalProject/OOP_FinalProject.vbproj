@@ -119,6 +119,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="StudentMainMenu.Designer.vb">
+      <DependentUpon>StudentMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="LoginRegPanel.resx">
@@ -129,6 +135,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMainMenu.resx">
+      <DependentUpon>StudentMainMenu.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +201,42 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-logo120_upscayl_4x_realesrgan-x4plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pamantasan-ng-lungsod-ng-pasig-high-resolution-logo-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditInfoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PfpIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UploadIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GMSicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\width_1404.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard LayoutIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotifIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeettingsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginOutIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
