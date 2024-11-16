@@ -67,6 +67,21 @@ OOP_FinalProject
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.Paman">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.Paman_upscayl_4x_remacri">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.Paman_upscayl_4x_remacri1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:OOP_FinalProject.My.Resources.Resources.Password_Key">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
