@@ -18,7 +18,6 @@ C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\bin\Debug\OOP_FinalPr
 C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\bin\Debug\OOP_FinalProject.xml
 C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\bin\Debug\Guna.UI2.dll
 C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.vbproj.AssemblyReference.cache
-C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.LoginPage.resources
 C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.Resources.resources
 C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.vbproj.GenerateResource.cache
 C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.vbproj.CoreCompileInputs.cache
@@ -26,3 +25,4 @@ C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_Fina.3A
 C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.exe
 C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.xml
 C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.pdb
+C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.LoginRegPanel.resources
