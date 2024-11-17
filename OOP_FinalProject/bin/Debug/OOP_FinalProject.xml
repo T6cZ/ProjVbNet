@@ -32,6 +32,11 @@ OOP_FinalProject
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.BurgerIcon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:OOP_FinalProject.My.Resources.Resources.cropped_logo120_upscayl_4x_realesrgan_x4plus">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -67,7 +72,17 @@ OOP_FinalProject
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.GradeSubjectIconm">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:OOP_FinalProject.My.Resources.Resources.HomeIcon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.HomeIcon1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

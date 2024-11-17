@@ -27,3 +27,4 @@ C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalPr
 C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.pdb
 C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.LoginRegPanel.resources
 C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.StudentMainMenu.resources
+C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\bin\Debug\WinFormAnimation.dll

@@ -82,6 +82,9 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -237,6 +240,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LoginOutIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GradeSubjectIconm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BurgerIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
