@@ -107,6 +107,11 @@ OOP_FinalProject
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.LoginOutIcon1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:OOP_FinalProject.My.Resources.Resources.Logo">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
