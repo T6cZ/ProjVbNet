@@ -189,7 +189,7 @@
            String.IsNullOrWhiteSpace(Reg_cpassword.Text) OrElse
            String.IsNullOrWhiteSpace(Reg_UHN.Text) OrElse
             Reg_city.SelectedIndex = -1 OrElse
-            Reg_barangay.SelectedIndex = -1 Then
+            Reg_barangay.SelectedIndex = -1 Then Thenfgfgh
 
             MessageBox.Show("Please fill out all the required information.", "Incomplete Information", MessageBoxButtons.OK, MessageBoxIcon.Warning)
 
