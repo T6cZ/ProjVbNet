@@ -23,9 +23,9 @@ Partial Class StudentMainMenu
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.FormBorder = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Drag_Control = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
@@ -37,7 +37,7 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel11 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel12 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.stp_container = New Guna.UI2.WinForms.Guna2ShadowPanel()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.stp_dashboard = New Guna.UI2.WinForms.Guna2Panel()
         Me.stp_datatable = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Guna2ShadowPanel5 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.Guna2HtmlLabel34 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -87,6 +87,7 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel16 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel17 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.stp_currentdate = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.stp_clocktimer = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
@@ -97,9 +98,8 @@ Partial Class StudentMainMenu
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.stp_currentdate = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.stp_container.SuspendLayout()
-        Me.Guna2Panel1.SuspendLayout()
+        Me.stp_dashboard.SuspendLayout()
         CType(Me.stp_datatable, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2ShadowPanel5.SuspendLayout()
         Me.Guna2ShadowPanel4.SuspendLayout()
@@ -257,7 +257,7 @@ Partial Class StudentMainMenu
         '
         Me.stp_container.AutoScroll = True
         Me.stp_container.BackColor = System.Drawing.Color.Transparent
-        Me.stp_container.Controls.Add(Me.Guna2Panel1)
+        Me.stp_container.Controls.Add(Me.stp_dashboard)
         Me.stp_container.Controls.Add(Me.Guna2Panel2)
         Me.stp_container.Controls.Add(Me.stp_sidebar)
         Me.stp_container.FillColor = System.Drawing.Color.Black
@@ -271,44 +271,44 @@ Partial Class StudentMainMenu
         Me.stp_container.Size = New System.Drawing.Size(999, 651)
         Me.stp_container.TabIndex = 17
         '
-        'Guna2Panel1
+        'stp_dashboard
         '
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.Black
-        Me.Guna2Panel1.BorderRadius = 10
-        Me.Guna2Panel1.Controls.Add(Me.stp_datatable)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2ShadowPanel5)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2ShadowPanel4)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2ShadowPanel1)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2ShadowPanel3)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2ShadowPanel2)
-        Me.Guna2Panel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Panel1.Location = New System.Drawing.Point(55, 67)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(926, 571)
-        Me.Guna2Panel1.TabIndex = 83
+        Me.stp_dashboard.BackColor = System.Drawing.Color.Black
+        Me.stp_dashboard.BorderRadius = 10
+        Me.stp_dashboard.Controls.Add(Me.stp_datatable)
+        Me.stp_dashboard.Controls.Add(Me.Guna2ShadowPanel5)
+        Me.stp_dashboard.Controls.Add(Me.Guna2ShadowPanel4)
+        Me.stp_dashboard.Controls.Add(Me.Guna2ShadowPanel1)
+        Me.stp_dashboard.Controls.Add(Me.Guna2ShadowPanel3)
+        Me.stp_dashboard.Controls.Add(Me.Guna2ShadowPanel2)
+        Me.stp_dashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_dashboard.Location = New System.Drawing.Point(55, 67)
+        Me.stp_dashboard.Name = "stp_dashboard"
+        Me.stp_dashboard.Size = New System.Drawing.Size(926, 571)
+        Me.stp_dashboard.TabIndex = 83
         '
         'stp_datatable
         '
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
-        Me.stp_datatable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.stp_datatable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.stp_datatable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.stp_datatable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.stp_datatable.ColumnHeadersHeight = 4
         Me.stp_datatable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.stp_datatable.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.stp_datatable.DefaultCellStyle = DataGridViewCellStyle3
         Me.stp_datatable.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.stp_datatable.Location = New System.Drawing.Point(226, 146)
         Me.stp_datatable.Name = "stp_datatable"
@@ -1057,6 +1057,22 @@ Partial Class StudentMainMenu
         Me.Guna2Panel2.Size = New System.Drawing.Size(944, 67)
         Me.Guna2Panel2.TabIndex = 1
         '
+        'stp_currentdate
+        '
+        Me.stp_currentdate.AutoSize = False
+        Me.stp_currentdate.BackColor = System.Drawing.Color.Transparent
+        Me.stp_currentdate.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_currentdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.stp_currentdate.IsContextMenuEnabled = False
+        Me.stp_currentdate.IsSelectionEnabled = False
+        Me.stp_currentdate.Location = New System.Drawing.Point(610, 23)
+        Me.stp_currentdate.Name = "stp_currentdate"
+        Me.stp_currentdate.Size = New System.Drawing.Size(194, 18)
+        Me.stp_currentdate.TabIndex = 75
+        Me.stp_currentdate.TabStop = False
+        Me.stp_currentdate.Text = "mm/dd/yyyy dddd"
+        Me.stp_currentdate.TextAlignment = System.Drawing.ContentAlignment.MiddleRight
+        '
         'stp_clocktimer
         '
         Me.stp_clocktimer.AutoSize = False
@@ -1197,22 +1213,6 @@ Partial Class StudentMainMenu
         'Timer1
         '
         '
-        'stp_currentdate
-        '
-        Me.stp_currentdate.AutoSize = False
-        Me.stp_currentdate.BackColor = System.Drawing.Color.Transparent
-        Me.stp_currentdate.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stp_currentdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.stp_currentdate.IsContextMenuEnabled = False
-        Me.stp_currentdate.IsSelectionEnabled = False
-        Me.stp_currentdate.Location = New System.Drawing.Point(610, 23)
-        Me.stp_currentdate.Name = "stp_currentdate"
-        Me.stp_currentdate.Size = New System.Drawing.Size(194, 18)
-        Me.stp_currentdate.TabIndex = 75
-        Me.stp_currentdate.TabStop = False
-        Me.stp_currentdate.Text = "mm/dd/yyyy dddd"
-        Me.stp_currentdate.TextAlignment = System.Drawing.ContentAlignment.MiddleRight
-        '
         'StudentMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1230,7 +1230,7 @@ Partial Class StudentMainMenu
         Me.Text = "StudentMainMenu"
         Me.TransparencyKey = System.Drawing.Color.SandyBrown
         Me.stp_container.ResumeLayout(False)
-        Me.Guna2Panel1.ResumeLayout(False)
+        Me.stp_dashboard.ResumeLayout(False)
         CType(Me.stp_datatable, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2ShadowPanel5.ResumeLayout(False)
         Me.Guna2ShadowPanel5.PerformLayout()
@@ -1296,7 +1296,7 @@ Partial Class StudentMainMenu
     Friend WithEvents Guna2HtmlLabel25 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Separator4 As Guna.UI2.WinForms.Guna2Separator
     Friend WithEvents Guna2HtmlLabel27 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents stp_dashboard As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2ShadowPanel5 As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents Guna2HtmlLabel34 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel35 As Guna.UI2.WinForms.Guna2HtmlLabel

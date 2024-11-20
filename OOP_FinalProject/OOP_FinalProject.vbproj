@@ -247,5 +247,14 @@
   <ItemGroup>
     <None Include="Resources\BurgerIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Closed Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gray.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
