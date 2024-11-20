@@ -9,5 +9,6 @@
         stp_clocktimer.Text = DateTime.Now.ToString("hh:mm:ss tt")
         stp_currentdate.Text = DateTime.Now.ToString("MM/dd/yyyy dddd")
 
+
     End Sub
 End Class
