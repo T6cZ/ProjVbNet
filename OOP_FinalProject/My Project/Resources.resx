@@ -139,9 +139,6 @@
   <data name="GradeManagementTxt_upscayl_4x_RealESRGAN_General_x4_v3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GradeManagementTxt_upscayl_4x_RealESRGAN_General_x4_v3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="EditInfoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EditInfoIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -150,6 +147,9 @@
   </data>
   <data name="LoginOutIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoginOutIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GMSicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GMSicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,6 +172,9 @@
   <data name="f157ff6b-5c6a-49b8-a49d-24f9877fa4f8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\f157ff6b-5c6a-49b8-a49d-24f9877fa4f8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Department" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Department.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="LoginLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoginLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -187,8 +190,11 @@
   <data name="SeettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SeettingsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UploadIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UploadIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="width_1404" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\width_1404.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -198,6 +204,9 @@
   </data>
   <data name="Closed Eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Closed Eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Teacher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Teacher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dashboard LayoutIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dashboard LayoutIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,7 +220,10 @@
   <data name="blob1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blob1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UploadIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UploadIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="faculty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\faculty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

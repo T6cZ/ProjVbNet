@@ -96,7 +96,6 @@ Partial Class StudentMainMenu
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
-        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.stp_container.SuspendLayout()
         Me.stp_dashboard.SuspendLayout()
@@ -113,7 +112,7 @@ Partial Class StudentMainMenu
         '
         'FormBorder
         '
-        Me.FormBorder.BorderRadius = 10
+        Me.FormBorder.BorderRadius = 15
         Me.FormBorder.TargetControl = Me
         '
         'Drag_Control
@@ -1206,10 +1205,6 @@ Partial Class StudentMainMenu
         Me.Guna2Elipse1.BorderRadius = 15
         Me.Guna2Elipse1.TargetControl = Me.stp_datatable
         '
-        'PrintDialog1
-        '
-        Me.PrintDialog1.UseEXDialog = True
-        '
         'Timer1
         '
         '
@@ -1269,7 +1264,6 @@ Partial Class StudentMainMenu
     Friend WithEvents Guna2ShadowPanel1 As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents Guna2DataGridViewStyler1 As Guna.UI2.WinForms.Guna2DataGridViewStyler
-    Friend WithEvents PrintDialog1 As PrintDialog
     Friend WithEvents Guna2DataGridViewStyler2 As Guna.UI2.WinForms.Guna2DataGridViewStyler
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Separator1 As Guna.UI2.WinForms.Guna2Separator

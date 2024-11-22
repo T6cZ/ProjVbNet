@@ -213,4 +213,8 @@
     Private Sub Red_suffix_TextChanged(sender As Object, e As EventArgs) Handles Reg_suffix.TextChanged
 
     End Sub
+
+    Private Sub Login_password_TextChanged(sender As Object, e As EventArgs) Handles Login_password.TextChanged
+
+    End Sub
 End Class

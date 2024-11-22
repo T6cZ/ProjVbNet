@@ -3,32 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\documents\\github\\projvbnet\\oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\documents\\github\\projvbnet\\oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|OOP_FinalProject||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-=======
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
->>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\documents\\github\\projvbnet\\oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|OOP_FinalProject||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,74 +29,15 @@
       "DocumentGroups": [
         {
           "DockedHeight": 618,
-<<<<<<< Updated upstream
-          "SelectedChildIndex": 5,
-=======
-          "SelectedChildIndex": 2,
->>>>>>> Stashed changes
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-<<<<<<< Updated upstream
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-=======
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StudentMainMenu.vb",
-              "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\StudentMainMenu.vb",
-              "RelativeDocumentMoniker": "OOP_FinalProject\\StudentMainMenu.vb",
-              "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\StudentMainMenu.vb",
-              "RelativeToolTip": "OOP_FinalProject\\StudentMainMenu.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-16T11:01:54.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginRegPanel.vb",
-              "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\LoginRegPanel.vb",
-              "RelativeDocumentMoniker": "OOP_FinalProject\\LoginRegPanel.vb",
-              "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\LoginRegPanel.vb",
-              "RelativeToolTip": "OOP_FinalProject\\LoginRegPanel.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-16T09:56:58.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudentMainMenu.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\StudentMainMenu.vb",
-              "RelativeDocumentMoniker": "OOP_FinalProject\\StudentMainMenu.vb",
-              "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\StudentMainMenu.vb [Design]",
-              "RelativeToolTip": "OOP_FinalProject\\StudentMainMenu.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-16T10:56:14.236Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginRegPanel.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\LoginRegPanel.vb",
-              "RelativeDocumentMoniker": "OOP_FinalProject\\LoginRegPanel.vb",
-              "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\LoginRegPanel.vb [Design]",
-              "RelativeToolTip": "OOP_FinalProject\\LoginRegPanel.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-16T09:55:40.299Z",
-              "EditorCaption": " [Design]"
->>>>>>> Stashed changes
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "OOP_FinalProject",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\OOP_FinalProject.vbproj",
               "RelativeDocumentMoniker": "OOP_FinalProject\\OOP_FinalProject.vbproj",
@@ -124,43 +56,43 @@
               "RelativeToolTip": "OOP_FinalProject\\StudentMainMenu.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-16T11:01:54.904Z"
+              "WhenOpened": "2024-11-16T11:01:54.904Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "StudentMainMenu.vb [Design]",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\StudentMainMenu.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\StudentMainMenu.vb",
               "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\StudentMainMenu.vb [Design]",
               "RelativeToolTip": "OOP_FinalProject\\StudentMainMenu.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-16T10:56:14.236Z"
+              "WhenOpened": "2024-11-16T10:56:14.236Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "LoginRegPanel.vb",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\LoginRegPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\LoginRegPanel.vb",
               "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\LoginRegPanel.vb",
               "RelativeToolTip": "OOP_FinalProject\\LoginRegPanel.vb",
-              "ViewState": "AgIAANcAAAAAAAAAAAAAANUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAiwNkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-16T09:56:58.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T09:56:58.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoginRegPanel.vb [Design]",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\LoginRegPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\LoginRegPanel.vb",
               "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\LoginRegPanel.vb [Design]",
               "RelativeToolTip": "OOP_FinalProject\\LoginRegPanel.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-11-16T09:55:40.299Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-16T09:55:40.299Z"
             }
           ]
         },
