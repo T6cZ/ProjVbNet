@@ -23,12 +23,12 @@ Partial Class AdminPanel
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.FormDrag = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.FormBorderRad = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
@@ -40,17 +40,26 @@ Partial Class AdminPanel
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.stp_sidebar = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
+        Me.admin_sbdepartment = New Guna.UI2.WinForms.Guna2Button()
+        Me.admin_sbfaculty = New Guna.UI2.WinForms.Guna2Button()
         Me.adming_professor = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.admin_sbprofessor = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.admin_sbstudent = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.admin_faculty = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.admin_ = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
+        Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.stp_datatable = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.DTBorderRad = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
+        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.admin_container.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,6 +67,7 @@ Partial Class AdminPanel
         Me.adming_professor.SuspendLayout()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.admin_faculty.SuspendLayout()
+        Me.Guna2ShadowPanel1.SuspendLayout()
         CType(Me.stp_datatable, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -205,12 +215,12 @@ Partial Class AdminPanel
         'stp_sidebar
         '
         Me.stp_sidebar.BorderRadius = 15
-        Me.stp_sidebar.Controls.Add(Me.Guna2Button5)
-        Me.stp_sidebar.Controls.Add(Me.Guna2Button6)
+        Me.stp_sidebar.Controls.Add(Me.admin_sbdepartment)
+        Me.stp_sidebar.Controls.Add(Me.admin_sbfaculty)
         Me.stp_sidebar.Controls.Add(Me.adming_professor)
-        Me.stp_sidebar.Controls.Add(Me.Guna2Button4)
+        Me.stp_sidebar.Controls.Add(Me.admin_sbprofessor)
         Me.stp_sidebar.Controls.Add(Me.Guna2Button2)
-        Me.stp_sidebar.Controls.Add(Me.Guna2Button1)
+        Me.stp_sidebar.Controls.Add(Me.admin_sbstudent)
         Me.stp_sidebar.Controls.Add(Me.Guna2Button3)
         Me.stp_sidebar.CustomizableEdges.BottomRight = False
         Me.stp_sidebar.CustomizableEdges.TopRight = False
@@ -221,53 +231,53 @@ Partial Class AdminPanel
         Me.stp_sidebar.Size = New System.Drawing.Size(55, 651)
         Me.stp_sidebar.TabIndex = 0
         '
-        'Guna2Button5
+        'admin_sbdepartment
         '
-        Me.Guna2Button5.BorderColor = System.Drawing.Color.WhiteSmoke
-        Me.Guna2Button5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Me.Guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button5.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.Guna2Button5.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.Guna2Button5.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.Guna2Button5.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.Guna2Button5.Image = Global.OOP_FinalProject.My.Resources.Resources.faculty
-        Me.Guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button5.ImageOffset = New System.Drawing.Point(5, 0)
-        Me.Guna2Button5.ImageSize = New System.Drawing.Size(27, 27)
-        Me.Guna2Button5.Location = New System.Drawing.Point(0, 354)
-        Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.Size = New System.Drawing.Size(55, 45)
-        Me.Guna2Button5.TabIndex = 91
-        Me.Guna2Button5.TextOffset = New System.Drawing.Point(14, 0)
-        Me.Guna2Button5.UseTransparentBackground = True
+        Me.admin_sbdepartment.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.admin_sbdepartment.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        Me.admin_sbdepartment.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.admin_sbdepartment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.admin_sbdepartment.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.admin_sbdepartment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.admin_sbdepartment.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.admin_sbdepartment.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.admin_sbdepartment.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
+        Me.admin_sbdepartment.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.admin_sbdepartment.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.admin_sbdepartment.Image = Global.OOP_FinalProject.My.Resources.Resources.faculty
+        Me.admin_sbdepartment.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.admin_sbdepartment.ImageOffset = New System.Drawing.Point(5, 0)
+        Me.admin_sbdepartment.ImageSize = New System.Drawing.Size(27, 27)
+        Me.admin_sbdepartment.Location = New System.Drawing.Point(0, 354)
+        Me.admin_sbdepartment.Name = "admin_sbdepartment"
+        Me.admin_sbdepartment.Size = New System.Drawing.Size(55, 45)
+        Me.admin_sbdepartment.TabIndex = 91
+        Me.admin_sbdepartment.TextOffset = New System.Drawing.Point(14, 0)
+        Me.admin_sbdepartment.UseTransparentBackground = True
         '
-        'Guna2Button6
+        'admin_sbfaculty
         '
-        Me.Guna2Button6.BorderColor = System.Drawing.Color.WhiteSmoke
-        Me.Guna2Button6.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Me.Guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button6.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.Guna2Button6.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.Guna2Button6.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.Guna2Button6.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.Guna2Button6.Image = Global.OOP_FinalProject.My.Resources.Resources.Department
-        Me.Guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button6.ImageOffset = New System.Drawing.Point(5, 0)
-        Me.Guna2Button6.ImageSize = New System.Drawing.Size(27, 27)
-        Me.Guna2Button6.Location = New System.Drawing.Point(0, 305)
-        Me.Guna2Button6.Name = "Guna2Button6"
-        Me.Guna2Button6.Size = New System.Drawing.Size(55, 45)
-        Me.Guna2Button6.TabIndex = 90
-        Me.Guna2Button6.TextOffset = New System.Drawing.Point(14, 0)
-        Me.Guna2Button6.UseTransparentBackground = True
+        Me.admin_sbfaculty.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.admin_sbfaculty.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        Me.admin_sbfaculty.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.admin_sbfaculty.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.admin_sbfaculty.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.admin_sbfaculty.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.admin_sbfaculty.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.admin_sbfaculty.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.admin_sbfaculty.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
+        Me.admin_sbfaculty.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.admin_sbfaculty.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.admin_sbfaculty.Image = Global.OOP_FinalProject.My.Resources.Resources.Department
+        Me.admin_sbfaculty.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.admin_sbfaculty.ImageOffset = New System.Drawing.Point(5, 0)
+        Me.admin_sbfaculty.ImageSize = New System.Drawing.Size(27, 27)
+        Me.admin_sbfaculty.Location = New System.Drawing.Point(0, 305)
+        Me.admin_sbfaculty.Name = "admin_sbfaculty"
+        Me.admin_sbfaculty.Size = New System.Drawing.Size(55, 45)
+        Me.admin_sbfaculty.TabIndex = 90
+        Me.admin_sbfaculty.TextOffset = New System.Drawing.Point(14, 0)
+        Me.admin_sbfaculty.UseTransparentBackground = True
         '
         'adming_professor
         '
@@ -282,26 +292,26 @@ Partial Class AdminPanel
         '
         'Guna2DataGridView1
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle28.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle28
+        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle29.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle29.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle29
         Me.Guna2DataGridView1.ColumnHeadersHeight = 4
         Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle30.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle30
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.Location = New System.Drawing.Point(22, 24)
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
@@ -330,29 +340,29 @@ Partial Class AdminPanel
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
-        'Guna2Button4
+        'admin_sbprofessor
         '
-        Me.Guna2Button4.BorderColor = System.Drawing.Color.WhiteSmoke
-        Me.Guna2Button4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Me.Guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button4.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.Guna2Button4.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.Guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.Guna2Button4.Image = Global.OOP_FinalProject.My.Resources.Resources.Teacher
-        Me.Guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button4.ImageOffset = New System.Drawing.Point(5, 0)
-        Me.Guna2Button4.ImageSize = New System.Drawing.Size(27, 27)
-        Me.Guna2Button4.Location = New System.Drawing.Point(0, 225)
-        Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.Size = New System.Drawing.Size(55, 45)
-        Me.Guna2Button4.TabIndex = 7
-        Me.Guna2Button4.TextOffset = New System.Drawing.Point(14, 0)
-        Me.Guna2Button4.UseTransparentBackground = True
+        Me.admin_sbprofessor.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.admin_sbprofessor.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        Me.admin_sbprofessor.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.admin_sbprofessor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.admin_sbprofessor.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.admin_sbprofessor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.admin_sbprofessor.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.admin_sbprofessor.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.admin_sbprofessor.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
+        Me.admin_sbprofessor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.admin_sbprofessor.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.admin_sbprofessor.Image = Global.OOP_FinalProject.My.Resources.Resources.Teacher
+        Me.admin_sbprofessor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.admin_sbprofessor.ImageOffset = New System.Drawing.Point(5, 0)
+        Me.admin_sbprofessor.ImageSize = New System.Drawing.Size(27, 27)
+        Me.admin_sbprofessor.Location = New System.Drawing.Point(0, 225)
+        Me.admin_sbprofessor.Name = "admin_sbprofessor"
+        Me.admin_sbprofessor.Size = New System.Drawing.Size(55, 45)
+        Me.admin_sbprofessor.TabIndex = 7
+        Me.admin_sbprofessor.TextOffset = New System.Drawing.Point(14, 0)
+        Me.admin_sbprofessor.UseTransparentBackground = True
         '
         'Guna2Button2
         '
@@ -378,29 +388,29 @@ Partial Class AdminPanel
         Me.Guna2Button2.TextOffset = New System.Drawing.Point(14, 0)
         Me.Guna2Button2.UseTransparentBackground = True
         '
-        'Guna2Button1
+        'admin_sbstudent
         '
-        Me.Guna2Button1.BorderColor = System.Drawing.Color.WhiteSmoke
-        Me.Guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.Guna2Button1.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.Guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.Guna2Button1.Image = Global.OOP_FinalProject.My.Resources.Resources.Edu
-        Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button1.ImageOffset = New System.Drawing.Point(5, 0)
-        Me.Guna2Button1.ImageSize = New System.Drawing.Size(27, 27)
-        Me.Guna2Button1.Location = New System.Drawing.Point(0, 176)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(55, 45)
-        Me.Guna2Button1.TabIndex = 5
-        Me.Guna2Button1.TextOffset = New System.Drawing.Point(14, 0)
-        Me.Guna2Button1.UseTransparentBackground = True
+        Me.admin_sbstudent.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.admin_sbstudent.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        Me.admin_sbstudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.admin_sbstudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.admin_sbstudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.admin_sbstudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.admin_sbstudent.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.admin_sbstudent.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.admin_sbstudent.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
+        Me.admin_sbstudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.admin_sbstudent.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.admin_sbstudent.Image = Global.OOP_FinalProject.My.Resources.Resources.Edu
+        Me.admin_sbstudent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.admin_sbstudent.ImageOffset = New System.Drawing.Point(5, 0)
+        Me.admin_sbstudent.ImageSize = New System.Drawing.Size(27, 27)
+        Me.admin_sbstudent.Location = New System.Drawing.Point(0, 176)
+        Me.admin_sbstudent.Name = "admin_sbstudent"
+        Me.admin_sbstudent.Size = New System.Drawing.Size(55, 45)
+        Me.admin_sbstudent.TabIndex = 5
+        Me.admin_sbstudent.TextOffset = New System.Drawing.Point(14, 0)
+        Me.admin_sbstudent.UseTransparentBackground = True
         '
         'Guna2Button3
         '
@@ -429,6 +439,10 @@ Partial Class AdminPanel
         '
         Me.admin_faculty.BackColor = System.Drawing.Color.Black
         Me.admin_faculty.BorderRadius = 10
+        Me.admin_faculty.Controls.Add(Me.Guna2Button4)
+        Me.admin_faculty.Controls.Add(Me.Guna2Button1)
+        Me.admin_faculty.Controls.Add(Me.admin_)
+        Me.admin_faculty.Controls.Add(Me.Guna2ShadowPanel1)
         Me.admin_faculty.Controls.Add(Me.stp_datatable)
         Me.admin_faculty.CustomizableEdges.BottomLeft = False
         Me.admin_faculty.CustomizableEdges.TopLeft = False
@@ -439,33 +453,183 @@ Partial Class AdminPanel
         Me.admin_faculty.Size = New System.Drawing.Size(938, 580)
         Me.admin_faculty.TabIndex = 83
         '
+        'Guna2Button4
+        '
+        Me.Guna2Button4.Animated = True
+        Me.Guna2Button4.AnimatedGIF = True
+        Me.Guna2Button4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Button4.BorderRadius = 10
+        Me.Guna2Button4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button4.FillColor = System.Drawing.Color.DarkRed
+        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button4.Image = Global.OOP_FinalProject.My.Resources.Resources.Delete
+        Me.Guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button4.ImageOffset = New System.Drawing.Point(-3, 0)
+        Me.Guna2Button4.ImageSize = New System.Drawing.Size(23, 23)
+        Me.Guna2Button4.Location = New System.Drawing.Point(779, 509)
+        Me.Guna2Button4.Name = "Guna2Button4"
+        Me.Guna2Button4.Size = New System.Drawing.Size(112, 45)
+        Me.Guna2Button4.TabIndex = 92
+        Me.Guna2Button4.Text = "Delete"
+        Me.Guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.Guna2Button4.TextOffset = New System.Drawing.Point(-5, 0)
+        '
+        'Guna2Button1
+        '
+        Me.Guna2Button1.Animated = True
+        Me.Guna2Button1.AnimatedGIF = True
+        Me.Guna2Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Button1.BorderRadius = 10
+        Me.Guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button1.FillColor = System.Drawing.Color.DarkGreen
+        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.Image = Global.OOP_FinalProject.My.Resources.Resources.update
+        Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button1.ImageOffset = New System.Drawing.Point(-3, 0)
+        Me.Guna2Button1.ImageSize = New System.Drawing.Size(23, 23)
+        Me.Guna2Button1.Location = New System.Drawing.Point(651, 509)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.Size = New System.Drawing.Size(112, 45)
+        Me.Guna2Button1.TabIndex = 91
+        Me.Guna2Button1.Text = "Update"
+        Me.Guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.Guna2Button1.TextOffset = New System.Drawing.Point(-2, 0)
+        '
+        'admin_
+        '
+        Me.admin_.Animated = True
+        Me.admin_.AnimatedGIF = True
+        Me.admin_.BackColor = System.Drawing.Color.Transparent
+        Me.admin_.BorderRadius = 10
+        Me.admin_.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.admin_.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.admin_.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.admin_.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.admin_.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.admin_.FillColor = System.Drawing.Color.Green
+        Me.admin_.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.admin_.ForeColor = System.Drawing.Color.White
+        Me.admin_.Image = Global.OOP_FinalProject.My.Resources.Resources.Plus
+        Me.admin_.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.admin_.ImageOffset = New System.Drawing.Point(-3, 0)
+        Me.admin_.ImageSize = New System.Drawing.Size(25, 25)
+        Me.admin_.Location = New System.Drawing.Point(792, 21)
+        Me.admin_.Name = "admin_"
+        Me.admin_.Size = New System.Drawing.Size(112, 45)
+        Me.admin_.TabIndex = 90
+        Me.admin_.Text = "Add New"
+        Me.admin_.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.admin_.TextOffset = New System.Drawing.Point(0, -1)
+        '
+        'Guna2ShadowPanel1
+        '
+        Me.Guna2ShadowPanel1.AutoScroll = True
+        Me.Guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2TextBox1)
+        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel6)
+        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel5)
+        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2Separator1)
+        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel1)
+        Me.Guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.Guna2ShadowPanel1.Location = New System.Drawing.Point(41, 338)
+        Me.Guna2ShadowPanel1.Name = "Guna2ShadowPanel1"
+        Me.Guna2ShadowPanel1.Radius = 7
+        Me.Guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black
+        Me.Guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal
+        Me.Guna2ShadowPanel1.Size = New System.Drawing.Size(318, 216)
+        Me.Guna2ShadowPanel1.TabIndex = 89
+        '
+        'Guna2HtmlLabel6
+        '
+        Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Segoe UI Variable Display", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.Guna2HtmlLabel6.IsContextMenuEnabled = False
+        Me.Guna2HtmlLabel6.IsSelectionEnabled = False
+        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(8, 69)
+        Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
+        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(34, 19)
+        Me.Guna2HtmlLabel6.TabIndex = 79
+        Me.Guna2HtmlLabel6.TabStop = False
+        Me.Guna2HtmlLabel6.Text = "GWA"
+        Me.Guna2HtmlLabel6.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Guna2HtmlLabel5
+        '
+        Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Segoe UI Variable Display", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.Guna2HtmlLabel5.IsContextMenuEnabled = False
+        Me.Guna2HtmlLabel5.IsSelectionEnabled = False
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(8, 46)
+        Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
+        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(72, 19)
+        Me.Guna2HtmlLabel5.TabIndex = 78
+        Me.Guna2HtmlLabel5.TabStop = False
+        Me.Guna2HtmlLabel5.Text = "Percentage"
+        Me.Guna2HtmlLabel5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Guna2Separator1
+        '
+        Me.Guna2Separator1.FillColor = System.Drawing.Color.DimGray
+        Me.Guna2Separator1.FillThickness = 2
+        Me.Guna2Separator1.Location = New System.Drawing.Point(8, 36)
+        Me.Guna2Separator1.Name = "Guna2Separator1"
+        Me.Guna2Separator1.Size = New System.Drawing.Size(197, 10)
+        Me.Guna2Separator1.TabIndex = 76
+        '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Franklin Gothic Demi", 15.0!)
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.Guna2HtmlLabel1.IsContextMenuEnabled = False
+        Me.Guna2HtmlLabel1.IsSelectionEnabled = False
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(8, 8)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(135, 27)
+        Me.Guna2HtmlLabel1.TabIndex = 74
+        Me.Guna2HtmlLabel1.TabStop = False
+        Me.Guna2HtmlLabel1.Text = "Midterm Grade"
+        Me.Guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'stp_datatable
         '
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.stp_datatable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.stp_datatable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle25.BackColor = System.Drawing.Color.White
+        Me.stp_datatable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle25
+        DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle26.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.stp_datatable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle26
         Me.stp_datatable.ColumnHeadersHeight = 4
         Me.stp_datatable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.stp_datatable.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle27.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle27.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.stp_datatable.DefaultCellStyle = DataGridViewCellStyle27
         Me.stp_datatable.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.stp_datatable.Location = New System.Drawing.Point(39, 31)
+        Me.stp_datatable.Location = New System.Drawing.Point(40, 72)
         Me.stp_datatable.Name = "stp_datatable"
         Me.stp_datatable.RowHeadersVisible = False
-        Me.stp_datatable.Size = New System.Drawing.Size(864, 168)
+        Me.stp_datatable.Size = New System.Drawing.Size(864, 240)
         Me.stp_datatable.TabIndex = 88
         Me.stp_datatable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.stp_datatable.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -494,6 +658,28 @@ Partial Class AdminPanel
         Me.DTBorderRad.BorderRadius = 20
         Me.DTBorderRad.TargetControl = Me.stp_datatable
         '
+        'Guna2TextBox1
+        '
+        Me.Guna2TextBox1.Animated = True
+        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox1.DefaultText = ""
+        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.Green
+        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI Variable Text", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(115, 140)
+        Me.Guna2TextBox1.Name = "Guna2TextBox1"
+        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox1.PlaceholderText = "asdadad"
+        Me.Guna2TextBox1.SelectedText = ""
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(158, 33)
+        Me.Guna2TextBox1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
+        Me.Guna2TextBox1.TabIndex = 80
+        '
         'AdminPanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -514,6 +700,8 @@ Partial Class AdminPanel
         Me.adming_professor.ResumeLayout(False)
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.admin_faculty.ResumeLayout(False)
+        Me.Guna2ShadowPanel1.ResumeLayout(False)
+        Me.Guna2ShadowPanel1.PerformLayout()
         CType(Me.stp_datatable, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -526,9 +714,9 @@ Partial Class AdminPanel
     Friend WithEvents admin_container As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents stp_sidebar As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents admin_sbstudent As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents admin_sbprofessor As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DTBorderRad As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents adming_professor As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
@@ -539,6 +727,15 @@ Partial Class AdminPanel
     Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
     Friend WithEvents admin_faculty As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents stp_datatable As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents admin_sbdepartment As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents admin_sbfaculty As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2ShadowPanel1 As Guna.UI2.WinForms.Guna2ShadowPanel
+    Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2Separator1 As Guna.UI2.WinForms.Guna2Separator
+    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents admin_ As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
 End Class

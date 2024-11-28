@@ -52,7 +52,22 @@ OOP_FinalProject
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.Delete">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.Department">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:OOP_FinalProject.My.Resources.Resources.EditInfoIcon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.Edu">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -68,6 +83,11 @@ OOP_FinalProject
 </summary>
 </member>
 <member name="P:OOP_FinalProject.My.Resources.Resources.f157ff6b_5c6a_49b8_a49d_24f9877fa4f8_upscayl_4x_ultramix_balanced">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.faculty">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -167,7 +187,22 @@ OOP_FinalProject
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.Plus">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:OOP_FinalProject.My.Resources.Resources.SeettingsIcon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.Teacher">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.update">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

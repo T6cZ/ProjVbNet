@@ -139,17 +139,26 @@
   <data name="GradeManagementTxt_upscayl_4x_RealESRGAN_General_x4_v3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GradeManagementTxt_upscayl_4x_RealESRGAN_General_x4_v3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="EditInfoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EditInfoIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HomeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HomeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="faculty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\faculty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="LoginOutIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoginOutIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Edu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Edu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GMSicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GMSicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,17 +190,17 @@
   <data name="HomeIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HomeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BurgerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BurgerIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="cropped-logo120_upscayl_4x_realesrgan-x4plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cropped-logo120_upscayl_4x_realesrgan-x4plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SeettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SeettingsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BurgerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BurgerIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,7 +232,7 @@
   <data name="UploadIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UploadIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="faculty" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\faculty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="update" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
