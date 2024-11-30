@@ -41,50 +41,50 @@ Partial Class StudentMainMenu
         Me.stp_datatable = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Guna2ShadowPanel5 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.Guna2HtmlLabel34 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel35 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_semester = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel36 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel37 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_professorname = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel38 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel39 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_department = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel40 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel41 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_coursename = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel42 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel43 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_coursecode = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Separator5 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Guna2HtmlLabel44 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ShadowPanel4 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.Guna2HtmlLabel32 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel33 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_emailaddress = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel30 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel31 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_age = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel28 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel29 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_birthdate = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel23 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel26 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_studentaddress = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel24 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel25 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_studentid = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Separator4 = New Guna.UI2.WinForms.Guna2Separator()
         Me.Guna2HtmlLabel27 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_midtermgwa = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
-        Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_midtermpercentage = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ShadowPanel3 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.Guna2HtmlLabel18 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel19 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel20 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_semestragwa = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Separator3 = New Guna.UI2.WinForms.Guna2Separator()
-        Me.Guna2HtmlLabel21 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_semestralpercentage = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel22 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ShadowPanel2 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.Guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel14 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel15 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_finalsgwa = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Separator2 = New Guna.UI2.WinForms.Guna2Separator()
-        Me.Guna2HtmlLabel16 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.stp_finalspercentage = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel17 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.stp_currentdate = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -340,15 +340,15 @@ Partial Class StudentMainMenu
         '
         Me.Guna2ShadowPanel5.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ShadowPanel5.Controls.Add(Me.Guna2HtmlLabel34)
-        Me.Guna2ShadowPanel5.Controls.Add(Me.Guna2HtmlLabel35)
+        Me.Guna2ShadowPanel5.Controls.Add(Me.stp_semester)
         Me.Guna2ShadowPanel5.Controls.Add(Me.Guna2HtmlLabel36)
-        Me.Guna2ShadowPanel5.Controls.Add(Me.Guna2HtmlLabel37)
+        Me.Guna2ShadowPanel5.Controls.Add(Me.stp_professorname)
         Me.Guna2ShadowPanel5.Controls.Add(Me.Guna2HtmlLabel38)
-        Me.Guna2ShadowPanel5.Controls.Add(Me.Guna2HtmlLabel39)
+        Me.Guna2ShadowPanel5.Controls.Add(Me.stp_department)
         Me.Guna2ShadowPanel5.Controls.Add(Me.Guna2HtmlLabel40)
-        Me.Guna2ShadowPanel5.Controls.Add(Me.Guna2HtmlLabel41)
+        Me.Guna2ShadowPanel5.Controls.Add(Me.stp_coursename)
         Me.Guna2ShadowPanel5.Controls.Add(Me.Guna2HtmlLabel42)
-        Me.Guna2ShadowPanel5.Controls.Add(Me.Guna2HtmlLabel43)
+        Me.Guna2ShadowPanel5.Controls.Add(Me.stp_coursecode)
         Me.Guna2ShadowPanel5.Controls.Add(Me.Guna2Separator5)
         Me.Guna2ShadowPanel5.Controls.Add(Me.Guna2HtmlLabel44)
         Me.Guna2ShadowPanel5.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
@@ -375,20 +375,20 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel34.Text = "Semester"
         Me.Guna2HtmlLabel34.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2HtmlLabel35
+        'stp_semester
         '
-        Me.Guna2HtmlLabel35.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel35.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel35.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.Guna2HtmlLabel35.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel35.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel35.Location = New System.Drawing.Point(19, 302)
-        Me.Guna2HtmlLabel35.Name = "Guna2HtmlLabel35"
-        Me.Guna2HtmlLabel35.Size = New System.Drawing.Size(57, 17)
-        Me.Guna2HtmlLabel35.TabIndex = 85
-        Me.Guna2HtmlLabel35.TabStop = False
-        Me.Guna2HtmlLabel35.Text = "(semester)"
-        Me.Guna2HtmlLabel35.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_semester.BackColor = System.Drawing.Color.Transparent
+        Me.stp_semester.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_semester.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.stp_semester.IsContextMenuEnabled = False
+        Me.stp_semester.IsSelectionEnabled = False
+        Me.stp_semester.Location = New System.Drawing.Point(19, 302)
+        Me.stp_semester.Name = "stp_semester"
+        Me.stp_semester.Size = New System.Drawing.Size(57, 17)
+        Me.stp_semester.TabIndex = 85
+        Me.stp_semester.TabStop = False
+        Me.stp_semester.Text = "(semester)"
+        Me.stp_semester.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2HtmlLabel36
         '
@@ -405,20 +405,20 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel36.Text = "Professor"
         Me.Guna2HtmlLabel36.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2HtmlLabel37
+        'stp_professorname
         '
-        Me.Guna2HtmlLabel37.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel37.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel37.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.Guna2HtmlLabel37.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel37.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel37.Location = New System.Drawing.Point(19, 245)
-        Me.Guna2HtmlLabel37.Name = "Guna2HtmlLabel37"
-        Me.Guna2HtmlLabel37.Size = New System.Drawing.Size(92, 17)
-        Me.Guna2HtmlLabel37.TabIndex = 83
-        Me.Guna2HtmlLabel37.TabStop = False
-        Me.Guna2HtmlLabel37.Text = "(professor name)"
-        Me.Guna2HtmlLabel37.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_professorname.BackColor = System.Drawing.Color.Transparent
+        Me.stp_professorname.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_professorname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.stp_professorname.IsContextMenuEnabled = False
+        Me.stp_professorname.IsSelectionEnabled = False
+        Me.stp_professorname.Location = New System.Drawing.Point(19, 245)
+        Me.stp_professorname.Name = "stp_professorname"
+        Me.stp_professorname.Size = New System.Drawing.Size(92, 17)
+        Me.stp_professorname.TabIndex = 83
+        Me.stp_professorname.TabStop = False
+        Me.stp_professorname.Text = "(professor name)"
+        Me.stp_professorname.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2HtmlLabel38
         '
@@ -435,20 +435,20 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel38.Text = "Department"
         Me.Guna2HtmlLabel38.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2HtmlLabel39
+        'stp_department
         '
-        Me.Guna2HtmlLabel39.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel39.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel39.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.Guna2HtmlLabel39.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel39.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel39.Location = New System.Drawing.Point(19, 188)
-        Me.Guna2HtmlLabel39.Name = "Guna2HtmlLabel39"
-        Me.Guna2HtmlLabel39.Size = New System.Drawing.Size(104, 17)
-        Me.Guna2HtmlLabel39.TabIndex = 81
-        Me.Guna2HtmlLabel39.TabStop = False
-        Me.Guna2HtmlLabel39.Text = "(department name)"
-        Me.Guna2HtmlLabel39.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_department.BackColor = System.Drawing.Color.Transparent
+        Me.stp_department.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_department.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.stp_department.IsContextMenuEnabled = False
+        Me.stp_department.IsSelectionEnabled = False
+        Me.stp_department.Location = New System.Drawing.Point(19, 188)
+        Me.stp_department.Name = "stp_department"
+        Me.stp_department.Size = New System.Drawing.Size(104, 17)
+        Me.stp_department.TabIndex = 81
+        Me.stp_department.TabStop = False
+        Me.stp_department.Text = "(department name)"
+        Me.stp_department.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2HtmlLabel40
         '
@@ -465,20 +465,20 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel40.Text = "Course Name"
         Me.Guna2HtmlLabel40.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2HtmlLabel41
+        'stp_coursename
         '
-        Me.Guna2HtmlLabel41.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel41.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel41.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.Guna2HtmlLabel41.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel41.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel41.Location = New System.Drawing.Point(19, 131)
-        Me.Guna2HtmlLabel41.Name = "Guna2HtmlLabel41"
-        Me.Guna2HtmlLabel41.Size = New System.Drawing.Size(77, 17)
-        Me.Guna2HtmlLabel41.TabIndex = 79
-        Me.Guna2HtmlLabel41.TabStop = False
-        Me.Guna2HtmlLabel41.Text = "(course name)"
-        Me.Guna2HtmlLabel41.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_coursename.BackColor = System.Drawing.Color.Transparent
+        Me.stp_coursename.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_coursename.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.stp_coursename.IsContextMenuEnabled = False
+        Me.stp_coursename.IsSelectionEnabled = False
+        Me.stp_coursename.Location = New System.Drawing.Point(19, 131)
+        Me.stp_coursename.Name = "stp_coursename"
+        Me.stp_coursename.Size = New System.Drawing.Size(77, 17)
+        Me.stp_coursename.TabIndex = 79
+        Me.stp_coursename.TabStop = False
+        Me.stp_coursename.Text = "(course name)"
+        Me.stp_coursename.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2HtmlLabel42
         '
@@ -495,20 +495,20 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel42.Text = "Course Code"
         Me.Guna2HtmlLabel42.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2HtmlLabel43
+        'stp_coursecode
         '
-        Me.Guna2HtmlLabel43.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel43.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel43.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.Guna2HtmlLabel43.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel43.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel43.Location = New System.Drawing.Point(19, 74)
-        Me.Guna2HtmlLabel43.Name = "Guna2HtmlLabel43"
-        Me.Guna2HtmlLabel43.Size = New System.Drawing.Size(73, 17)
-        Me.Guna2HtmlLabel43.TabIndex = 77
-        Me.Guna2HtmlLabel43.TabStop = False
-        Me.Guna2HtmlLabel43.Text = "(course code)"
-        Me.Guna2HtmlLabel43.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_coursecode.BackColor = System.Drawing.Color.Transparent
+        Me.stp_coursecode.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_coursecode.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.stp_coursecode.IsContextMenuEnabled = False
+        Me.stp_coursecode.IsSelectionEnabled = False
+        Me.stp_coursecode.Location = New System.Drawing.Point(19, 74)
+        Me.stp_coursecode.Name = "stp_coursecode"
+        Me.stp_coursecode.Size = New System.Drawing.Size(73, 17)
+        Me.stp_coursecode.TabIndex = 77
+        Me.stp_coursecode.TabStop = False
+        Me.stp_coursecode.Text = "(course code)"
+        Me.stp_coursecode.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2Separator5
         '
@@ -538,15 +538,15 @@ Partial Class StudentMainMenu
         '
         Me.Guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel32)
-        Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel33)
+        Me.Guna2ShadowPanel4.Controls.Add(Me.stp_emailaddress)
         Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel30)
-        Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel31)
+        Me.Guna2ShadowPanel4.Controls.Add(Me.stp_age)
         Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel28)
-        Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel29)
+        Me.Guna2ShadowPanel4.Controls.Add(Me.stp_birthdate)
         Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel23)
-        Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel26)
+        Me.Guna2ShadowPanel4.Controls.Add(Me.stp_studentaddress)
         Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel24)
-        Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel25)
+        Me.Guna2ShadowPanel4.Controls.Add(Me.stp_studentid)
         Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2Separator4)
         Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel27)
         Me.Guna2ShadowPanel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
@@ -573,20 +573,20 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel32.Text = "Email Address"
         Me.Guna2HtmlLabel32.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2HtmlLabel33
+        'stp_emailaddress
         '
-        Me.Guna2HtmlLabel33.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel33.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel33.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.Guna2HtmlLabel33.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel33.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel33.Location = New System.Drawing.Point(24, 130)
-        Me.Guna2HtmlLabel33.Name = "Guna2HtmlLabel33"
-        Me.Guna2HtmlLabel33.Size = New System.Drawing.Size(65, 17)
-        Me.Guna2HtmlLabel33.TabIndex = 85
-        Me.Guna2HtmlLabel33.TabStop = False
-        Me.Guna2HtmlLabel33.Text = "(student ID)"
-        Me.Guna2HtmlLabel33.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_emailaddress.BackColor = System.Drawing.Color.Transparent
+        Me.stp_emailaddress.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_emailaddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.stp_emailaddress.IsContextMenuEnabled = False
+        Me.stp_emailaddress.IsSelectionEnabled = False
+        Me.stp_emailaddress.Location = New System.Drawing.Point(24, 130)
+        Me.stp_emailaddress.Name = "stp_emailaddress"
+        Me.stp_emailaddress.Size = New System.Drawing.Size(82, 17)
+        Me.stp_emailaddress.TabIndex = 85
+        Me.stp_emailaddress.TabStop = False
+        Me.stp_emailaddress.Text = "(email address)"
+        Me.stp_emailaddress.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2HtmlLabel30
         '
@@ -603,20 +603,20 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel30.Text = "Age"
         Me.Guna2HtmlLabel30.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2HtmlLabel31
+        'stp_age
         '
-        Me.Guna2HtmlLabel31.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel31.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel31.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.Guna2HtmlLabel31.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel31.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel31.Location = New System.Drawing.Point(24, 308)
-        Me.Guna2HtmlLabel31.Name = "Guna2HtmlLabel31"
-        Me.Guna2HtmlLabel31.Size = New System.Drawing.Size(30, 17)
-        Me.Guna2HtmlLabel31.TabIndex = 83
-        Me.Guna2HtmlLabel31.TabStop = False
-        Me.Guna2HtmlLabel31.Text = "(age)"
-        Me.Guna2HtmlLabel31.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_age.BackColor = System.Drawing.Color.Transparent
+        Me.stp_age.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_age.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.stp_age.IsContextMenuEnabled = False
+        Me.stp_age.IsSelectionEnabled = False
+        Me.stp_age.Location = New System.Drawing.Point(24, 308)
+        Me.stp_age.Name = "stp_age"
+        Me.stp_age.Size = New System.Drawing.Size(30, 17)
+        Me.stp_age.TabIndex = 83
+        Me.stp_age.TabStop = False
+        Me.stp_age.Text = "(age)"
+        Me.stp_age.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2HtmlLabel28
         '
@@ -633,20 +633,20 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel28.Text = "Birthdate "
         Me.Guna2HtmlLabel28.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2HtmlLabel29
+        'stp_birthdate
         '
-        Me.Guna2HtmlLabel29.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel29.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel29.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.Guna2HtmlLabel29.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel29.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel29.Location = New System.Drawing.Point(24, 248)
-        Me.Guna2HtmlLabel29.Name = "Guna2HtmlLabel29"
-        Me.Guna2HtmlLabel29.Size = New System.Drawing.Size(59, 17)
-        Me.Guna2HtmlLabel29.TabIndex = 81
-        Me.Guna2HtmlLabel29.TabStop = False
-        Me.Guna2HtmlLabel29.Text = "(birthdate)"
-        Me.Guna2HtmlLabel29.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_birthdate.BackColor = System.Drawing.Color.Transparent
+        Me.stp_birthdate.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_birthdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.stp_birthdate.IsContextMenuEnabled = False
+        Me.stp_birthdate.IsSelectionEnabled = False
+        Me.stp_birthdate.Location = New System.Drawing.Point(24, 248)
+        Me.stp_birthdate.Name = "stp_birthdate"
+        Me.stp_birthdate.Size = New System.Drawing.Size(59, 17)
+        Me.stp_birthdate.TabIndex = 81
+        Me.stp_birthdate.TabStop = False
+        Me.stp_birthdate.Text = "(birthdate)"
+        Me.stp_birthdate.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2HtmlLabel23
         '
@@ -663,20 +663,20 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel23.Text = "Student Address"
         Me.Guna2HtmlLabel23.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2HtmlLabel26
+        'stp_studentaddress
         '
-        Me.Guna2HtmlLabel26.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel26.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel26.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.Guna2HtmlLabel26.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel26.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel26.Location = New System.Drawing.Point(24, 189)
-        Me.Guna2HtmlLabel26.Name = "Guna2HtmlLabel26"
-        Me.Guna2HtmlLabel26.Size = New System.Drawing.Size(94, 17)
-        Me.Guna2HtmlLabel26.TabIndex = 79
-        Me.Guna2HtmlLabel26.TabStop = False
-        Me.Guna2HtmlLabel26.Text = "(student address)"
-        Me.Guna2HtmlLabel26.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_studentaddress.BackColor = System.Drawing.Color.Transparent
+        Me.stp_studentaddress.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_studentaddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.stp_studentaddress.IsContextMenuEnabled = False
+        Me.stp_studentaddress.IsSelectionEnabled = False
+        Me.stp_studentaddress.Location = New System.Drawing.Point(24, 189)
+        Me.stp_studentaddress.Name = "stp_studentaddress"
+        Me.stp_studentaddress.Size = New System.Drawing.Size(94, 17)
+        Me.stp_studentaddress.TabIndex = 79
+        Me.stp_studentaddress.TabStop = False
+        Me.stp_studentaddress.Text = "(student address)"
+        Me.stp_studentaddress.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2HtmlLabel24
         '
@@ -693,20 +693,20 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel24.Text = "Student ID"
         Me.Guna2HtmlLabel24.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2HtmlLabel25
+        'stp_studentid
         '
-        Me.Guna2HtmlLabel25.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel25.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.Guna2HtmlLabel25.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel25.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel25.Location = New System.Drawing.Point(24, 71)
-        Me.Guna2HtmlLabel25.Name = "Guna2HtmlLabel25"
-        Me.Guna2HtmlLabel25.Size = New System.Drawing.Size(65, 17)
-        Me.Guna2HtmlLabel25.TabIndex = 77
-        Me.Guna2HtmlLabel25.TabStop = False
-        Me.Guna2HtmlLabel25.Text = "(student ID)"
-        Me.Guna2HtmlLabel25.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_studentid.BackColor = System.Drawing.Color.Transparent
+        Me.stp_studentid.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_studentid.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.stp_studentid.IsContextMenuEnabled = False
+        Me.stp_studentid.IsSelectionEnabled = False
+        Me.stp_studentid.Location = New System.Drawing.Point(24, 71)
+        Me.stp_studentid.Name = "stp_studentid"
+        Me.stp_studentid.Size = New System.Drawing.Size(65, 17)
+        Me.stp_studentid.TabIndex = 77
+        Me.stp_studentid.TabStop = False
+        Me.stp_studentid.Text = "(student ID)"
+        Me.stp_studentid.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2Separator4
         '
@@ -738,9 +738,9 @@ Partial Class StudentMainMenu
         Me.Guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel6)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel5)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel4)
+        Me.Guna2ShadowPanel1.Controls.Add(Me.stp_midtermgwa)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2Separator1)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel3)
+        Me.Guna2ShadowPanel1.Controls.Add(Me.stp_midtermpercentage)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel1)
         Me.Guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
         Me.Guna2ShadowPanel1.Location = New System.Drawing.Point(226, 29)
@@ -781,20 +781,20 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel5.Text = "Percentage"
         Me.Guna2HtmlLabel5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2HtmlLabel4
+        'stp_midtermgwa
         '
-        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Segoe UI Variable Text", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.Guna2HtmlLabel4.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel4.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(114, 69)
-        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(28, 19)
-        Me.Guna2HtmlLabel4.TabIndex = 77
-        Me.Guna2HtmlLabel4.TabStop = False
-        Me.Guna2HtmlLabel4.Text = "0.00"
-        Me.Guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_midtermgwa.BackColor = System.Drawing.Color.Transparent
+        Me.stp_midtermgwa.Font = New System.Drawing.Font("Segoe UI Variable Text", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_midtermgwa.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.stp_midtermgwa.IsContextMenuEnabled = False
+        Me.stp_midtermgwa.IsSelectionEnabled = False
+        Me.stp_midtermgwa.Location = New System.Drawing.Point(114, 69)
+        Me.stp_midtermgwa.Name = "stp_midtermgwa"
+        Me.stp_midtermgwa.Size = New System.Drawing.Size(28, 19)
+        Me.stp_midtermgwa.TabIndex = 77
+        Me.stp_midtermgwa.TabStop = False
+        Me.stp_midtermgwa.Text = "0.00"
+        Me.stp_midtermgwa.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2Separator1
         '
@@ -805,20 +805,20 @@ Partial Class StudentMainMenu
         Me.Guna2Separator1.Size = New System.Drawing.Size(197, 10)
         Me.Guna2Separator1.TabIndex = 76
         '
-        'Guna2HtmlLabel3
+        'stp_midtermpercentage
         '
-        Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Segoe UI Variable Text", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.Guna2HtmlLabel3.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel3.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(110, 46)
-        Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(35, 19)
-        Me.Guna2HtmlLabel3.TabIndex = 75
-        Me.Guna2HtmlLabel3.TabStop = False
-        Me.Guna2HtmlLabel3.Text = "00.00"
-        Me.Guna2HtmlLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_midtermpercentage.BackColor = System.Drawing.Color.Transparent
+        Me.stp_midtermpercentage.Font = New System.Drawing.Font("Segoe UI Variable Text", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_midtermpercentage.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.stp_midtermpercentage.IsContextMenuEnabled = False
+        Me.stp_midtermpercentage.IsSelectionEnabled = False
+        Me.stp_midtermpercentage.Location = New System.Drawing.Point(110, 46)
+        Me.stp_midtermpercentage.Name = "stp_midtermpercentage"
+        Me.stp_midtermpercentage.Size = New System.Drawing.Size(35, 19)
+        Me.stp_midtermpercentage.TabIndex = 75
+        Me.stp_midtermpercentage.TabStop = False
+        Me.stp_midtermpercentage.Text = "00.00"
+        Me.stp_midtermpercentage.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2HtmlLabel1
         '
@@ -840,9 +840,9 @@ Partial Class StudentMainMenu
         Me.Guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ShadowPanel3.Controls.Add(Me.Guna2HtmlLabel18)
         Me.Guna2ShadowPanel3.Controls.Add(Me.Guna2HtmlLabel19)
-        Me.Guna2ShadowPanel3.Controls.Add(Me.Guna2HtmlLabel20)
+        Me.Guna2ShadowPanel3.Controls.Add(Me.stp_semestragwa)
         Me.Guna2ShadowPanel3.Controls.Add(Me.Guna2Separator3)
-        Me.Guna2ShadowPanel3.Controls.Add(Me.Guna2HtmlLabel21)
+        Me.Guna2ShadowPanel3.Controls.Add(Me.stp_semestralpercentage)
         Me.Guna2ShadowPanel3.Controls.Add(Me.Guna2HtmlLabel22)
         Me.Guna2ShadowPanel3.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
         Me.Guna2ShadowPanel3.Location = New System.Drawing.Point(692, 29)
@@ -883,20 +883,20 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel19.Text = "Percentage"
         Me.Guna2HtmlLabel19.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2HtmlLabel20
+        'stp_semestragwa
         '
-        Me.Guna2HtmlLabel20.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel20.Font = New System.Drawing.Font("Segoe UI Variable Text", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.Guna2HtmlLabel20.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel20.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel20.Location = New System.Drawing.Point(114, 69)
-        Me.Guna2HtmlLabel20.Name = "Guna2HtmlLabel20"
-        Me.Guna2HtmlLabel20.Size = New System.Drawing.Size(28, 19)
-        Me.Guna2HtmlLabel20.TabIndex = 77
-        Me.Guna2HtmlLabel20.TabStop = False
-        Me.Guna2HtmlLabel20.Text = "0.00"
-        Me.Guna2HtmlLabel20.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_semestragwa.BackColor = System.Drawing.Color.Transparent
+        Me.stp_semestragwa.Font = New System.Drawing.Font("Segoe UI Variable Text", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_semestragwa.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.stp_semestragwa.IsContextMenuEnabled = False
+        Me.stp_semestragwa.IsSelectionEnabled = False
+        Me.stp_semestragwa.Location = New System.Drawing.Point(114, 69)
+        Me.stp_semestragwa.Name = "stp_semestragwa"
+        Me.stp_semestragwa.Size = New System.Drawing.Size(28, 19)
+        Me.stp_semestragwa.TabIndex = 77
+        Me.stp_semestragwa.TabStop = False
+        Me.stp_semestragwa.Text = "0.00"
+        Me.stp_semestragwa.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2Separator3
         '
@@ -907,20 +907,20 @@ Partial Class StudentMainMenu
         Me.Guna2Separator3.Size = New System.Drawing.Size(197, 10)
         Me.Guna2Separator3.TabIndex = 76
         '
-        'Guna2HtmlLabel21
+        'stp_semestralpercentage
         '
-        Me.Guna2HtmlLabel21.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel21.Font = New System.Drawing.Font("Segoe UI Variable Text", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.Guna2HtmlLabel21.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel21.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel21.Location = New System.Drawing.Point(110, 46)
-        Me.Guna2HtmlLabel21.Name = "Guna2HtmlLabel21"
-        Me.Guna2HtmlLabel21.Size = New System.Drawing.Size(35, 19)
-        Me.Guna2HtmlLabel21.TabIndex = 75
-        Me.Guna2HtmlLabel21.TabStop = False
-        Me.Guna2HtmlLabel21.Text = "00.00"
-        Me.Guna2HtmlLabel21.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_semestralpercentage.BackColor = System.Drawing.Color.Transparent
+        Me.stp_semestralpercentage.Font = New System.Drawing.Font("Segoe UI Variable Text", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_semestralpercentage.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.stp_semestralpercentage.IsContextMenuEnabled = False
+        Me.stp_semestralpercentage.IsSelectionEnabled = False
+        Me.stp_semestralpercentage.Location = New System.Drawing.Point(110, 46)
+        Me.stp_semestralpercentage.Name = "stp_semestralpercentage"
+        Me.stp_semestralpercentage.Size = New System.Drawing.Size(35, 19)
+        Me.stp_semestralpercentage.TabIndex = 75
+        Me.stp_semestralpercentage.TabStop = False
+        Me.stp_semestralpercentage.Text = "00.00"
+        Me.stp_semestralpercentage.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2HtmlLabel22
         '
@@ -942,9 +942,9 @@ Partial Class StudentMainMenu
         Me.Guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ShadowPanel2.Controls.Add(Me.Guna2HtmlLabel13)
         Me.Guna2ShadowPanel2.Controls.Add(Me.Guna2HtmlLabel14)
-        Me.Guna2ShadowPanel2.Controls.Add(Me.Guna2HtmlLabel15)
+        Me.Guna2ShadowPanel2.Controls.Add(Me.stp_finalsgwa)
         Me.Guna2ShadowPanel2.Controls.Add(Me.Guna2Separator2)
-        Me.Guna2ShadowPanel2.Controls.Add(Me.Guna2HtmlLabel16)
+        Me.Guna2ShadowPanel2.Controls.Add(Me.stp_finalspercentage)
         Me.Guna2ShadowPanel2.Controls.Add(Me.Guna2HtmlLabel17)
         Me.Guna2ShadowPanel2.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
         Me.Guna2ShadowPanel2.Location = New System.Drawing.Point(459, 29)
@@ -985,20 +985,20 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel14.Text = "Percentage"
         Me.Guna2HtmlLabel14.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2HtmlLabel15
+        'stp_finalsgwa
         '
-        Me.Guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel15.Font = New System.Drawing.Font("Segoe UI Variable Text", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.Guna2HtmlLabel15.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel15.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel15.Location = New System.Drawing.Point(114, 69)
-        Me.Guna2HtmlLabel15.Name = "Guna2HtmlLabel15"
-        Me.Guna2HtmlLabel15.Size = New System.Drawing.Size(28, 19)
-        Me.Guna2HtmlLabel15.TabIndex = 77
-        Me.Guna2HtmlLabel15.TabStop = False
-        Me.Guna2HtmlLabel15.Text = "0.00"
-        Me.Guna2HtmlLabel15.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_finalsgwa.BackColor = System.Drawing.Color.Transparent
+        Me.stp_finalsgwa.Font = New System.Drawing.Font("Segoe UI Variable Text", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_finalsgwa.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.stp_finalsgwa.IsContextMenuEnabled = False
+        Me.stp_finalsgwa.IsSelectionEnabled = False
+        Me.stp_finalsgwa.Location = New System.Drawing.Point(114, 69)
+        Me.stp_finalsgwa.Name = "stp_finalsgwa"
+        Me.stp_finalsgwa.Size = New System.Drawing.Size(28, 19)
+        Me.stp_finalsgwa.TabIndex = 77
+        Me.stp_finalsgwa.TabStop = False
+        Me.stp_finalsgwa.Text = "0.00"
+        Me.stp_finalsgwa.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2Separator2
         '
@@ -1009,20 +1009,20 @@ Partial Class StudentMainMenu
         Me.Guna2Separator2.Size = New System.Drawing.Size(197, 10)
         Me.Guna2Separator2.TabIndex = 76
         '
-        'Guna2HtmlLabel16
+        'stp_finalspercentage
         '
-        Me.Guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel16.Font = New System.Drawing.Font("Segoe UI Variable Text", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.Guna2HtmlLabel16.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel16.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel16.Location = New System.Drawing.Point(110, 46)
-        Me.Guna2HtmlLabel16.Name = "Guna2HtmlLabel16"
-        Me.Guna2HtmlLabel16.Size = New System.Drawing.Size(35, 19)
-        Me.Guna2HtmlLabel16.TabIndex = 75
-        Me.Guna2HtmlLabel16.TabStop = False
-        Me.Guna2HtmlLabel16.Text = "00.00"
-        Me.Guna2HtmlLabel16.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        Me.stp_finalspercentage.BackColor = System.Drawing.Color.Transparent
+        Me.stp_finalspercentage.Font = New System.Drawing.Font("Segoe UI Variable Text", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stp_finalspercentage.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.stp_finalspercentage.IsContextMenuEnabled = False
+        Me.stp_finalspercentage.IsSelectionEnabled = False
+        Me.stp_finalspercentage.Location = New System.Drawing.Point(110, 46)
+        Me.stp_finalspercentage.Name = "stp_finalspercentage"
+        Me.stp_finalspercentage.Size = New System.Drawing.Size(35, 19)
+        Me.stp_finalspercentage.TabIndex = 75
+        Me.stp_finalspercentage.TabStop = False
+        Me.stp_finalspercentage.Text = "00.00"
+        Me.stp_finalspercentage.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2HtmlLabel17
         '
@@ -1267,55 +1267,55 @@ Partial Class StudentMainMenu
     Friend WithEvents Guna2DataGridViewStyler2 As Guna.UI2.WinForms.Guna2DataGridViewStyler
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Separator1 As Guna.UI2.WinForms.Guna2Separator
-    Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_midtermpercentage As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_midtermgwa As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2ShadowPanel3 As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents Guna2HtmlLabel18 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel19 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel20 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_semestragwa As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Separator3 As Guna.UI2.WinForms.Guna2Separator
-    Friend WithEvents Guna2HtmlLabel21 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_semestralpercentage As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel22 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2ShadowPanel2 As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents Guna2HtmlLabel13 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel14 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel15 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_finalsgwa As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Separator2 As Guna.UI2.WinForms.Guna2Separator
-    Friend WithEvents Guna2HtmlLabel16 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_finalspercentage As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel17 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2ShadowPanel4 As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents Guna2HtmlLabel24 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel25 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Separator4 As Guna.UI2.WinForms.Guna2Separator
     Friend WithEvents Guna2HtmlLabel27 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents stp_dashboard As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2ShadowPanel5 As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents Guna2HtmlLabel34 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel35 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_semester As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel36 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel37 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_professorname As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel38 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel39 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_department As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel40 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel41 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_coursename As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel42 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel43 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_coursecode As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Separator5 As Guna.UI2.WinForms.Guna2Separator
     Friend WithEvents Guna2HtmlLabel44 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel28 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel29 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_birthdate As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel23 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel26 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_studentaddress As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel30 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel31 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_age As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2DataGridViewStyler3 As Guna.UI2.WinForms.Guna2DataGridViewStyler
     Friend WithEvents stp_datatable As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Guna2HtmlLabel32 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel33 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_emailaddress As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents stp_clocktimer As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Timer1 As Timer
     Friend WithEvents stp_currentdate As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents stp_studentid As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
