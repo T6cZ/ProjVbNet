@@ -3,7 +3,8 @@
 
     End Sub
 
-    Private Sub admin__Click(sender As Object, e As EventArgs) Handles admin_.Click
+    Private Sub admin__Click(sender As Object, e As EventArgs) Handles admin_add.Click
 
     End Sub
+
 End Class
