@@ -100,6 +100,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add Professor.Designer.vb">
+      <DependentUpon>Add Professor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add Professor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AdminPanel.Designer.vb">
       <DependentUpon>AdminPanel.vb</DependentUpon>
     </Compile>
@@ -136,6 +142,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Add Professor.resx">
+      <DependentUpon>Add Professor.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.vb</DependentUpon>
     </EmbeddedResource>
