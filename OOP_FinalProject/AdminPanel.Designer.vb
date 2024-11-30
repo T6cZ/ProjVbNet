@@ -23,12 +23,12 @@ Partial Class AdminPanel
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.FormDrag = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.FormBorderRad = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
@@ -72,6 +72,7 @@ Partial Class AdminPanel
         Me.admin_profdatatable = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.DTBorderRad = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.CheckBoxRAD = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
+        Me.timer = New System.Windows.Forms.Timer(Me.components)
         Me.admin_container.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         CType(Me.admin_profilepic, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,9 +107,10 @@ Partial Class AdminPanel
         Me.Guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red
         Me.Guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.White
         Me.Guna2ControlBox1.IconColor = System.Drawing.Color.White
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(1038, -1)
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(1384, -1)
+        Me.Guna2ControlBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
-        Me.Guna2ControlBox1.Size = New System.Drawing.Size(45, 29)
+        Me.Guna2ControlBox1.Size = New System.Drawing.Size(60, 36)
         Me.Guna2ControlBox1.TabIndex = 10
         '
         'Guna2ControlBox2
@@ -125,9 +127,10 @@ Partial Class AdminPanel
         Me.Guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(63, Byte), Integer))
         Me.Guna2ControlBox2.HoverState.IconColor = System.Drawing.Color.White
         Me.Guna2ControlBox2.IconColor = System.Drawing.Color.White
-        Me.Guna2ControlBox2.Location = New System.Drawing.Point(994, -1)
+        Me.Guna2ControlBox2.Location = New System.Drawing.Point(1325, -1)
+        Me.Guna2ControlBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2ControlBox2.Name = "Guna2ControlBox2"
-        Me.Guna2ControlBox2.Size = New System.Drawing.Size(45, 29)
+        Me.Guna2ControlBox2.Size = New System.Drawing.Size(60, 36)
         Me.Guna2ControlBox2.TabIndex = 11
         Me.Guna2ControlBox2.UseTransparentBackground = True
         '
@@ -139,14 +142,15 @@ Partial Class AdminPanel
         Me.admin_container.Controls.Add(Me.stp_sidebar)
         Me.admin_container.Controls.Add(Me.admin_faculty)
         Me.admin_container.FillColor = System.Drawing.Color.Black
-        Me.admin_container.Location = New System.Drawing.Point(43, 45)
+        Me.admin_container.Location = New System.Drawing.Point(57, 55)
+        Me.admin_container.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_container.Name = "admin_container"
         Me.admin_container.Radius = 10
         Me.admin_container.ShadowColor = System.Drawing.Color.Black
         Me.admin_container.ShadowDepth = 0
         Me.admin_container.ShadowShift = 0
         Me.admin_container.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal
-        Me.admin_container.Size = New System.Drawing.Size(999, 651)
+        Me.admin_container.Size = New System.Drawing.Size(1332, 801)
         Me.admin_container.TabIndex = 18
         '
         'Guna2Panel2
@@ -161,22 +165,23 @@ Partial Class AdminPanel
         Me.Guna2Panel2.CustomizableEdges.TopLeft = False
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Guna2Panel2.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.Guna2Panel2.Location = New System.Drawing.Point(55, 0)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(73, 0)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(944, 67)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(1259, 82)
         Me.Guna2Panel2.TabIndex = 1
         '
         'admin_currentdate
         '
-        Me.admin_currentdate.AutoSize = False
         Me.admin_currentdate.BackColor = System.Drawing.Color.Transparent
         Me.admin_currentdate.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.admin_currentdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.admin_currentdate.IsContextMenuEnabled = False
         Me.admin_currentdate.IsSelectionEnabled = False
-        Me.admin_currentdate.Location = New System.Drawing.Point(610, 23)
+        Me.admin_currentdate.Location = New System.Drawing.Point(907, 28)
+        Me.admin_currentdate.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_currentdate.Name = "admin_currentdate"
-        Me.admin_currentdate.Size = New System.Drawing.Size(194, 18)
+        Me.admin_currentdate.Size = New System.Drawing.Size(153, 22)
         Me.admin_currentdate.TabIndex = 75
         Me.admin_currentdate.TabStop = False
         Me.admin_currentdate.Text = "mm/dd/yyyy dddd"
@@ -184,19 +189,19 @@ Partial Class AdminPanel
         '
         'admin_currenttime
         '
-        Me.admin_currenttime.AutoSize = False
         Me.admin_currenttime.BackColor = System.Drawing.Color.Transparent
         Me.admin_currenttime.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.admin_currenttime.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.admin_currenttime.IsContextMenuEnabled = False
         Me.admin_currenttime.IsSelectionEnabled = False
-        Me.admin_currenttime.Location = New System.Drawing.Point(806, 23)
+        Me.admin_currenttime.Location = New System.Drawing.Point(1106, 28)
+        Me.admin_currenttime.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_currenttime.Name = "admin_currenttime"
-        Me.admin_currenttime.Size = New System.Drawing.Size(101, 18)
+        Me.admin_currenttime.Size = New System.Drawing.Size(101, 22)
         Me.admin_currenttime.TabIndex = 74
         Me.admin_currenttime.TabStop = False
         Me.admin_currenttime.Text = "00:00:00 PM"
-        Me.admin_currenttime.TextAlignment = System.Drawing.ContentAlignment.MiddleRight
+        Me.admin_currenttime.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'admin_adminname
         '
@@ -206,9 +211,10 @@ Partial Class AdminPanel
         Me.admin_adminname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.admin_adminname.IsContextMenuEnabled = False
         Me.admin_adminname.IsSelectionEnabled = False
-        Me.admin_adminname.Location = New System.Drawing.Point(68, 23)
+        Me.admin_adminname.Location = New System.Drawing.Point(91, 28)
+        Me.admin_adminname.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_adminname.Name = "admin_adminname"
-        Me.admin_adminname.Size = New System.Drawing.Size(196, 18)
+        Me.admin_adminname.Size = New System.Drawing.Size(261, 22)
         Me.admin_adminname.TabIndex = 73
         Me.admin_adminname.TabStop = False
         Me.admin_adminname.Text = "Sample Name S. Name"
@@ -217,10 +223,11 @@ Partial Class AdminPanel
         'admin_profilepic
         '
         Me.admin_profilepic.ImageRotate = 0!
-        Me.admin_profilepic.Location = New System.Drawing.Point(22, 12)
+        Me.admin_profilepic.Location = New System.Drawing.Point(29, 15)
+        Me.admin_profilepic.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_profilepic.Name = "admin_profilepic"
         Me.admin_profilepic.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.admin_profilepic.Size = New System.Drawing.Size(40, 40)
+        Me.admin_profilepic.Size = New System.Drawing.Size(53, 49)
         Me.admin_profilepic.TabIndex = 0
         Me.admin_profilepic.TabStop = False
         '
@@ -239,8 +246,9 @@ Partial Class AdminPanel
         Me.stp_sidebar.Dock = System.Windows.Forms.DockStyle.Left
         Me.stp_sidebar.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
         Me.stp_sidebar.Location = New System.Drawing.Point(0, 0)
+        Me.stp_sidebar.Margin = New System.Windows.Forms.Padding(4)
         Me.stp_sidebar.Name = "stp_sidebar"
-        Me.stp_sidebar.Size = New System.Drawing.Size(55, 651)
+        Me.stp_sidebar.Size = New System.Drawing.Size(73, 801)
         Me.stp_sidebar.TabIndex = 0
         '
         'admin_sbdepartment
@@ -260,9 +268,10 @@ Partial Class AdminPanel
         Me.admin_sbdepartment.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.admin_sbdepartment.ImageOffset = New System.Drawing.Point(5, 0)
         Me.admin_sbdepartment.ImageSize = New System.Drawing.Size(27, 27)
-        Me.admin_sbdepartment.Location = New System.Drawing.Point(0, 354)
+        Me.admin_sbdepartment.Location = New System.Drawing.Point(0, 436)
+        Me.admin_sbdepartment.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_sbdepartment.Name = "admin_sbdepartment"
-        Me.admin_sbdepartment.Size = New System.Drawing.Size(55, 45)
+        Me.admin_sbdepartment.Size = New System.Drawing.Size(73, 55)
         Me.admin_sbdepartment.TabIndex = 91
         Me.admin_sbdepartment.TextOffset = New System.Drawing.Point(14, 0)
         Me.admin_sbdepartment.UseTransparentBackground = True
@@ -284,9 +293,10 @@ Partial Class AdminPanel
         Me.admin_sbfaculty.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.admin_sbfaculty.ImageOffset = New System.Drawing.Point(5, 0)
         Me.admin_sbfaculty.ImageSize = New System.Drawing.Size(27, 27)
-        Me.admin_sbfaculty.Location = New System.Drawing.Point(0, 305)
+        Me.admin_sbfaculty.Location = New System.Drawing.Point(0, 375)
+        Me.admin_sbfaculty.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_sbfaculty.Name = "admin_sbfaculty"
-        Me.admin_sbfaculty.Size = New System.Drawing.Size(55, 45)
+        Me.admin_sbfaculty.Size = New System.Drawing.Size(73, 55)
         Me.admin_sbfaculty.TabIndex = 90
         Me.admin_sbfaculty.TextOffset = New System.Drawing.Point(14, 0)
         Me.admin_sbfaculty.UseTransparentBackground = True
@@ -297,38 +307,41 @@ Partial Class AdminPanel
         Me.adming_professor.BorderRadius = 10
         Me.adming_professor.Controls.Add(Me.Guna2DataGridView1)
         Me.adming_professor.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.adming_professor.Location = New System.Drawing.Point(55, 67)
+        Me.adming_professor.Location = New System.Drawing.Point(73, 82)
+        Me.adming_professor.Margin = New System.Windows.Forms.Padding(4)
         Me.adming_professor.Name = "adming_professor"
-        Me.adming_professor.Size = New System.Drawing.Size(931, 571)
+        Me.adming_professor.Size = New System.Drawing.Size(1241, 703)
         Me.adming_professor.TabIndex = 89
         '
         'Guna2DataGridView1
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle25.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle25
+        DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle26.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle26
         Me.Guna2DataGridView1.ColumnHeadersHeight = 4
         Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle27.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle27.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle27
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView1.Location = New System.Drawing.Point(22, 24)
+        Me.Guna2DataGridView1.Location = New System.Drawing.Point(29, 30)
+        Me.Guna2DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
         Me.Guna2DataGridView1.RowHeadersVisible = False
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(885, 154)
+        Me.Guna2DataGridView1.RowHeadersWidth = 51
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(1180, 190)
         Me.Guna2DataGridView1.TabIndex = 88
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -369,9 +382,10 @@ Partial Class AdminPanel
         Me.admin_sbprofessor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.admin_sbprofessor.ImageOffset = New System.Drawing.Point(5, 0)
         Me.admin_sbprofessor.ImageSize = New System.Drawing.Size(27, 27)
-        Me.admin_sbprofessor.Location = New System.Drawing.Point(0, 225)
+        Me.admin_sbprofessor.Location = New System.Drawing.Point(0, 277)
+        Me.admin_sbprofessor.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_sbprofessor.Name = "admin_sbprofessor"
-        Me.admin_sbprofessor.Size = New System.Drawing.Size(55, 45)
+        Me.admin_sbprofessor.Size = New System.Drawing.Size(73, 55)
         Me.admin_sbprofessor.TabIndex = 7
         Me.admin_sbprofessor.TextOffset = New System.Drawing.Point(14, 0)
         Me.admin_sbprofessor.UseTransparentBackground = True
@@ -393,9 +407,10 @@ Partial Class AdminPanel
         Me.Guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button2.ImageOffset = New System.Drawing.Point(5, 0)
         Me.Guna2Button2.ImageSize = New System.Drawing.Size(27, 27)
-        Me.Guna2Button2.Location = New System.Drawing.Point(0, 593)
+        Me.Guna2Button2.Location = New System.Drawing.Point(0, 730)
+        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(55, 45)
+        Me.Guna2Button2.Size = New System.Drawing.Size(73, 55)
         Me.Guna2Button2.TabIndex = 6
         Me.Guna2Button2.TextOffset = New System.Drawing.Point(14, 0)
         Me.Guna2Button2.UseTransparentBackground = True
@@ -417,9 +432,10 @@ Partial Class AdminPanel
         Me.admin_sbstudent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.admin_sbstudent.ImageOffset = New System.Drawing.Point(5, 0)
         Me.admin_sbstudent.ImageSize = New System.Drawing.Size(27, 27)
-        Me.admin_sbstudent.Location = New System.Drawing.Point(0, 176)
+        Me.admin_sbstudent.Location = New System.Drawing.Point(0, 217)
+        Me.admin_sbstudent.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_sbstudent.Name = "admin_sbstudent"
-        Me.admin_sbstudent.Size = New System.Drawing.Size(55, 45)
+        Me.admin_sbstudent.Size = New System.Drawing.Size(73, 55)
         Me.admin_sbstudent.TabIndex = 5
         Me.admin_sbstudent.TextOffset = New System.Drawing.Point(14, 0)
         Me.admin_sbstudent.UseTransparentBackground = True
@@ -441,9 +457,10 @@ Partial Class AdminPanel
         Me.Guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button3.ImageOffset = New System.Drawing.Point(5, 0)
         Me.Guna2Button3.ImageSize = New System.Drawing.Size(27, 27)
-        Me.Guna2Button3.Location = New System.Drawing.Point(0, 106)
+        Me.Guna2Button3.Location = New System.Drawing.Point(0, 130)
+        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.Size = New System.Drawing.Size(55, 45)
+        Me.Guna2Button3.Size = New System.Drawing.Size(73, 55)
         Me.Guna2Button3.TabIndex = 4
         Me.Guna2Button3.UseTransparentBackground = True
         '
@@ -460,9 +477,10 @@ Partial Class AdminPanel
         Me.admin_faculty.CustomizableEdges.TopLeft = False
         Me.admin_faculty.CustomizableEdges.TopRight = False
         Me.admin_faculty.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.admin_faculty.Location = New System.Drawing.Point(58, 68)
+        Me.admin_faculty.Location = New System.Drawing.Point(77, 84)
+        Me.admin_faculty.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_faculty.Name = "admin_faculty"
-        Me.admin_faculty.Size = New System.Drawing.Size(938, 580)
+        Me.admin_faculty.Size = New System.Drawing.Size(1251, 714)
         Me.admin_faculty.TabIndex = 83
         '
         'admin_profdelete
@@ -483,9 +501,10 @@ Partial Class AdminPanel
         Me.admin_profdelete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.admin_profdelete.ImageOffset = New System.Drawing.Point(-3, 0)
         Me.admin_profdelete.ImageSize = New System.Drawing.Size(23, 23)
-        Me.admin_profdelete.Location = New System.Drawing.Point(792, 500)
+        Me.admin_profdelete.Location = New System.Drawing.Point(1056, 615)
+        Me.admin_profdelete.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_profdelete.Name = "admin_profdelete"
-        Me.admin_profdelete.Size = New System.Drawing.Size(112, 45)
+        Me.admin_profdelete.Size = New System.Drawing.Size(149, 55)
         Me.admin_profdelete.TabIndex = 92
         Me.admin_profdelete.Text = "Delete"
         Me.admin_profdelete.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -509,9 +528,10 @@ Partial Class AdminPanel
         Me.admin_profUpdate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.admin_profUpdate.ImageOffset = New System.Drawing.Point(-3, 0)
         Me.admin_profUpdate.ImageSize = New System.Drawing.Size(23, 23)
-        Me.admin_profUpdate.Location = New System.Drawing.Point(792, 436)
+        Me.admin_profUpdate.Location = New System.Drawing.Point(1056, 537)
+        Me.admin_profUpdate.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_profUpdate.Name = "admin_profUpdate"
-        Me.admin_profUpdate.Size = New System.Drawing.Size(112, 45)
+        Me.admin_profUpdate.Size = New System.Drawing.Size(149, 55)
         Me.admin_profUpdate.TabIndex = 91
         Me.admin_profUpdate.Text = "Update"
         Me.admin_profUpdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -535,9 +555,10 @@ Partial Class AdminPanel
         Me.admin_addnewprof.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.admin_addnewprof.ImageOffset = New System.Drawing.Point(-3, 0)
         Me.admin_addnewprof.ImageSize = New System.Drawing.Size(25, 25)
-        Me.admin_addnewprof.Location = New System.Drawing.Point(792, 21)
+        Me.admin_addnewprof.Location = New System.Drawing.Point(1056, 26)
+        Me.admin_addnewprof.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_addnewprof.Name = "admin_addnewprof"
-        Me.admin_addnewprof.Size = New System.Drawing.Size(112, 45)
+        Me.admin_addnewprof.Size = New System.Drawing.Size(149, 55)
         Me.admin_addnewprof.TabIndex = 90
         Me.admin_addnewprof.Text = "Add New"
         Me.admin_addnewprof.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -564,12 +585,13 @@ Partial Class AdminPanel
         Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel5)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2Separator1)
         Me.Guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.Guna2ShadowPanel1.Location = New System.Drawing.Point(40, 253)
+        Me.Guna2ShadowPanel1.Location = New System.Drawing.Point(53, 311)
+        Me.Guna2ShadowPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2ShadowPanel1.Name = "Guna2ShadowPanel1"
         Me.Guna2ShadowPanel1.Radius = 7
         Me.Guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black
         Me.Guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal
-        Me.Guna2ShadowPanel1.Size = New System.Drawing.Size(723, 293)
+        Me.Guna2ShadowPanel1.Size = New System.Drawing.Size(964, 361)
         Me.Guna2ShadowPanel1.TabIndex = 89
         '
         'admin_profyearandsection
@@ -580,9 +602,10 @@ Partial Class AdminPanel
         Me.admin_profyearandsection.FormattingEnabled = True
         Me.admin_profyearandsection.HorizontalScrollbar = True
         Me.admin_profyearandsection.Items.AddRange(New Object() {""})
-        Me.admin_profyearandsection.Location = New System.Drawing.Point(485, 179)
+        Me.admin_profyearandsection.Location = New System.Drawing.Point(647, 220)
+        Me.admin_profyearandsection.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_profyearandsection.Name = "admin_profyearandsection"
-        Me.admin_profyearandsection.Size = New System.Drawing.Size(210, 88)
+        Me.admin_profyearandsection.Size = New System.Drawing.Size(279, 82)
         Me.admin_profyearandsection.Sorted = True
         Me.admin_profyearandsection.TabIndex = 92
         Me.admin_profyearandsection.UseCompatibleTextRendering = True
@@ -594,9 +617,10 @@ Partial Class AdminPanel
         Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel9.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel9.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(364, 179)
+        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(485, 220)
+        Me.Guna2HtmlLabel9.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
-        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(112, 19)
+        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(140, 23)
         Me.Guna2HtmlLabel9.TabIndex = 91
         Me.Guna2HtmlLabel9.TabStop = False
         Me.Guna2HtmlLabel9.Text = "Year and Section : "
@@ -616,13 +640,14 @@ Partial Class AdminPanel
         Me.admin_txtprofacademicyear.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.admin_txtprofacademicyear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.admin_txtprofacademicyear.HoverState.BorderColor = System.Drawing.Color.Black
-        Me.admin_txtprofacademicyear.Location = New System.Drawing.Point(150, 229)
+        Me.admin_txtprofacademicyear.Location = New System.Drawing.Point(200, 282)
+        Me.admin_txtprofacademicyear.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_txtprofacademicyear.Name = "admin_txtprofacademicyear"
         Me.admin_txtprofacademicyear.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.admin_txtprofacademicyear.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(190, Byte), Integer))
         Me.admin_txtprofacademicyear.PlaceholderText = "Academic Year"
         Me.admin_txtprofacademicyear.SelectedText = ""
-        Me.admin_txtprofacademicyear.Size = New System.Drawing.Size(129, 23)
+        Me.admin_txtprofacademicyear.Size = New System.Drawing.Size(172, 28)
         Me.admin_txtprofacademicyear.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         Me.admin_txtprofacademicyear.TabIndex = 90
         Me.admin_txtprofacademicyear.TextOffset = New System.Drawing.Point(-5, 1)
@@ -634,9 +659,10 @@ Partial Class AdminPanel
         Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.Guna2HtmlLabel1.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel1.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(25, 9)
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(33, 11)
+        Me.Guna2HtmlLabel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(152, 27)
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(191, 34)
         Me.Guna2HtmlLabel1.TabIndex = 74
         Me.Guna2HtmlLabel1.TabStop = False
         Me.Guna2HtmlLabel1.Text = "Professor Details"
@@ -649,9 +675,10 @@ Partial Class AdminPanel
         Me.Guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel8.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel8.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(25, 233)
+        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(33, 287)
+        Me.Guna2HtmlLabel8.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
-        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(100, 19)
+        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(124, 23)
         Me.Guna2HtmlLabel8.TabIndex = 89
         Me.Guna2HtmlLabel8.TabStop = False
         Me.Guna2HtmlLabel8.Text = "Academic Year :"
@@ -669,10 +696,11 @@ Partial Class AdminPanel
         Me.admin_txtprofsemester.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.admin_txtprofsemester.ItemHeight = 20
         Me.admin_txtprofsemester.Items.AddRange(New Object() {"CCS", "EDUC", "NURSING"})
-        Me.admin_txtprofsemester.Location = New System.Drawing.Point(151, 183)
+        Me.admin_txtprofsemester.Location = New System.Drawing.Point(201, 225)
+        Me.admin_txtprofsemester.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_txtprofsemester.Name = "admin_txtprofsemester"
         Me.admin_txtprofsemester.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.admin_txtprofsemester.Size = New System.Drawing.Size(129, 26)
+        Me.admin_txtprofsemester.Size = New System.Drawing.Size(171, 26)
         Me.admin_txtprofsemester.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         Me.admin_txtprofsemester.TabIndex = 88
         Me.admin_txtprofsemester.TextOffset = New System.Drawing.Point(-5, 1)
@@ -684,9 +712,10 @@ Partial Class AdminPanel
         Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel7.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel7.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(25, 190)
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(33, 234)
+        Me.Guna2HtmlLabel7.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
-        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(66, 19)
+        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(84, 23)
         Me.Guna2HtmlLabel7.TabIndex = 87
         Me.Guna2HtmlLabel7.TabStop = False
         Me.Guna2HtmlLabel7.Text = "Semester :"
@@ -700,9 +729,10 @@ Partial Class AdminPanel
         Me.admin_courseCB.FormattingEnabled = True
         Me.admin_courseCB.HorizontalScrollbar = True
         Me.admin_courseCB.Items.AddRange(New Object() {""})
-        Me.admin_courseCB.Location = New System.Drawing.Point(485, 65)
+        Me.admin_courseCB.Location = New System.Drawing.Point(647, 80)
+        Me.admin_courseCB.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_courseCB.Name = "admin_courseCB"
-        Me.admin_courseCB.Size = New System.Drawing.Size(210, 88)
+        Me.admin_courseCB.Size = New System.Drawing.Size(279, 82)
         Me.admin_courseCB.Sorted = True
         Me.admin_courseCB.TabIndex = 86
         Me.admin_courseCB.UseCompatibleTextRendering = True
@@ -714,9 +744,10 @@ Partial Class AdminPanel
         Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel6.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel6.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(418, 65)
+        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(557, 80)
+        Me.Guna2HtmlLabel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
-        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(58, 19)
+        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(72, 23)
         Me.Guna2HtmlLabel6.TabIndex = 85
         Me.Guna2HtmlLabel6.TabStop = False
         Me.Guna2HtmlLabel6.Text = "Courses : "
@@ -734,10 +765,11 @@ Partial Class AdminPanel
         Me.admin_txtprofdepartment.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.admin_txtprofdepartment.ItemHeight = 20
         Me.admin_txtprofdepartment.Items.AddRange(New Object() {"CCS", "EDUC", "NURSING"})
-        Me.admin_txtprofdepartment.Location = New System.Drawing.Point(151, 140)
+        Me.admin_txtprofdepartment.Location = New System.Drawing.Point(201, 172)
+        Me.admin_txtprofdepartment.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_txtprofdepartment.Name = "admin_txtprofdepartment"
         Me.admin_txtprofdepartment.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.admin_txtprofdepartment.Size = New System.Drawing.Size(129, 26)
+        Me.admin_txtprofdepartment.Size = New System.Drawing.Size(171, 26)
         Me.admin_txtprofdepartment.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         Me.admin_txtprofdepartment.TabIndex = 84
         Me.admin_txtprofdepartment.TextOffset = New System.Drawing.Point(-5, 1)
@@ -749,9 +781,10 @@ Partial Class AdminPanel
         Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel4.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel4.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(24, 147)
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(32, 181)
+        Me.Guna2HtmlLabel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(82, 19)
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(105, 23)
         Me.Guna2HtmlLabel4.TabIndex = 83
         Me.Guna2HtmlLabel4.TabStop = False
         Me.Guna2HtmlLabel4.Text = "Department : "
@@ -771,13 +804,14 @@ Partial Class AdminPanel
         Me.admin_txtprofname.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.admin_txtprofname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.admin_txtprofname.HoverState.BorderColor = System.Drawing.Color.Black
-        Me.admin_txtprofname.Location = New System.Drawing.Point(150, 104)
+        Me.admin_txtprofname.Location = New System.Drawing.Point(200, 128)
+        Me.admin_txtprofname.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_txtprofname.Name = "admin_txtprofname"
         Me.admin_txtprofname.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.admin_txtprofname.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(190, Byte), Integer))
         Me.admin_txtprofname.PlaceholderText = "Edit Name"
         Me.admin_txtprofname.SelectedText = ""
-        Me.admin_txtprofname.Size = New System.Drawing.Size(129, 23)
+        Me.admin_txtprofname.Size = New System.Drawing.Size(172, 28)
         Me.admin_txtprofname.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         Me.admin_txtprofname.TabIndex = 82
         Me.admin_txtprofname.TextOffset = New System.Drawing.Point(-5, 1)
@@ -789,9 +823,10 @@ Partial Class AdminPanel
         Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel3.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel3.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(24, 107)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(32, 132)
+        Me.Guna2HtmlLabel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(106, 19)
+        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(132, 23)
         Me.Guna2HtmlLabel3.TabIndex = 81
         Me.Guna2HtmlLabel3.TabStop = False
         Me.Guna2HtmlLabel3.Text = "Professor Name :"
@@ -811,13 +846,14 @@ Partial Class AdminPanel
         Me.admin_txtprofid.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.admin_txtprofid.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.admin_txtprofid.HoverState.BorderColor = System.Drawing.Color.Black
-        Me.admin_txtprofid.Location = New System.Drawing.Point(150, 65)
+        Me.admin_txtprofid.Location = New System.Drawing.Point(200, 80)
+        Me.admin_txtprofid.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_txtprofid.Name = "admin_txtprofid"
         Me.admin_txtprofid.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.admin_txtprofid.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(190, Byte), Integer))
         Me.admin_txtprofid.PlaceholderText = "Edit ID"
         Me.admin_txtprofid.SelectedText = ""
-        Me.admin_txtprofid.Size = New System.Drawing.Size(129, 23)
+        Me.admin_txtprofid.Size = New System.Drawing.Size(172, 28)
         Me.admin_txtprofid.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         Me.admin_txtprofid.TabIndex = 80
         Me.admin_txtprofid.TextOffset = New System.Drawing.Point(-5, 1)
@@ -829,9 +865,10 @@ Partial Class AdminPanel
         Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel5.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel5.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(24, 68)
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(32, 84)
+        Me.Guna2HtmlLabel5.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
-        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(83, 19)
+        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(105, 23)
         Me.Guna2HtmlLabel5.TabIndex = 78
         Me.Guna2HtmlLabel5.TabStop = False
         Me.Guna2HtmlLabel5.Text = "Professor ID : "
@@ -841,38 +878,41 @@ Partial Class AdminPanel
         '
         Me.Guna2Separator1.FillColor = System.Drawing.Color.DimGray
         Me.Guna2Separator1.FillThickness = 2
-        Me.Guna2Separator1.Location = New System.Drawing.Point(24, 23)
+        Me.Guna2Separator1.Location = New System.Drawing.Point(32, 28)
+        Me.Guna2Separator1.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2Separator1.Name = "Guna2Separator1"
-        Me.Guna2Separator1.Size = New System.Drawing.Size(671, 36)
+        Me.Guna2Separator1.Size = New System.Drawing.Size(895, 44)
         Me.Guna2Separator1.TabIndex = 76
         '
         'admin_profdatatable
         '
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.admin_profdatatable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.admin_profdatatable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle28.BackColor = System.Drawing.Color.White
+        Me.admin_profdatatable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle28
+        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle29.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle29.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.admin_profdatatable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle29
         Me.admin_profdatatable.ColumnHeadersHeight = 4
         Me.admin_profdatatable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.admin_profdatatable.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle30.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.admin_profdatatable.DefaultCellStyle = DataGridViewCellStyle30
         Me.admin_profdatatable.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.admin_profdatatable.Location = New System.Drawing.Point(40, 72)
+        Me.admin_profdatatable.Location = New System.Drawing.Point(53, 89)
+        Me.admin_profdatatable.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_profdatatable.Name = "admin_profdatatable"
         Me.admin_profdatatable.RowHeadersVisible = False
-        Me.admin_profdatatable.Size = New System.Drawing.Size(864, 175)
+        Me.admin_profdatatable.RowHeadersWidth = 51
+        Me.admin_profdatatable.Size = New System.Drawing.Size(1152, 215)
         Me.admin_profdatatable.TabIndex = 88
         Me.admin_profdatatable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.admin_profdatatable.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -906,23 +946,28 @@ Partial Class AdminPanel
         Me.CheckBoxRAD.BorderRadius = 10
         Me.CheckBoxRAD.TargetControl = Me.admin_courseCB
         '
+        'timer
+        '
+        '
         'AdminPanel
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.HotPink
         Me.BackgroundImage = Global.OOP_FinalProject.My.Resources.Resources.Paman
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1084, 711)
+        Me.ClientSize = New System.Drawing.Size(1445, 875)
         Me.Controls.Add(Me.admin_container)
         Me.Controls.Add(Me.Guna2ControlBox1)
         Me.Controls.Add(Me.Guna2ControlBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "AdminPanel"
         Me.Text = "AdminPanel"
         Me.TransparencyKey = System.Drawing.Color.HotPink
         Me.admin_container.ResumeLayout(False)
         Me.Guna2Panel2.ResumeLayout(False)
+        Me.Guna2Panel2.PerformLayout()
         CType(Me.admin_profilepic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.stp_sidebar.ResumeLayout(False)
         Me.adming_professor.ResumeLayout(False)
@@ -978,4 +1023,5 @@ Partial Class AdminPanel
     Friend WithEvents admin_profyearandsection As CheckedListBox
     Friend WithEvents Guna2HtmlLabel9 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents admin_courseCB As CheckedListBox
+    Friend WithEvents timer As Timer
 End Class
