@@ -4,9 +4,9 @@
     End Sub
 
     Private Sub AdminPanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        timer.Interval = 1000
-        timer.Enabled = True
-        timer.Start()
+        Timer.Interval = 1000
+        Timer.Enabled = True
+        Timer.Start()
 
 
 
