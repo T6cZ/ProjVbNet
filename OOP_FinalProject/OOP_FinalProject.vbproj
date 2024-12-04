@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{90099951-37D8-4F15-8144-8968A8855494}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>OOP_FinalProject.My.MyApplication</StartupObject>
+    <StartupObject>OOP_FinalProject.AdminPanel</StartupObject>
     <RootNamespace>OOP_FinalProject</RootNamespace>
     <AssemblyName>OOP_FinalProject</AssemblyName>
     <FileAlignment>512</FileAlignment>

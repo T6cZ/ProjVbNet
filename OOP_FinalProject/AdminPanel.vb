@@ -2,10 +2,6 @@
 
 Public Module DatabaseConnection
 
-<<<<<<< HEAD
-    Dim connectionString As String = "server=localhost; user=root; database=gms"
-    Return New MySqlConnection(connectionString)
-=======
     Dim cmd As New MySql.Data.MySqlClient.MySqlCommand
     Dim dt As New DataTable
     Dim da As New MySql.Data.MySqlClient.MySqlDataAdapter
@@ -14,7 +10,6 @@ Public Module DatabaseConnection
     Public Function GetConnection() As MySql.Data.MySqlClient.MySqlConnection
         Dim connectionString As String = "server=localhost;user=root;database=GRADING_SYSTEM"
         Return New MySql.Data.MySqlClient.MySqlConnection(connectionString)
->>>>>>> 9b71e23204dbd5f321181ace2cf48c4d78e657f5
     End Function
 End Module
 
@@ -91,12 +86,7 @@ Public Class AdminPanel
         admin_txtprofacademicyear.Enabled = True
     End Sub
 
-    Private Sub admin_profUpdate_Click(sender As Object, e As EventArgs) Handles admin_profUpdate.Click
 
-    End Sub
-
-    Private Sub admin_profdelete_Click(sender As Object, e As EventArgs) Handles admin_profdelete.Click
-    End Sub
 
     Private Sub LoadCourses()
         Try
@@ -125,4 +115,6 @@ Public Class AdminPanel
             MessageBox.Show($"Failed to load courses: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
+
 End Class
