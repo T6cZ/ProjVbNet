@@ -1,5 +1,4 @@
 ﻿Imports MySql.Data.MySqlClient
-'aaksdhahsdbsabhabdasjbhasdsbh
 Public Module DatabaseConnection
 
     Dim cmd As New MySql.Data.MySqlClient.MySqlCommand

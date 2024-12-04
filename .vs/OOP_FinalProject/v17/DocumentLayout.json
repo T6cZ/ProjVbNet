@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\documents\\github\\projvbnet\\oop_finalproject\\my project\\application.myapp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\my project\\application.myapp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbnet\\oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
@@ -64,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "StudentMainMenu.vb",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbnet\\OOP_FinalProject\\StudentMainMenu.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\StudentMainMenu.vb",
@@ -76,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "StudentMainMenu.vb [Design]",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbnet\\OOP_FinalProject\\StudentMainMenu.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\StudentMainMenu.vb",
@@ -87,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "LoginRegPanel.vb",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbnet\\OOP_FinalProject\\LoginRegPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\LoginRegPanel.vb",
@@ -105,14 +109,14 @@
               "RelativeDocumentMoniker": "OOP_FinalProject\\AdminPanel.vb",
               "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbnet\\OOP_FinalProject\\AdminPanel.vb",
               "RelativeToolTip": "OOP_FinalProject\\AdminPanel.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-12-04T13:28:49.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AdminPanel.vb [Design]",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbnet\\OOP_FinalProject\\AdminPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\AdminPanel.vb",
@@ -124,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LoginRegPanel.vb [Design]",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbnet\\OOP_FinalProject\\LoginRegPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\LoginRegPanel.vb",
@@ -135,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ProfessorPanel.vb [Design]",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbnet\\OOP_FinalProject\\ProfessorPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\ProfessorPanel.vb",
@@ -146,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "OOP_FinalProject",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\OOP_FinalProject.vbproj",
               "RelativeDocumentMoniker": "OOP_FinalProject\\OOP_FinalProject.vbproj",
@@ -158,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Add Professor.vb",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbnet\\OOP_FinalProject\\Add Professor.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\Add Professor.vb",
@@ -170,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Add Professor.vb [Design]",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbnet\\OOP_FinalProject\\Add Professor.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\Add Professor.vb",
@@ -183,8 +187,21 @@
         },
         {
           "DockedHeight": 249,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Application.myapp",
+              "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\My Project\\Application.myapp",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\My Project\\Application.myapp",
+              "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\My Project\\Application.myapp",
+              "RelativeToolTip": "OOP_FinalProject\\My Project\\Application.myapp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-04T13:44:52.499Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
