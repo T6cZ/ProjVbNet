@@ -89,7 +89,7 @@ Partial Class StudentMainMenu
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.stp_currentdate = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.stp_clocktimer = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.STUDENT_NAME = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.stp_sidebar = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
@@ -164,7 +164,7 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel9.AutoSize = False
         Me.Guna2HtmlLabel9.AvoidGeometryAntialias = True
         Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Leelawadee", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Guna2HtmlLabel9.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel9.IsSelectionEnabled = False
@@ -180,7 +180,7 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel7.AutoSize = False
         Me.Guna2HtmlLabel7.AvoidGeometryAntialias = True
         Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Leelawadee", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Guna2HtmlLabel7.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel7.IsSelectionEnabled = False
@@ -195,13 +195,13 @@ Partial Class StudentMainMenu
         '
         Me.Guna2HtmlLabel8.AvoidGeometryAntialias = True
         Me.Guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel8.Font = New System.Drawing.Font("Leelawadee", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(63, Byte), Integer))
         Me.Guna2HtmlLabel8.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel8.IsSelectionEnabled = False
         Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(21, 48)
         Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
-        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(27, 13)
+        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(31, 14)
         Me.Guna2HtmlLabel8.TabIndex = 24
         Me.Guna2HtmlLabel8.Text = "Email"
         Me.Guna2HtmlLabel8.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft
@@ -210,13 +210,13 @@ Partial Class StudentMainMenu
         '
         Me.Guna2HtmlLabel10.AvoidGeometryAntialias = True
         Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Leelawadee", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(63, Byte), Integer))
         Me.Guna2HtmlLabel10.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel10.IsSelectionEnabled = False
         Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(21, 79)
         Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
-        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(74, 13)
+        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(85, 14)
         Me.Guna2HtmlLabel10.TabIndex = 26
         Me.Guna2HtmlLabel10.Text = "Contact Number"
         Me.Guna2HtmlLabel10.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft
@@ -225,13 +225,13 @@ Partial Class StudentMainMenu
         '
         Me.Guna2HtmlLabel11.AvoidGeometryAntialias = True
         Me.Guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel11.Font = New System.Drawing.Font("Leelawadee", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel11.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(63, Byte), Integer))
         Me.Guna2HtmlLabel11.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel11.IsSelectionEnabled = False
         Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(21, 127)
         Me.Guna2HtmlLabel11.Name = "Guna2HtmlLabel11"
-        Me.Guna2HtmlLabel11.Size = New System.Drawing.Size(38, 13)
+        Me.Guna2HtmlLabel11.Size = New System.Drawing.Size(45, 14)
         Me.Guna2HtmlLabel11.TabIndex = 27
         Me.Guna2HtmlLabel11.Text = "Address"
         Me.Guna2HtmlLabel11.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft
@@ -241,7 +241,7 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel12.AutoSize = False
         Me.Guna2HtmlLabel12.AvoidGeometryAntialias = True
         Me.Guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel12.Font = New System.Drawing.Font("Leelawadee", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(123, Byte), Integer))
         Me.Guna2HtmlLabel12.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel12.IsSelectionEnabled = False
@@ -1044,7 +1044,7 @@ Partial Class StudentMainMenu
         Me.Guna2Panel2.BorderRadius = 15
         Me.Guna2Panel2.Controls.Add(Me.stp_currentdate)
         Me.Guna2Panel2.Controls.Add(Me.stp_clocktimer)
-        Me.Guna2Panel2.Controls.Add(Me.Guna2HtmlLabel2)
+        Me.Guna2Panel2.Controls.Add(Me.STUDENT_NAME)
         Me.Guna2Panel2.Controls.Add(Me.Guna2CirclePictureBox1)
         Me.Guna2Panel2.CustomizableEdges.BottomLeft = False
         Me.Guna2Panel2.CustomizableEdges.BottomRight = False
@@ -1088,21 +1088,21 @@ Partial Class StudentMainMenu
         Me.stp_clocktimer.Text = "00:00:00 PM"
         Me.stp_clocktimer.TextAlignment = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Guna2HtmlLabel2
+        'STUDENT_NAME
         '
-        Me.Guna2HtmlLabel2.AutoSize = False
-        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.Guna2HtmlLabel2.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel2.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(68, 23)
-        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(196, 18)
-        Me.Guna2HtmlLabel2.TabIndex = 73
-        Me.Guna2HtmlLabel2.TabStop = False
-        Me.Guna2HtmlLabel2.Text = "Sample Name S. Name"
-        Me.Guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft
+        Me.STUDENT_NAME.AutoSize = False
+        Me.STUDENT_NAME.BackColor = System.Drawing.Color.Transparent
+        Me.STUDENT_NAME.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STUDENT_NAME.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.STUDENT_NAME.IsContextMenuEnabled = False
+        Me.STUDENT_NAME.IsSelectionEnabled = False
+        Me.STUDENT_NAME.Location = New System.Drawing.Point(68, 23)
+        Me.STUDENT_NAME.Name = "STUDENT_NAME"
+        Me.STUDENT_NAME.Size = New System.Drawing.Size(196, 18)
+        Me.STUDENT_NAME.TabIndex = 73
+        Me.STUDENT_NAME.TabStop = False
+        Me.STUDENT_NAME.Text = "Sample Name S. Name"
+        Me.STUDENT_NAME.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Guna2CirclePictureBox1
         '
@@ -1258,7 +1258,7 @@ Partial Class StudentMainMenu
     Friend WithEvents stp_sidebar As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
-    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents STUDENT_NAME As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2ShadowPanel1 As Guna.UI2.WinForms.Guna2ShadowPanel
