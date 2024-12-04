@@ -3,8 +3,8 @@
 Public Module DatabaseConnection
 
 <<<<<<< HEAD
-        Dim connectionString As String = "server=localhost; user=root; database=gms"
-        Return New MySqlConnection(connectionString)
+    Dim connectionString As String = "server=localhost; user=root; database=gms"
+    Return New MySqlConnection(connectionString)
 =======
     Dim cmd As New MySql.Data.MySqlClient.MySqlCommand
     Dim dt As New DataTable
@@ -71,7 +71,7 @@ Public Class AdminPanel
 
     Dim x As Integer = 0
     Private Sub admin_addnewprof_Click(sender As Object, e As EventArgs) Handles admin_addnewprof.Click
-        X = 1
+        x = 1
         BtnforAddEdit()
         admin_txtprofid.Text = ""
         admin_txtprofname.Text = ""
