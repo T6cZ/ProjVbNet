@@ -3,14 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\plpasig\\onedrive\\documents\\github\\projvb\\oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|OOP_FinalProject||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\plpasig\\onedrive\\documents\\github\\projvb\\oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+>>>>>>> 9b71e23204dbd5f321181ace2cf48c4d78e657f5
     },
     {
       "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\oop_finalproject\\add professor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\add professor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
@@ -36,6 +53,29 @@
     {
       "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\plpasig\\onedrive\\documents\\github\\projvb\\oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\plpasig\\onedrive\\documents\\github\\projvb\\oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\plpasig\\onedrive\\documents\\github\\projvb\\oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\oop_finalproject\\add professor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\add professor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\oop_finalproject\\add professor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\add professor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\plpasig\\onedrive\\documents\\github\\projvb\\oop_finalproject\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
+>>>>>>> 9b71e23204dbd5f321181ace2cf48c4d78e657f5
     }
   ],
   "DocumentGroupContainers": [
@@ -45,7 +85,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 618,
+<<<<<<< HEAD
           "SelectedChildIndex": 5,
+=======
+          "SelectedChildIndex": 3,
+>>>>>>> 9b71e23204dbd5f321181ace2cf48c4d78e657f5
           "Children": [
             {
               "$type": "Bookmark",
@@ -56,6 +100,7 @@
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
+<<<<<<< HEAD
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "ProfessorPanel.Designer.vb",
@@ -66,10 +111,126 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-12-04T10:10:12.396Z",
+=======
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentMainMenu.vb",
+              "DocumentMoniker": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\StudentMainMenu.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\StudentMainMenu.vb",
+              "ToolTip": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\StudentMainMenu.vb",
+              "RelativeToolTip": "OOP_FinalProject\\StudentMainMenu.vb",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAmwAwAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-04T10:26:07.119Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentMainMenu.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\StudentMainMenu.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\StudentMainMenu.vb",
+              "ToolTip": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\StudentMainMenu.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\StudentMainMenu.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-04T10:26:03.226Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginRegPanel.vb",
+              "DocumentMoniker": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\LoginRegPanel.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\LoginRegPanel.vb",
+              "ToolTip": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\LoginRegPanel.vb",
+              "RelativeToolTip": "OOP_FinalProject\\LoginRegPanel.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-04T08:17:05.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminPanel.vb",
+              "DocumentMoniker": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\AdminPanel.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\AdminPanel.vb",
+              "ToolTip": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\AdminPanel.vb",
+              "RelativeToolTip": "OOP_FinalProject\\AdminPanel.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-04T08:16:06.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminPanel.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\AdminPanel.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\AdminPanel.vb",
+              "ToolTip": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\AdminPanel.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\AdminPanel.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-04T08:15:56.597Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginRegPanel.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\LoginRegPanel.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\LoginRegPanel.vb",
+              "ToolTip": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\LoginRegPanel.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\LoginRegPanel.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-04T08:16:52.577Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProfessorPanel.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\ProfessorPanel.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ProfessorPanel.vb",
+              "ToolTip": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\ProfessorPanel.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\ProfessorPanel.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-04T08:13:22.861Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OOP_FinalProject",
+              "DocumentMoniker": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\OOP_FinalProject.vbproj",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\OOP_FinalProject.vbproj",
+              "ToolTip": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\OOP_FinalProject.vbproj",
+              "RelativeToolTip": "OOP_FinalProject\\OOP_FinalProject.vbproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-04T08:15:34.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Add Professor.vb",
+              "DocumentMoniker": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\Add Professor.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\Add Professor.vb",
+              "ToolTip": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\Add Professor.vb",
+              "RelativeToolTip": "OOP_FinalProject\\Add Professor.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-04T08:16:54.644Z",
+>>>>>>> 9b71e23204dbd5f321181ace2cf48c4d78e657f5
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "ProfessorPanel.vb",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\ProfessorPanel.vb",
@@ -125,10 +286,18 @@
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\Add Professor.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\Add Professor.vb",
               "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\ProjVbNet\\OOP_FinalProject\\Add Professor.vb [Design]",
+=======
+              "DocumentIndex": 9,
+              "Title": "Add Professor.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\Add Professor.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\Add Professor.vb",
+              "ToolTip": "C:\\Users\\PLPASIG\\OneDrive\\Documents\\GitHub\\PROJVB\\OOP_FinalProject\\Add Professor.vb [Design]",
+>>>>>>> 9b71e23204dbd5f321181ace2cf48c4d78e657f5
               "RelativeToolTip": "OOP_FinalProject\\Add Professor.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-12-04T08:16:47.402Z",
               "EditorCaption": " [Design]"
+<<<<<<< HEAD
             },
             {
               "$type": "Document",
@@ -163,6 +332,8 @@
               "RelativeToolTip": "OOP_FinalProject\\OOP_FinalProject.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-12-04T08:15:34.511Z"
+=======
+>>>>>>> 9b71e23204dbd5f321181ace2cf48c4d78e657f5
             }
           ]
         },

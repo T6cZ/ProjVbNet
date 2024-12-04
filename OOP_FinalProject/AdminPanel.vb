@@ -1,21 +1,32 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Module DatabaseConnection
-    Public Function GetConnection() As MySqlConnection
 
+<<<<<<< HEAD
         Dim connectionString As String = "server=localhost; user=root; database=gms"
         Return New MySqlConnection(connectionString)
+=======
+    Dim cmd As New MySql.Data.MySqlClient.MySqlCommand
+    Dim dt As New DataTable
+    Dim da As New MySql.Data.MySqlClient.MySqlDataAdapter
+    Dim X As Integer = 0
+
+    Public Function GetConnection() As MySql.Data.MySqlClient.MySqlConnection
+        Dim connectionString As String = "server=localhost;user=root;database=GRADING_SYSTEM"
+        Return New MySql.Data.MySqlClient.MySqlConnection(connectionString)
+>>>>>>> 9b71e23204dbd5f321181ace2cf48c4d78e657f5
     End Function
 End Module
 
 Public Class AdminPanel
 
     Private Sub AdminPanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadProfessorData() ' Load professors into DataGridView
+        LoadCourses() ' Load courses into the ListBox
 
         timer.Interval = 1000
         timer.Enabled = True
         timer.Start()
-
 
         LoadProfessorData()
     End Sub
@@ -58,9 +69,26 @@ Public Class AdminPanel
         End Try
     End Sub
 
-
+    Dim x As Integer = 0
     Private Sub admin_addnewprof_Click(sender As Object, e As EventArgs) Handles admin_addnewprof.Click
+        X = 1
+        BtnforAddEdit()
+        admin_txtprofid.Text = ""
+        admin_txtprofname.Text = ""
+        admin_txtprofdepartment.Text = ""
+        admin_txtprofsemester.Text = ""
+        admin_txtprofacademicyear.Text = ""
 
+        admin_profUpdate.Enabled = True
+        admin_profdelete.Enabled = True
+    End Sub
+
+    Sub BtnforAddEdit()
+        admin_txtprofid.Enabled = True
+        admin_txtprofname.Enabled = True
+        admin_txtprofdepartment.Enabled = True
+        admin_txtprofsemester.Enabled = True
+        admin_txtprofacademicyear.Enabled = True
     End Sub
 
     Private Sub admin_profUpdate_Click(sender As Object, e As EventArgs) Handles admin_profUpdate.Click
@@ -68,5 +96,33 @@ Public Class AdminPanel
     End Sub
 
     Private Sub admin_profdelete_Click(sender As Object, e As EventArgs) Handles admin_profdelete.Click
+    End Sub
+
+    Private Sub LoadCourses()
+        Try
+            ' SQL Query to fetch courses
+            Dim query As String = "
+            SELECT SUBJECT_CODE, SUBJECT_TITLE 
+            FROM subjects" ' Replace "subjects" with your actual table name
+
+            ' Open connection and execute query
+            Using conn As MySqlConnection = GetConnection()
+                conn.Open()
+                Using cmd As New MySqlCommand(query, conn)
+                    Dim reader As MySqlDataReader = cmd.ExecuteReader()
+
+                    ' Clear the list before populating
+                    admin_courseCB.Items.Clear()
+
+                    ' Populate the ListBox
+                    While reader.Read()
+                        Dim course As String = $"{reader("SUBJECT_CODE")} - {reader("SUBJECT_TITLE")}"
+                        admin_courseCB.Items.Add(course) ' Add to ListBox
+                    End While
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Failed to load courses: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 End Class
