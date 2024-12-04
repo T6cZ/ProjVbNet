@@ -15,4 +15,8 @@
     Private Sub Guna2HtmlLabel14_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel14.Click
 
     End Sub
+
+    Private Sub stp_datatable_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles stp_datatable.CellContentClick
+
+    End Sub
 End Class
