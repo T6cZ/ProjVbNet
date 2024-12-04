@@ -8,7 +8,7 @@ Public Module DatabaseConnection
     End Function
 End Module
 
-'ihisugiug
+'TITITITITITITITITITITITITI
 Public Class AdminPanel
 
     Private Sub AdminPanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
