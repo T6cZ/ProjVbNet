@@ -36,6 +36,7 @@ Partial Class ProfessorPanel
         Me.prof_profname = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.prof_profilepic = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.stp_sidebar = New Guna.UI2.WinForms.Guna2Panel()
+        Me.prof_sbsettings = New Guna.UI2.WinForms.Guna2Button()
         Me.adming_professor = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.prof_sbmanagegrade = New Guna.UI2.WinForms.Guna2Button()
@@ -46,14 +47,13 @@ Partial Class ProfessorPanel
         Me.admin_profUpdate = New Guna.UI2.WinForms.Guna2Button()
         Me.admin_addnewprof = New Guna.UI2.WinForms.Guna2Button()
         Me.prof_datatable = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.prof_dashboard = New Guna.UI2.WinForms.Guna2Panel()
         Me.FormDrag = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.FormBorderRad = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.timer = New System.Windows.Forms.Timer(Me.components)
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.DTBorderRad = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
-        Me.prof_dashboard = New Guna.UI2.WinForms.Guna2Panel()
-        Me.prof_sbsettings = New Guna.UI2.WinForms.Guna2Button()
         Me.admin_container.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         CType(Me.prof_profilepic, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -172,6 +172,30 @@ Partial Class ProfessorPanel
         Me.stp_sidebar.Name = "stp_sidebar"
         Me.stp_sidebar.Size = New System.Drawing.Size(55, 706)
         Me.stp_sidebar.TabIndex = 0
+        '
+        'prof_sbsettings
+        '
+        Me.prof_sbsettings.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.prof_sbsettings.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        Me.prof_sbsettings.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.prof_sbsettings.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.prof_sbsettings.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.prof_sbsettings.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.prof_sbsettings.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.prof_sbsettings.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.prof_sbsettings.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
+        Me.prof_sbsettings.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.prof_sbsettings.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.prof_sbsettings.Image = Global.OOP_FinalProject.My.Resources.Resources.SeettingsIcon
+        Me.prof_sbsettings.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.prof_sbsettings.ImageOffset = New System.Drawing.Point(5, 0)
+        Me.prof_sbsettings.ImageSize = New System.Drawing.Size(27, 27)
+        Me.prof_sbsettings.Location = New System.Drawing.Point(0, 532)
+        Me.prof_sbsettings.Name = "prof_sbsettings"
+        Me.prof_sbsettings.Size = New System.Drawing.Size(55, 45)
+        Me.prof_sbsettings.TabIndex = 90
+        Me.prof_sbsettings.TextOffset = New System.Drawing.Point(14, 0)
+        Me.prof_sbsettings.UseTransparentBackground = True
         '
         'adming_professor
         '
@@ -341,7 +365,7 @@ Partial Class ProfessorPanel
         Me.admin_profdelete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.admin_profdelete.ImageOffset = New System.Drawing.Point(-3, 0)
         Me.admin_profdelete.ImageSize = New System.Drawing.Size(23, 23)
-        Me.admin_profdelete.Location = New System.Drawing.Point(658, 150)
+        Me.admin_profdelete.Location = New System.Drawing.Point(671, 354)
         Me.admin_profdelete.Name = "admin_profdelete"
         Me.admin_profdelete.Size = New System.Drawing.Size(112, 45)
         Me.admin_profdelete.TabIndex = 92
@@ -367,7 +391,7 @@ Partial Class ProfessorPanel
         Me.admin_profUpdate.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.admin_profUpdate.ImageOffset = New System.Drawing.Point(-3, 0)
         Me.admin_profUpdate.ImageSize = New System.Drawing.Size(23, 23)
-        Me.admin_profUpdate.Location = New System.Drawing.Point(658, 86)
+        Me.admin_profUpdate.Location = New System.Drawing.Point(671, 290)
         Me.admin_profUpdate.Name = "admin_profUpdate"
         Me.admin_profUpdate.Size = New System.Drawing.Size(112, 45)
         Me.admin_profUpdate.TabIndex = 91
@@ -393,7 +417,7 @@ Partial Class ProfessorPanel
         Me.admin_addnewprof.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.admin_addnewprof.ImageOffset = New System.Drawing.Point(-3, 0)
         Me.admin_addnewprof.ImageSize = New System.Drawing.Size(25, 25)
-        Me.admin_addnewprof.Location = New System.Drawing.Point(658, 23)
+        Me.admin_addnewprof.Location = New System.Drawing.Point(671, 227)
         Me.admin_addnewprof.Name = "admin_addnewprof"
         Me.admin_addnewprof.Size = New System.Drawing.Size(112, 45)
         Me.admin_addnewprof.TabIndex = 90
@@ -452,6 +476,19 @@ Partial Class ProfessorPanel
         Me.prof_datatable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.prof_datatable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
+        'prof_dashboard
+        '
+        Me.prof_dashboard.BackColor = System.Drawing.Color.Black
+        Me.prof_dashboard.BorderRadius = 10
+        Me.prof_dashboard.CustomizableEdges.BottomLeft = False
+        Me.prof_dashboard.CustomizableEdges.TopLeft = False
+        Me.prof_dashboard.CustomizableEdges.TopRight = False
+        Me.prof_dashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.prof_dashboard.Location = New System.Drawing.Point(57, 68)
+        Me.prof_dashboard.Name = "prof_dashboard"
+        Me.prof_dashboard.Size = New System.Drawing.Size(1025, 635)
+        Me.prof_dashboard.TabIndex = 93
+        '
         'FormDrag
         '
         Me.FormDrag.DockIndicatorTransparencyValue = 0.6R
@@ -504,43 +541,6 @@ Partial Class ProfessorPanel
         '
         Me.DTBorderRad.BorderRadius = 20
         Me.DTBorderRad.TargetControl = Me.prof_datatable
-        '
-        'prof_dashboard
-        '
-        Me.prof_dashboard.BackColor = System.Drawing.Color.Black
-        Me.prof_dashboard.BorderRadius = 10
-        Me.prof_dashboard.CustomizableEdges.BottomLeft = False
-        Me.prof_dashboard.CustomizableEdges.TopLeft = False
-        Me.prof_dashboard.CustomizableEdges.TopRight = False
-        Me.prof_dashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.prof_dashboard.Location = New System.Drawing.Point(57, 68)
-        Me.prof_dashboard.Name = "prof_dashboard"
-        Me.prof_dashboard.Size = New System.Drawing.Size(1025, 635)
-        Me.prof_dashboard.TabIndex = 93
-        '
-        'prof_sbsettings
-        '
-        Me.prof_sbsettings.BorderColor = System.Drawing.Color.WhiteSmoke
-        Me.prof_sbsettings.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Me.prof_sbsettings.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.prof_sbsettings.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.prof_sbsettings.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.prof_sbsettings.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.prof_sbsettings.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.prof_sbsettings.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.prof_sbsettings.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
-        Me.prof_sbsettings.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.prof_sbsettings.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.prof_sbsettings.Image = Global.OOP_FinalProject.My.Resources.Resources.SeettingsIcon
-        Me.prof_sbsettings.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.prof_sbsettings.ImageOffset = New System.Drawing.Point(5, 0)
-        Me.prof_sbsettings.ImageSize = New System.Drawing.Size(27, 27)
-        Me.prof_sbsettings.Location = New System.Drawing.Point(0, 532)
-        Me.prof_sbsettings.Name = "prof_sbsettings"
-        Me.prof_sbsettings.Size = New System.Drawing.Size(55, 45)
-        Me.prof_sbsettings.TabIndex = 90
-        Me.prof_sbsettings.TextOffset = New System.Drawing.Point(14, 0)
-        Me.prof_sbsettings.UseTransparentBackground = True
         '
         'ProfessorPanel
         '

@@ -48,3 +48,10 @@ C:\Users\mando\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_Fina.3A
 C:\Users\mando\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.exe
 C:\Users\mando\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.xml
 C:\Users\mando\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.pdb
+C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.ProfessorPanel.resources
+C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\bin\Debug\MySql.Data.dll
+C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\bin\Debug\System.Memory.dll
+C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\bin\Debug\System.Buffers.dll
+C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\bin\Debug\MySql.Data.xml
