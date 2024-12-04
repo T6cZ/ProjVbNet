@@ -3,12 +3,12 @@
 Public Module DatabaseConnection
     Public Function GetConnection() As MySqlConnection
 
-        Dim connectionString As String = "server=localhost; user=root; database=gms"
+        Dim connectionString As String = "server=localhost; user=root; database=GRADING_SYSTEM"
         Return New MySqlConnection(connectionString)
     End Function
 End Module
 
-
+'ihisugiug
 Public Class AdminPanel
 
     Private Sub AdminPanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
