@@ -36,8 +36,8 @@ Partial Class LoginRegPanel
         Me.Guna2PictureBox5 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.reg_logincont = New Guna.UI2.WinForms.Guna2ShadowPanel()
-        Me.login_showpassbtn = New Guna.UI2.WinForms.Guna2ToggleSwitch()
-        Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.login_showpass = New Guna.UI2.WinForms.Guna2ToggleSwitch()
+        Me.login_showhide = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Separator2 = New Guna.UI2.WinForms.Guna2Separator()
@@ -45,8 +45,8 @@ Partial Class LoginRegPanel
         Me.Login_password = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Login_email = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Login_forgotpassword = New System.Windows.Forms.Label()
-        Me.logintxt_invalidpassword = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.logintxrt_invalidUE = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Login_invalidpassword = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Login_invalidusername = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.passrec_showconfirmpassword = New Guna.UI2.WinForms.Guna2ToggleSwitch()
@@ -77,6 +77,7 @@ Partial Class LoginRegPanel
         Me.Guna2HtmlLabel38 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel36 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
+        Me.login_errortimer = New System.Windows.Forms.Timer(Me.components)
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Login_panel_cont.SuspendLayout()
         CType(Me.Guna2PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -286,8 +287,8 @@ Partial Class LoginRegPanel
         'reg_logincont
         '
         Me.reg_logincont.BackColor = System.Drawing.Color.Transparent
-        Me.reg_logincont.Controls.Add(Me.login_showpassbtn)
-        Me.reg_logincont.Controls.Add(Me.Guna2HtmlLabel7)
+        Me.reg_logincont.Controls.Add(Me.login_showpass)
+        Me.reg_logincont.Controls.Add(Me.login_showhide)
         Me.reg_logincont.Controls.Add(Me.Guna2HtmlLabel2)
         Me.reg_logincont.Controls.Add(Me.Guna2HtmlLabel3)
         Me.reg_logincont.Controls.Add(Me.Guna2Separator2)
@@ -295,8 +296,8 @@ Partial Class LoginRegPanel
         Me.reg_logincont.Controls.Add(Me.Login_password)
         Me.reg_logincont.Controls.Add(Me.Login_email)
         Me.reg_logincont.Controls.Add(Me.Login_forgotpassword)
-        Me.reg_logincont.Controls.Add(Me.logintxt_invalidpassword)
-        Me.reg_logincont.Controls.Add(Me.logintxrt_invalidUE)
+        Me.reg_logincont.Controls.Add(Me.Login_invalidpassword)
+        Me.reg_logincont.Controls.Add(Me.Login_invalidusername)
         Me.reg_logincont.Controls.Add(Me.Guna2HtmlLabel1)
         Me.reg_logincont.EdgeWidth = 50
         Me.reg_logincont.FillColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
@@ -310,41 +311,41 @@ Partial Class LoginRegPanel
         Me.reg_logincont.Size = New System.Drawing.Size(611, 635)
         Me.reg_logincont.TabIndex = 16
         '
-        'login_showpassbtn
+        'login_showpass
         '
-        Me.login_showpassbtn.Animated = True
-        Me.login_showpassbtn.AutoRoundedCorners = True
-        Me.login_showpassbtn.CheckedState.BorderColor = System.Drawing.Color.Black
-        Me.login_showpassbtn.CheckedState.BorderRadius = 7
-        Me.login_showpassbtn.CheckedState.FillColor = System.Drawing.Color.Green
-        Me.login_showpassbtn.CheckedState.InnerBorderColor = System.Drawing.Color.White
-        Me.login_showpassbtn.CheckedState.InnerBorderRadius = 3
-        Me.login_showpassbtn.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.login_showpassbtn.Location = New System.Drawing.Point(460, 221)
-        Me.login_showpassbtn.Name = "login_showpassbtn"
-        Me.login_showpassbtn.Size = New System.Drawing.Size(30, 17)
-        Me.login_showpassbtn.TabIndex = 107
-        Me.login_showpassbtn.UncheckedState.BorderColor = System.Drawing.Color.Black
-        Me.login_showpassbtn.UncheckedState.BorderRadius = 7
-        Me.login_showpassbtn.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(189, Byte), Integer))
-        Me.login_showpassbtn.UncheckedState.InnerBorderColor = System.Drawing.Color.White
-        Me.login_showpassbtn.UncheckedState.InnerBorderRadius = 3
-        Me.login_showpassbtn.UncheckedState.InnerColor = System.Drawing.Color.White
+        Me.login_showpass.Animated = True
+        Me.login_showpass.AutoRoundedCorners = True
+        Me.login_showpass.CheckedState.BorderColor = System.Drawing.Color.Black
+        Me.login_showpass.CheckedState.BorderRadius = 7
+        Me.login_showpass.CheckedState.FillColor = System.Drawing.Color.Green
+        Me.login_showpass.CheckedState.InnerBorderColor = System.Drawing.Color.White
+        Me.login_showpass.CheckedState.InnerBorderRadius = 3
+        Me.login_showpass.CheckedState.InnerColor = System.Drawing.Color.White
+        Me.login_showpass.Location = New System.Drawing.Point(460, 221)
+        Me.login_showpass.Name = "login_showpass"
+        Me.login_showpass.Size = New System.Drawing.Size(30, 17)
+        Me.login_showpass.TabIndex = 107
+        Me.login_showpass.UncheckedState.BorderColor = System.Drawing.Color.Black
+        Me.login_showpass.UncheckedState.BorderRadius = 7
+        Me.login_showpass.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(189, Byte), Integer))
+        Me.login_showpass.UncheckedState.InnerBorderColor = System.Drawing.Color.White
+        Me.login_showpass.UncheckedState.InnerBorderRadius = 3
+        Me.login_showpass.UncheckedState.InnerColor = System.Drawing.Color.White
         '
-        'Guna2HtmlLabel7
+        'login_showhide
         '
-        Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
-        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Segoe UI Variable Display", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Guna2HtmlLabel7.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel7.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(496, 219)
-        Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
-        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(34, 18)
-        Me.Guna2HtmlLabel7.TabIndex = 106
-        Me.Guna2HtmlLabel7.TabStop = False
-        Me.Guna2HtmlLabel7.Text = "Show"
-        Me.Guna2HtmlLabel7.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        Me.login_showhide.BackColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.login_showhide.Font = New System.Drawing.Font("Segoe UI Variable Display", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.login_showhide.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.login_showhide.IsContextMenuEnabled = False
+        Me.login_showhide.IsSelectionEnabled = False
+        Me.login_showhide.Location = New System.Drawing.Point(496, 219)
+        Me.login_showhide.Name = "login_showhide"
+        Me.login_showhide.Size = New System.Drawing.Size(34, 18)
+        Me.login_showhide.TabIndex = 106
+        Me.login_showhide.TabStop = False
+        Me.login_showhide.Text = "Show"
+        Me.login_showhide.TextAlignment = System.Drawing.ContentAlignment.TopCenter
         '
         'Guna2HtmlLabel2
         '
@@ -478,35 +479,35 @@ Partial Class LoginRegPanel
         Me.Login_forgotpassword.TabIndex = 65
         Me.Login_forgotpassword.Text = "Forgot password?"
         '
-        'logintxt_invalidpassword
+        'Login_invalidpassword
         '
-        Me.logintxt_invalidpassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
-        Me.logintxt_invalidpassword.Font = New System.Drawing.Font("Segoe UI Variable Small", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.logintxt_invalidpassword.ForeColor = System.Drawing.Color.Maroon
-        Me.logintxt_invalidpassword.IsContextMenuEnabled = False
-        Me.logintxt_invalidpassword.IsSelectionEnabled = False
-        Me.logintxt_invalidpassword.Location = New System.Drawing.Point(89, 251)
-        Me.logintxt_invalidpassword.Name = "logintxt_invalidpassword"
-        Me.logintxt_invalidpassword.Size = New System.Drawing.Size(165, 18)
-        Me.logintxt_invalidpassword.TabIndex = 74
-        Me.logintxt_invalidpassword.TabStop = False
-        Me.logintxt_invalidpassword.Text = "Invalid Password. Try again."
-        Me.logintxt_invalidpassword.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        Me.Login_invalidpassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Login_invalidpassword.Font = New System.Drawing.Font("Segoe UI Variable Small", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Login_invalidpassword.ForeColor = System.Drawing.Color.Maroon
+        Me.Login_invalidpassword.IsContextMenuEnabled = False
+        Me.Login_invalidpassword.IsSelectionEnabled = False
+        Me.Login_invalidpassword.Location = New System.Drawing.Point(89, 251)
+        Me.Login_invalidpassword.Name = "Login_invalidpassword"
+        Me.Login_invalidpassword.Size = New System.Drawing.Size(165, 18)
+        Me.Login_invalidpassword.TabIndex = 74
+        Me.Login_invalidpassword.TabStop = False
+        Me.Login_invalidpassword.Text = "Invalid Password. Try again."
+        Me.Login_invalidpassword.TextAlignment = System.Drawing.ContentAlignment.TopCenter
         '
-        'logintxrt_invalidUE
+        'Login_invalidusername
         '
-        Me.logintxrt_invalidUE.BackColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
-        Me.logintxrt_invalidUE.Font = New System.Drawing.Font("Segoe UI Variable Small", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.logintxrt_invalidUE.ForeColor = System.Drawing.Color.Maroon
-        Me.logintxrt_invalidUE.IsContextMenuEnabled = False
-        Me.logintxrt_invalidUE.IsSelectionEnabled = False
-        Me.logintxrt_invalidUE.Location = New System.Drawing.Point(86, 170)
-        Me.logintxrt_invalidUE.Name = "logintxrt_invalidUE"
-        Me.logintxrt_invalidUE.Size = New System.Drawing.Size(43, 18)
-        Me.logintxrt_invalidUE.TabIndex = 75
-        Me.logintxrt_invalidUE.TabStop = False
-        Me.logintxrt_invalidUE.Text = "Invalid"
-        Me.logintxrt_invalidUE.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        Me.Login_invalidusername.BackColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Login_invalidusername.Font = New System.Drawing.Font("Segoe UI Variable Small", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Login_invalidusername.ForeColor = System.Drawing.Color.Maroon
+        Me.Login_invalidusername.IsContextMenuEnabled = False
+        Me.Login_invalidusername.IsSelectionEnabled = False
+        Me.Login_invalidusername.Location = New System.Drawing.Point(86, 170)
+        Me.Login_invalidusername.Name = "Login_invalidusername"
+        Me.Login_invalidusername.Size = New System.Drawing.Size(170, 18)
+        Me.Login_invalidusername.TabIndex = 75
+        Me.Login_invalidusername.TabStop = False
+        Me.Login_invalidusername.Text = "Invalid Username. Try Again."
+        Me.Login_invalidusername.TextAlignment = System.Drawing.ContentAlignment.TopCenter
         '
         'Guna2HtmlLabel1
         '
@@ -1033,6 +1034,10 @@ Partial Class LoginRegPanel
         Me.Guna2HtmlLabel36.Text = "Password"
         Me.Guna2HtmlLabel36.TextAlignment = System.Drawing.ContentAlignment.TopCenter
         '
+        'login_errortimer
+        '
+        Me.login_errortimer.Interval = 2500
+        '
         'LoginRegPanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1092,8 +1097,8 @@ Partial Class LoginRegPanel
     Friend WithEvents Login_password As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Login_email As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Login_forgotpassword As Label
-    Friend WithEvents logintxt_invalidpassword As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents logintxrt_invalidUE As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Login_invalidpassword As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Login_invalidusername As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2ShadowForm1 As Guna.UI2.WinForms.Guna2ShadowForm
     Friend WithEvents Guna2ShadowPanel1 As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -1113,9 +1118,10 @@ Partial Class LoginRegPanel
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel15 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents login_showpassbtn As Guna.UI2.WinForms.Guna2ToggleSwitch
-    Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents login_showpass As Guna.UI2.WinForms.Guna2ToggleSwitch
+    Friend WithEvents login_showhide As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents passrec_showconfirmpassword As Guna.UI2.WinForms.Guna2ToggleSwitch
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents passrec_showpassword As Guna.UI2.WinForms.Guna2ToggleSwitch
+    Friend WithEvents login_errortimer As Timer
 End Class
