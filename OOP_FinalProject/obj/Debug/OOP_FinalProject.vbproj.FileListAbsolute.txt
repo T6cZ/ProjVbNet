@@ -78,3 +78,7 @@ C:\Users\PLPASIG\OneDrive\Documents\GitHub\PROJVB\OOP_FinalProject\obj\Debug\OOP
 C:\Users\PLPASIG\OneDrive\Documents\GitHub\PROJVB\OOP_FinalProject\obj\Debug\OOP_FinalProject.exe
 C:\Users\PLPASIG\OneDrive\Documents\GitHub\PROJVB\OOP_FinalProject\obj\Debug\OOP_FinalProject.xml
 C:\Users\PLPASIG\OneDrive\Documents\GitHub\PROJVB\OOP_FinalProject\obj\Debug\OOP_FinalProject.pdb
+C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.vbproj.SuggestedBindingRedirects.cache
+C:\Users\aimvr\Documents\GitHub\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.exe.config

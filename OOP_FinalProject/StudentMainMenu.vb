@@ -10,7 +10,7 @@ Public Class StudentMainMenu
     Dim da As New MySqlDataAdapter
     Dim str As String
     Dim x As Integer
-    Dim con As New MySqlConnection("server=localhost;user=root;database=gms")
+    Dim con As New MySqlConnection("server=localhost;user=root;database=GRADING_SYSTEM")
     Dim student_id As String = "23-00242 " 'papalitan based sa log in na 
 
     Private Sub StudentMainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load

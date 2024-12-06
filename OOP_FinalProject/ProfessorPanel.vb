@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class ProfessorPanel
-    Private isAddingNewRow As Boolean = False ' Tracks if the user is adding a new row
+    Private isAddingNewRow As Boolean = False
 
     Private Sub ProfessorPanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadDepartments()
@@ -76,7 +76,8 @@ Public Class ProfessorPanel
                     STUDENT_GRADES.MIDTERM_GRADE AS 'Midterm Grade',
                     STUDENT_GRADES.FINALS_GRADE AS 'Finals Grade',
                     STUDENT_GRADES.SEMESTRAL_GRADE AS 'Semestral Grade',
-                    STUDENT_GRADES.REMARKS AS 'Remarks'
+                    STUDENT_GRADES.REMARKS AS 'Remarks',
+                    STUDENT_GRADES.GRADE_EQUIVALENT AS 'Grade Equivalent'
                 FROM 
                     STUDENTS
                 INNER JOIN 
@@ -107,20 +108,37 @@ Public Class ProfessorPanel
         End Try
     End Sub
 
-    ' Add new row
-    Private Sub prof_addnewstudent_Click(sender As Object, e As EventArgs) Handles prof_addnewstudent.Click
-        If Not isAddingNewRow Then
-            Dim dt As DataTable = TryCast(prof_datatable.DataSource, DataTable)
-            If dt IsNot Nothing Then
-                Dim newRow As DataRow = dt.NewRow()
-                dt.Rows.Add(newRow)
-                prof_datatable.CurrentCell = prof_datatable.Rows(prof_datatable.Rows.Count - 1).Cells(0)
-                isAddingNewRow = True
+    ' Automatically calculate Semestral Grade and determine Remarks
+    Private Sub prof_datatable_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles prof_datatable.CellValueChanged
+        If e.ColumnIndex = prof_datatable.Columns("Midterm Grade").Index OrElse e.ColumnIndex = prof_datatable.Columns("Finals Grade").Index Then
+            Dim midtermGrade As Decimal
+            Dim finalsGrade As Decimal
+
+            If Decimal.TryParse(prof_datatable.Rows(e.RowIndex).Cells("Midterm Grade").Value?.ToString(), midtermGrade) AndAlso
+               Decimal.TryParse(prof_datatable.Rows(e.RowIndex).Cells("Finals Grade").Value?.ToString(), finalsGrade) Then
+
+                Dim semestralGrade = Math.Round((midtermGrade + finalsGrade) / 2, 2)
+                prof_datatable.Rows(e.RowIndex).Cells("Semestral Grade").Value = semestralGrade
+
+                ' Determine Remarks
+                Dim remarks As String = If(semestralGrade >= 3.0, "FAILED", "PASSED")
+                prof_datatable.Rows(e.RowIndex).Cells("Remarks").Value = remarks
+
+                ' Transmute Grade
+                Dim gradeEquivalent = TransmuteGrade(semestralGrade)
+                prof_datatable.Rows(e.RowIndex).Cells("Grade Equivalent").Value = gradeEquivalent
             End If
         End If
     End Sub
 
-    ' Save new or updated data to the database
+    Private Function TransmuteGrade(semestralGrade As Decimal) As Decimal
+        ' Example transmutation logic (replace with your logic if needed)
+        If semestralGrade >= 1.0 AndAlso semestralGrade <= 3.0 Then
+            Return semestralGrade ' Adjust this as per your grading system
+        End If
+        Return 5.0 ' Default to failing grade
+    End Function
+
     Private Sub prof_updateinfo_Click(sender As Object, e As EventArgs) Handles prof_updateinfo.Click
         Try
             Dim dt As DataTable = TryCast(prof_datatable.DataSource, DataTable)
@@ -129,24 +147,20 @@ Public Class ProfessorPanel
                     conn.Open()
                     Using transaction = conn.BeginTransaction()
                         For Each row As DataRow In dt.Rows
-                            If row.RowState = DataRowState.Added Then
-                                ' Insert new record
-                                Dim insertQuery As String = "INSERT INTO STUDENTS (STUDENT_ID, LAST_NAME, MIDDLE_NAME, FIRST_NAME) VALUES (@StudentID, @LastName, @MiddleName, @FirstName);"
-                                Using cmd As New MySqlCommand(insertQuery, conn, transaction)
-                                    cmd.Parameters.AddWithValue("@StudentID", row("Student ID"))
-                                    cmd.Parameters.AddWithValue("@LastName", row("Last Name"))
-                                    cmd.Parameters.AddWithValue("@MiddleName", row("Middle Name"))
-                                    cmd.Parameters.AddWithValue("@FirstName", row("First Name"))
-                                    cmd.ExecuteNonQuery()
-                                End Using
-                            ElseIf row.RowState = DataRowState.Modified Then
-                                ' Update existing record
-                                Dim updateQuery As String = "UPDATE STUDENTS SET LAST_NAME = @LastName, MIDDLE_NAME = @MiddleName, FIRST_NAME = @FirstName WHERE STUDENT_ID = @StudentID;"
+                            If row.RowState = DataRowState.Modified Then
+                                Dim updateQuery As String = "
+                                    UPDATE STUDENT_GRADES 
+                                    SET MIDTERM_GRADE = @MidtermGrade, FINALS_GRADE = @FinalsGrade, 
+                                        SEMESTRAL_GRADE = @SemestralGrade, REMARKS = @Remarks, 
+                                        GRADE_EQUIVALENT = @GradeEquivalent
+                                    WHERE STUDENT_ID = @StudentID;"
                                 Using cmd As New MySqlCommand(updateQuery, conn, transaction)
                                     cmd.Parameters.AddWithValue("@StudentID", row("Student ID"))
-                                    cmd.Parameters.AddWithValue("@LastName", row("Last Name"))
-                                    cmd.Parameters.AddWithValue("@MiddleName", row("Middle Name"))
-                                    cmd.Parameters.AddWithValue("@FirstName", row("First Name"))
+                                    cmd.Parameters.AddWithValue("@MidtermGrade", row("Midterm Grade"))
+                                    cmd.Parameters.AddWithValue("@FinalsGrade", row("Finals Grade"))
+                                    cmd.Parameters.AddWithValue("@SemestralGrade", row("Semestral Grade"))
+                                    cmd.Parameters.AddWithValue("@Remarks", row("Remarks"))
+                                    cmd.Parameters.AddWithValue("@GradeEquivalent", row("Grade Equivalent"))
                                     cmd.ExecuteNonQuery()
                                 End Using
                             End If
@@ -159,34 +173,5 @@ Public Class ProfessorPanel
         Catch ex As Exception
             MessageBox.Show($"Failed to save changes: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
-        isAddingNewRow = False
-    End Sub
-
-    ' Delete selected row
-    Private Sub prof_deleteentry_Click(sender As Object, e As EventArgs) Handles prof_deleteentry.Click
-        If prof_datatable.SelectedRows.Count > 0 Then
-            Dim selectedRow As DataGridViewRow = prof_datatable.SelectedRows(0)
-            Dim studentID As String = selectedRow.Cells("Student ID").Value.ToString()
-            Dim confirmation = MessageBox.Show($"Are you sure you want to delete Student ID {studentID}?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
-
-            If confirmation = DialogResult.Yes Then
-                Try
-                    Dim deleteQuery As String = "DELETE FROM STUDENTS WHERE STUDENT_ID = @StudentID;"
-                    Using conn As MySqlConnection = GetConnection()
-                        conn.Open()
-                        Using cmd As New MySqlCommand(deleteQuery, conn)
-                            cmd.Parameters.AddWithValue("@StudentID", studentID)
-                            cmd.ExecuteNonQuery()
-                        End Using
-                    End Using
-                    prof_datatable.Rows.Remove(selectedRow)
-                    MessageBox.Show("Record deleted successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                Catch ex As Exception
-                    MessageBox.Show($"Failed to delete record: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                End Try
-            End If
-        Else
-            MessageBox.Show("Please select a row to delete.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        End If
     End Sub
 End Class
