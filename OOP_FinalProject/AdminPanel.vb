@@ -3,7 +3,7 @@
 Public Module DatabaseConnection
     Public Function GetConnection() As MySqlConnection
 
-        Dim connectionString As String = "server=localhost; user=root; database=gms"
+        Dim connectionString As String = "server=localhost; user=root; database=grading_system"
         Return New MySqlConnection(connectionString)
     End Function
 End Module
@@ -69,5 +69,10 @@ Public Class AdminPanel
     End Sub
 
     Private Sub admin_profdelete_Click(sender As Object, e As EventArgs) Handles admin_profdelete.Click
+    End Sub
+
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        Me.Hide()
+        LoginRegPanel.Show()
     End Sub
 End Class
