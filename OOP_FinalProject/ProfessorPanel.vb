@@ -108,7 +108,6 @@ Public Class ProfessorPanel
         End Try
     End Sub
 
-    ' Automatically calculate Semestral Grade and determine Remarks
     Private Sub prof_datatable_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles prof_datatable.CellValueChanged
         If e.ColumnIndex = prof_datatable.Columns("Midterm Grade").Index OrElse e.ColumnIndex = prof_datatable.Columns("Finals Grade").Index Then
             Dim midtermGrade As Decimal
@@ -120,11 +119,10 @@ Public Class ProfessorPanel
                 Dim semestralGrade = Math.Round((midtermGrade + finalsGrade) / 2, 2)
                 prof_datatable.Rows(e.RowIndex).Cells("Semestral Grade").Value = semestralGrade
 
-                ' Determine Remarks
                 Dim remarks As String = If(semestralGrade >= 3.0, "FAILED", "PASSED")
                 prof_datatable.Rows(e.RowIndex).Cells("Remarks").Value = remarks
 
-                ' Transmute Grade
+
                 Dim gradeEquivalent = TransmuteGrade(semestralGrade)
                 prof_datatable.Rows(e.RowIndex).Cells("Grade Equivalent").Value = gradeEquivalent
             End If
@@ -132,11 +130,11 @@ Public Class ProfessorPanel
     End Sub
 
     Private Function TransmuteGrade(semestralGrade As Decimal) As Decimal
-        ' Example transmutation logic (replace with your logic if needed)
+
         If semestralGrade >= 1.0 AndAlso semestralGrade <= 3.0 Then
-            Return semestralGrade ' Adjust this as per your grading system
+            Return semestralGrade
         End If
-        Return 5.0 ' Default to failing grade
+        Return 5.0
     End Function
 
     Private Sub prof_updateinfo_Click(sender As Object, e As EventArgs) Handles prof_updateinfo.Click
