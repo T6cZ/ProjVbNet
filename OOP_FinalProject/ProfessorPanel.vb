@@ -174,4 +174,9 @@ Public Class ProfessorPanel
             MessageBox.Show($"Failed to save changes: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
+    Private Sub prof_sblogout_Click(sender As Object, e As EventArgs) Handles prof_sblogout.Click
+        Me.Hide()
+        LoginRegPanel.Show()
+    End Sub
 End Class
