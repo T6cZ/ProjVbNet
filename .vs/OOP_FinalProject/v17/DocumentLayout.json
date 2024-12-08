@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\documents\\github\\projvbnet\\oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\documents\\github\\projvbnet\\oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -21,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|OOP_FinalProject||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
@@ -53,7 +53,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 528,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,14 +69,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "LoginRegPanel.vb [Design]",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\OOP_FinalProject\\LoginRegPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\LoginRegPanel.vb",
               "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\OOP_FinalProject\\LoginRegPanel.vb [Design]",
               "RelativeToolTip": "OOP_FinalProject\\LoginRegPanel.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-04T13:28:49.25Z"
+              "WhenOpened": "2024-12-04T13:28:49.25Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -86,36 +87,39 @@
               "RelativeDocumentMoniker": "OOP_FinalProject\\LoginRegPanel.vb",
               "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\OOP_FinalProject\\LoginRegPanel.vb",
               "RelativeToolTip": "OOP_FinalProject\\LoginRegPanel.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAG0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-04T13:28:49.246Z"
+              "WhenOpened": "2024-12-04T13:28:49.246Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ProfessorPanel.vb [Design]",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\OOP_FinalProject\\ProfessorPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\ProfessorPanel.vb",
               "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\OOP_FinalProject\\ProfessorPanel.vb [Design]",
               "RelativeToolTip": "OOP_FinalProject\\ProfessorPanel.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-04T13:28:49.25Z"
+              "WhenOpened": "2024-12-04T13:28:49.25Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "ProfessorPanel.vb",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\OOP_FinalProject\\ProfessorPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\ProfessorPanel.vb",
               "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\OOP_FinalProject\\ProfessorPanel.vb",
               "RelativeToolTip": "OOP_FinalProject\\ProfessorPanel.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-05T07:09:01.55Z"
+              "WhenOpened": "2024-12-05T07:09:01.55Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "StudentMainMenu.vb [Design]",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\OOP_FinalProject\\StudentMainMenu.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\StudentMainMenu.vb",
@@ -127,13 +131,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "StudentMainMenu.vb",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\OOP_FinalProject\\StudentMainMenu.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\StudentMainMenu.vb",
               "ToolTip": "C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\OOP_FinalProject\\StudentMainMenu.vb",
               "RelativeToolTip": "OOP_FinalProject\\StudentMainMenu.vb",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-12-04T13:28:48.928Z",
               "EditorCaption": ""
@@ -152,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "AdminPanel.vb [Design]",
               "DocumentMoniker": "C:\\Users\\aimvr\\Documents\\GitHub\\projvbnet\\OOP_FinalProject\\AdminPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\AdminPanel.vb",

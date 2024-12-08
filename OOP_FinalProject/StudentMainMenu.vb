@@ -41,7 +41,7 @@ Public Class StudentMainMenu
 
             ' SQL query to get student details (including student_id) by email
             str = "SELECT STUDENT_ID, FIRST_NAME, MIDDLE_NAME, LAST_NAME, EMAIL, ADDRESS, BIRTHDAY, AGE 
-                   FROM STUDENTS WHERE EMAIL = @Email"
+                       FROM STUDENTS WHERE EMAIL = @Email"
 
             cmd = New MySqlCommand(str, con)
             cmd.Parameters.AddWithValue("@Email", email)

@@ -76,6 +76,51 @@ Public Class LoginRegPanel
         Return userType
     End Function
 
+    Public Sub LoginProfessor(email As String, password As String)
+        Using connection As New MySqlConnection(connectionString)
+            connection.Open()
+
+            Dim query As String = "
+                SELECT 
+                p.PROFESSOR_ID, 
+                CONCAT(p.FIRST_NAME, ' ', IFNULL(p.MIDDLE_NAME, ''), ' ', p.LAST_NAME) AS FULL_NAME,
+                p.DEPARTMENT_ID, 
+                d.DEPARTMENT_NAME, 
+                p.STATUS
+                FROM LOGIN_CREDENTIALS lc
+                JOIN PROFESSOR p ON lc.PROFESSOR_ID = p.PROFESSOR_ID
+                JOIN DEPARTMENT d ON p.DEPARTMENT_ID = d.DEPARTMENT_ID
+                WHERE lc.EMAIL = @Email AND lc.PASSWORD = @Password;
+                "
+
+            Using cmd As New MySqlCommand(query, connection)
+                cmd.Parameters.AddWithValue("@Email", email)
+                cmd.Parameters.AddWithValue("@Password", password)
+
+                Using reader As MySqlDataReader = cmd.ExecuteReader()
+                    If reader.Read() Then
+                        Dim professorPanel As New ProfessorPanel()
+                        professorPanel.ProfessorID = reader("PROFESSOR_ID").ToString()
+                        professorPanel.LastName = reader("LAST_NAME").ToString()
+                        professorPanel.FirstName = reader("FIRST_NAME").ToString()
+                        professorPanel.MiddleName = If(IsDBNull(reader("MIDDLE_NAME")), "", reader("MIDDLE_NAME").ToString())
+                        professorPanel.DepartmentID = reader("DEPARTMENT_ID").ToString()
+                        professorPanel.DepartmentName = reader("DEPARTMENT_NAME").ToString()
+                        professorPanel.Status = reader("STATUS").ToString()
+                        professorPanel.ProfFullName = String.Join(" ", reader("FIRST_NAME"),
+                                          If(IsDBNull(reader("MIDDLE_NAME")), "", reader("MIDDLE_NAME")),
+                                          reader("LAST_NAME"))
+
+                        professorPanel.Show()
+                        Me.Hide()
+                    Else
+                        MessageBox.Show("Invalid login credentials.")
+                    End If
+                End Using
+            End Using
+        End Using
+    End Sub
+
     Private Sub Login_errortimer_Tick(sender As Object, e As EventArgs) Handles login_errortimer.Tick
         Login_invalidusername.Visible = False
         Login_invalidpassword.Visible = False
