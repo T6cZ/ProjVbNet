@@ -239,35 +239,6 @@
         n1cqfQGYKxGPdgA2IwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="prof_updateinfo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAbpJREFUaEPt
-        mOFRwkAUhCnBEiiBDqQD6UA7kBIogQ6kAyzBDrQD7EA7wG/xMcNk7o6QvCR3et/M/mA49nbnAnlhVqlU
-        KqNxPB636M5elgsl3tB78WWsiCi7DOHPRUS5ZQh+WUSUWYbQzSJiujJsPEf3HaTQIcYpo03QI9qjLzQE
-        w5bB/BkNFb6JfxkMF+gg95HxK4PRCo11Ck0+UP8imKjEVLiV0OVU9kkIjNp8J77RDm2QTm95gxQ2hGuJ
-        9ckyjgoofOcN+WzohuhaQveJ1CWlEgtb3hk8mkX8SgjMnk62YVxKCHwui/iWEBi+nqzDbGxZb/A6F/Ev
-        ITCNXVY6DbcN8VKRwUpoAIyxs2Uu4Dfcoy7G+lmM4XZZDQ5hU0VWtix/CPtnTkRjSYytLSsDCx3iYEvK
-        gMD6SYyxtGX5Q9jUnDXO87QHBE3dS8TeluYPYTWap9DJzG15vigk0khyjRf0gPItRbjUFHwLmt1UeLrv
-        FptrHvLCdVa7GQX4zdEfs5wOMlx79G2F2U0LOTSHhZ6z2/JpVnlAIBVKPUXGWJtFfhBOfwHp3xRJ5XRi
-        Tem9ckabSqVSqfwTZrMfTKNa6Sl3hlIAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="prof_addnewstudent.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAllJREFUaEPt
-        mI1twjAQhRmBERihG8AmdAQ2KBuUDWCDdoOyAWwAG8AG9D3yiEjsc0ziBIT8SScR3/PZjn8OZ5TJZDKZ
-        zKtxuVymsC/ZWnZ7nkr2mqCDc9gP7ARrghpq56r+fNCZGWwHawvrzhRueND4GMYlkwrGGiv8MKDBCazL
-        LFgw5jCDQUMcRMw+aAtj9zsYNgBrmokjbAn7ULUSlslHTYh+ZwbBQ3viDPuUtBFqVcdiLWlaEJink8Ue
-        9vAbZB3VtUh/miGotaTMQbAcdkuEIY01mD/J0oCAXAY+uDTMmYDvfvA7FTvAxwPEWmbRy7URBPstYjoE
-        G5GmRMVe4LZe1kaS7iCY77g9ym0iXYmKTSDxnWYnubuBQNYmX0piIl2Jik0gWRVKh+6bHkF47vtw8kQd
-        6UpUbAIJ84yPhSTtQRDvQOS+gseYROnDSXxFsUPj7DeCIJsiVhW5r+DRmrUYKp1UWZ3uG55BilhV5L6C
-        x74HspK7PQgSu7RCGdrCSaZFsUOSpfU2m/09jl+CQL6/Dwe5TaQrUbEJJIdCWeEsd3cQ7G3+oliNBG9z
-        8N0fAHsVO8AXunWm+9NIENA6lczbHMthPCxoIY2VTLeSpQNBQxcrdmQiaTSso7oW/XwmQmBvchRcGtEf
-        3KhVHYt0e6MOgsckPp48vBFaHx++pQnhJMrkoIHQbS4FwVtnUtgQrGlm2tD/TNRhg7DQnnkUxhp2EPeg
-        cZ5mW/akJaz7vI/YddAZJk2+1Zj9Qw21aZNdatBBztICxkTIDtP4m2Wv8/YzmUwmk7kyGv0D/egnY0wC
-        oeQAAAAASUVORK5CYII=
-</value>
-  </data>
   <metadata name="FormDrag.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>667, 17</value>
   </metadata>
