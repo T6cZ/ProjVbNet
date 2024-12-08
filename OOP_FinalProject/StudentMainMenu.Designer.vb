@@ -98,6 +98,10 @@ Partial Class StudentMainMenu
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel15 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.stp_container.SuspendLayout()
         Me.stp_dashboard.SuspendLayout()
         CType(Me.stp_datatable, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -553,6 +557,10 @@ Partial Class StudentMainMenu
         'Guna2ShadowPanel4
         '
         Me.Guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel15)
+        Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel4)
+        Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel2)
+        Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel32)
         Me.Guna2ShadowPanel4.Controls.Add(Me.stp_emailaddress)
         Me.Guna2ShadowPanel4.Controls.Add(Me.Guna2HtmlLabel30)
@@ -581,7 +589,7 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel32.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel32.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel32.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel32.Location = New System.Drawing.Point(8, 108)
+        Me.Guna2HtmlLabel32.Location = New System.Drawing.Point(8, 208)
         Me.Guna2HtmlLabel32.Name = "Guna2HtmlLabel32"
         Me.Guna2HtmlLabel32.Size = New System.Drawing.Size(101, 22)
         Me.Guna2HtmlLabel32.TabIndex = 86
@@ -596,7 +604,7 @@ Partial Class StudentMainMenu
         Me.stp_emailaddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.stp_emailaddress.IsContextMenuEnabled = False
         Me.stp_emailaddress.IsSelectionEnabled = False
-        Me.stp_emailaddress.Location = New System.Drawing.Point(24, 130)
+        Me.stp_emailaddress.Location = New System.Drawing.Point(24, 237)
         Me.stp_emailaddress.Name = "stp_emailaddress"
         Me.stp_emailaddress.Size = New System.Drawing.Size(82, 17)
         Me.stp_emailaddress.TabIndex = 85
@@ -611,7 +619,7 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel30.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel30.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel30.Location = New System.Drawing.Point(8, 285)
+        Me.Guna2HtmlLabel30.Location = New System.Drawing.Point(8, 367)
         Me.Guna2HtmlLabel30.Name = "Guna2HtmlLabel30"
         Me.Guna2HtmlLabel30.Size = New System.Drawing.Size(30, 22)
         Me.Guna2HtmlLabel30.TabIndex = 84
@@ -626,7 +634,7 @@ Partial Class StudentMainMenu
         Me.stp_age.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.stp_age.IsContextMenuEnabled = False
         Me.stp_age.IsSelectionEnabled = False
-        Me.stp_age.Location = New System.Drawing.Point(24, 308)
+        Me.stp_age.Location = New System.Drawing.Point(24, 396)
         Me.stp_age.Name = "stp_age"
         Me.stp_age.Size = New System.Drawing.Size(30, 17)
         Me.stp_age.TabIndex = 83
@@ -641,7 +649,7 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel28.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel28.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel28.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel28.Location = New System.Drawing.Point(8, 226)
+        Me.Guna2HtmlLabel28.Location = New System.Drawing.Point(8, 314)
         Me.Guna2HtmlLabel28.Name = "Guna2HtmlLabel28"
         Me.Guna2HtmlLabel28.Size = New System.Drawing.Size(68, 22)
         Me.Guna2HtmlLabel28.TabIndex = 82
@@ -656,7 +664,7 @@ Partial Class StudentMainMenu
         Me.stp_birthdate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.stp_birthdate.IsContextMenuEnabled = False
         Me.stp_birthdate.IsSelectionEnabled = False
-        Me.stp_birthdate.Location = New System.Drawing.Point(24, 248)
+        Me.stp_birthdate.Location = New System.Drawing.Point(24, 343)
         Me.stp_birthdate.Name = "stp_birthdate"
         Me.stp_birthdate.Size = New System.Drawing.Size(59, 17)
         Me.stp_birthdate.TabIndex = 81
@@ -671,7 +679,7 @@ Partial Class StudentMainMenu
         Me.Guna2HtmlLabel23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel23.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel23.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel23.Location = New System.Drawing.Point(8, 167)
+        Me.Guna2HtmlLabel23.Location = New System.Drawing.Point(8, 261)
         Me.Guna2HtmlLabel23.Name = "Guna2HtmlLabel23"
         Me.Guna2HtmlLabel23.Size = New System.Drawing.Size(119, 22)
         Me.Guna2HtmlLabel23.TabIndex = 80
@@ -686,7 +694,7 @@ Partial Class StudentMainMenu
         Me.stp_studentaddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.stp_studentaddress.IsContextMenuEnabled = False
         Me.stp_studentaddress.IsSelectionEnabled = False
-        Me.stp_studentaddress.Location = New System.Drawing.Point(24, 189)
+        Me.stp_studentaddress.Location = New System.Drawing.Point(24, 290)
         Me.stp_studentaddress.Name = "stp_studentaddress"
         Me.stp_studentaddress.Size = New System.Drawing.Size(94, 17)
         Me.stp_studentaddress.TabIndex = 79
@@ -716,7 +724,7 @@ Partial Class StudentMainMenu
         Me.stp_studentid.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.stp_studentid.IsContextMenuEnabled = False
         Me.stp_studentid.IsSelectionEnabled = False
-        Me.stp_studentid.Location = New System.Drawing.Point(24, 71)
+        Me.stp_studentid.Location = New System.Drawing.Point(24, 78)
         Me.stp_studentid.Name = "stp_studentid"
         Me.stp_studentid.Size = New System.Drawing.Size(65, 17)
         Me.stp_studentid.TabIndex = 77
@@ -1224,6 +1232,66 @@ Partial Class StudentMainMenu
         'Timer1
         '
         '
+        'Guna2HtmlLabel2
+        '
+        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Segoe UI Variable Display", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.Guna2HtmlLabel2.IsContextMenuEnabled = False
+        Me.Guna2HtmlLabel2.IsSelectionEnabled = False
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(8, 155)
+        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(56, 22)
+        Me.Guna2HtmlLabel2.TabIndex = 88
+        Me.Guna2HtmlLabel2.TabStop = False
+        Me.Guna2HtmlLabel2.Text = "Section"
+        Me.Guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Guna2HtmlLabel3
+        '
+        Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.Guna2HtmlLabel3.IsContextMenuEnabled = False
+        Me.Guna2HtmlLabel3.IsSelectionEnabled = False
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(16, 184)
+        Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
+        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(82, 17)
+        Me.Guna2HtmlLabel3.TabIndex = 87
+        Me.Guna2HtmlLabel3.TabStop = False
+        Me.Guna2HtmlLabel3.Text = "(email address)"
+        Me.Guna2HtmlLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Guna2HtmlLabel4
+        '
+        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Segoe UI Variable Display", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.Guna2HtmlLabel4.IsContextMenuEnabled = False
+        Me.Guna2HtmlLabel4.IsSelectionEnabled = False
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(8, 102)
+        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(88, 22)
+        Me.Guna2HtmlLabel4.TabIndex = 89
+        Me.Guna2HtmlLabel4.TabStop = False
+        Me.Guna2HtmlLabel4.Text = "Department"
+        Me.Guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Guna2HtmlLabel15
+        '
+        Me.Guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel15.Font = New System.Drawing.Font("Segoe UI Variable Text", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.Guna2HtmlLabel15.IsContextMenuEnabled = False
+        Me.Guna2HtmlLabel15.IsSelectionEnabled = False
+        Me.Guna2HtmlLabel15.Location = New System.Drawing.Point(8, 131)
+        Me.Guna2HtmlLabel15.Name = "Guna2HtmlLabel15"
+        Me.Guna2HtmlLabel15.Size = New System.Drawing.Size(82, 17)
+        Me.Guna2HtmlLabel15.TabIndex = 90
+        Me.Guna2HtmlLabel15.TabStop = False
+        Me.Guna2HtmlLabel15.Text = "(email address)"
+        Me.Guna2HtmlLabel15.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'StudentMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1334,4 +1402,8 @@ Partial Class StudentMainMenu
     Friend WithEvents Timer1 As Timer
     Friend WithEvents stp_currentdate As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents stp_studentid As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel15 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
