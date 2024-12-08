@@ -58,13 +58,13 @@ Public Class StudentMainMenu
         Courses.COURSE_ID AS CourseCode,
         CONCAT(Professor.FIRST_NAME, ' ', Professor.LAST_NAME) AS ProfessorName, 
         Enrollments.TERM AS Term, 
-        Final_Grades.MIDTERM_GRADE, 
-        Final_Grades.FINAL_GRADE, 
-        Final_Grades.SEMESTRAL_GRADE, 
+        Final_Grades.MIDTERM_PERCENTAGE, 
+        Final_Grades.FINAL_PERCENTAGE, 
+        Final_Grades.SEMESTRAL_PERCENTAGE, 
         Final_Grades.REMARKS,
         Final_Grades.MIDTERM_GWA,
-        Final_Grades.FINALS_GWA,
-        Final_Grades.SEMESTRAL_GWA
+        Final_Grades.FINAL_GWA,
+        Final_Grades.GWA
     FROM Enrollments 
     INNER JOIN Sections ON Enrollments.Section_ID = Sections.Section_ID 
     INNER JOIN Courses ON Sections.Course_ID = Courses.COURSE_ID 
@@ -88,8 +88,8 @@ Public Class StudentMainMenu
                 stp_datatable.Columns("MIDTERM_GWA").Visible = False
             End If
 
-            If stp_datatable.Columns.Contains("FINALS_GWA") Then
-                stp_datatable.Columns("FINALS_GWA").Visible = False
+            If stp_datatable.Columns.Contains("FINAL_GWA") Then
+                stp_datatable.Columns("FINAL_GWA").Visible = False
             End If
 
             If stp_datatable.Columns.Contains("SEMESTRAL_GWA") Then
@@ -114,14 +114,14 @@ Public Class StudentMainMenu
             Dim courseCode As String = selectedRow.Cells("CourseCode").Value?.ToString()
             Dim professorName As String = selectedRow.Cells("ProfessorName").Value?.ToString()
             Dim term As String = selectedRow.Cells("Term").Value?.ToString()
-            Dim midtermGrade As String = selectedRow.Cells("Midterm_GRADE").Value?.ToString()
-            Dim finalGrade As String = selectedRow.Cells("Final_GRADE").Value?.ToString()
-            Dim semestralGrade As String = selectedRow.Cells("Semestral_GRADE").Value?.ToString()
+            Dim midtermGrade As String = selectedRow.Cells("MIDTERM_PERCENTAGE").Value?.ToString()
+            Dim finalGrade As String = selectedRow.Cells("Final_PERCENTAGE").Value?.ToString()
+            Dim semestralGrade As String = selectedRow.Cells("Semestral_PERCENTAGE").Value?.ToString()
             Dim remarks As String = selectedRow.Cells("Remarks").Value?.ToString()
 
             Dim midtermGWA As String = selectedRow.Cells("Midterm_GWA").Value?.ToString()
-            Dim finalGWA As String = selectedRow.Cells("Finals_GWA").Value?.ToString()
-            Dim semestralGWA As String = selectedRow.Cells("Semestral_GWA").Value?.ToString()
+            Dim finalGWA As String = selectedRow.Cells("Final_GWA").Value?.ToString()
+            Dim semestralGWA As String = selectedRow.Cells("GWA").Value?.ToString()
 
             stp_coursename.Text = courseName
             stp_coursecode.Text = courseCode
