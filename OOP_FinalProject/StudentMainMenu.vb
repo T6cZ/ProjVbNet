@@ -1,123 +1,144 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class StudentMainMenu
-    Dim cmd As New MySqlCommand
-    Dim dt As New DataTable
-    Dim da As New MySqlDataAdapter
-    Dim str As String
-    Dim con As New MySqlConnection("server=localhost;user=root;database=grading_system")
-    Dim student_email As String
-    Dim student_id As String
+    Private ReadOnly LoggedInStudentID As String
 
-    ' Constructor to accept email from LoginRegPanel
-    Public Sub New(email As String)
-        ' This call is required by the designer.
+    Public Sub New(studentID As String)
         InitializeComponent()
-
-        ' Store the email value in the variable
-        student_email = email
+        LoggedInStudentID = studentID
     End Sub
 
     Private Sub StudentMainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Set timer to update clock every second
-        Timer1.Interval = 1000
-        Timer1.Enabled = True
-        Timer1.Start()
-
-        ' Fetch and display student details based on the email
-        SetStudentDetailsByEmail(student_email)
+        LoadStudentInfo()
+        LoadStudentCourses()
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        ' Update current time and date on the panel
-        stp_clocktimer.Text = DateTime.Now.ToString("hh:mm:ss tt")
-        stp_currentdate.Text = DateTime.Now.ToString("MM/dd/yyyy dddd")
+    Private Sub LoadStudentInfo()
+        Dim query As String = "SELECT DISTINCT " &
+                          "CONCAT(Student.Last_Name, ', ', Student.First_Name, ' ', Student.Middle_Name) AS FullName, " &
+                          "Student.Student_ID, " &
+                          "Student.Department AS Department_Name, " &
+                          "Sections.Section_Name, " &
+                          "Login.EMAIL AS EmailAddress, " &
+                          "Student.Address, " &
+                          "Student.Birthdate, " &
+                          "TIMESTAMPDIFF(YEAR, Student.Birthdate, CURDATE()) AS Age " &
+                          "FROM STUDENT " &
+                          "INNER JOIN LOGIN ON STUDENT.USER_ID = LOGIN.USER_ID " &
+                          "LEFT JOIN Enrollments ON STUDENT.Student_ID = Enrollments.Student_ID " &
+                          "LEFT JOIN Sections ON Enrollments.Section_ID = Sections.Section_ID " &
+                          "WHERE STUDENT.USER_ID = @studentID"
+
+        Dim params As New Dictionary(Of String, Object) From {
+        {"@studentID", LoggedInStudentID}
+    }
+
+
+        Dim studentRow As DataRow = databaseConnection.GetDataRow(query, params)
+
+        If studentRow IsNot Nothing Then
+            namelbl.Text = studentRow("FullName").ToString()
+            studentidlbl.Text = studentRow("Student_ID").ToString()
+            departmentlbl.Text = studentRow("Department_Name").ToString()
+            sectionlbl.Text = studentRow("Section_Name").ToString()
+            emailaddresslbl.Text = studentRow("EmailAddress").ToString()
+            addresslbl.Text = studentRow("Address").ToString()
+            birthdatelbl.Text = Convert.ToDateTime(studentRow("Birthdate")).ToShortDateString()
+            agelbl.Text = studentRow("Age").ToString()
+        Else
+            MessageBox.Show("Student information not found.")
+        End If
     End Sub
 
-    ' Function to fetch student details and student_id by email
-    Private Sub SetStudentDetailsByEmail(email As String)
+
+
+    Private Sub LoadStudentCourses()
+        Dim query As String = "SELECT DISTINCT 
+        Courses.COURSE_NAME AS Course, 
+        Courses.COURSE_ID AS CourseCode,
+        CONCAT(Professor.FIRST_NAME, ' ', Professor.LAST_NAME) AS ProfessorName, 
+        Enrollments.TERM AS Term, 
+        Final_Grades.MIDTERM_PERCENTAGE, 
+        Final_Grades.FINAL_PERCENTAGE, 
+        Final_Grades.SEMESTRAL_PERCENTAGE, 
+        Final_Grades.REMARKS,
+        Final_Grades.MIDTERM_GWA,
+        Final_Grades.FINAL_GWA,
+        Final_Grades.GWA
+    FROM Enrollments 
+    INNER JOIN Sections ON Enrollments.Section_ID = Sections.Section_ID 
+    INNER JOIN Courses ON Sections.Course_ID = Courses.COURSE_ID 
+    INNER JOIN Classes ON Sections.Section_ID = Classes.Section_ID 
+    INNER JOIN Professor ON Classes.Professor_ID = Professor.Professor_ID 
+    LEFT JOIN Final_Grades ON Enrollments.CLASS_ID = Final_Grades.CLASS_ID 
+    WHERE Enrollments.Student_ID = (
+        SELECT Student_ID FROM STUDENT WHERE USER_ID = @studentID
+    );"
+
+        Dim params As New Dictionary(Of String, Object) From {
+        {"@studentID", LoggedInStudentID}
+    }
+
         Try
-            con.Open()
+            Dim coursesTable As DataTable = databaseConnection.GetDataTable(query, params)
 
-            ' SQL query to get student details (including student_id) by email
-            str = "SELECT STUDENT_ID, FIRST_NAME, MIDDLE_NAME, LAST_NAME, EMAIL, ADDRESS, BIRTHDAY, AGE 
-                   FROM STUDENTS WHERE EMAIL = @Email"
+            stp_datatable.DataSource = coursesTable
 
-            cmd = New MySqlCommand(str, con)
-            cmd.Parameters.AddWithValue("@Email", email)
-
-            da = New MySqlDataAdapter(cmd)
-            dt = New DataTable()
-            da.Fill(dt)
-
-            ' Check if the student is found
-            If dt.Rows.Count > 0 Then
-                ' Extract student details from the database
-                student_id = dt.Rows(0)("STUDENT_ID").ToString() ' Save student_id
-                Dim firstName As String = dt.Rows(0)("FIRST_NAME").ToString()
-                Dim middleName As String = If(IsDBNull(dt.Rows(0)("MIDDLE_NAME")), "", dt.Rows(0)("MIDDLE_NAME").ToString())
-                Dim lastName As String = dt.Rows(0)("LAST_NAME").ToString()
-                Dim address As String = If(IsDBNull(dt.Rows(0)("ADDRESS")), "No Address Provided", dt.Rows(0)("ADDRESS").ToString())
-                Dim birthday As String = Date.Parse(dt.Rows(0)("BIRTHDAY").ToString()).ToString("MMMM dd, yyyy")
-                Dim age As String = dt.Rows(0)("AGE").ToString()
-
-                ' Concatenate full name and display in the panel
-                STUDENT_NAME.Text = $"{firstName} {middleName} {lastName}".Trim()
-                stp_studentid.Text = student_id
-                stp_emailaddress.Text = email
-                stp_studentaddress.Text = address
-                stp_birthdate.Text = birthday
-                stp_age.Text = age
-
-                ' Optionally, you can call other methods to fetch enrollments or grades
-                showenrollment()
+            If stp_datatable.Columns.Contains("MIDTERM_GWA") Then
+                stp_datatable.Columns("MIDTERM_GWA").Visible = False
             End If
+
+            If stp_datatable.Columns.Contains("FINAL_GWA") Then
+                stp_datatable.Columns("FINAL_GWA").Visible = False
+            End If
+
+            If stp_datatable.Columns.Contains("SEMESTRAL_GWA") Then
+                stp_datatable.Columns("SEMESTRAL_GWA").Visible = False
+            End If
+
+            If stp_datatable.Columns.Contains("CourseCode") Then
+                stp_datatable.Columns("CourseCode").Visible = False
+            End If
+
         Catch ex As Exception
-            MessageBox.Show($"An error occurred: {ex.Message}")
-        Finally
-            ' Ensure connection is closed
-            If con.State = ConnectionState.Open Then
-                con.Close()
-            End If
+            MessageBox.Show($"Failed to load courses: {ex.Message}")
         End Try
     End Sub
 
-    ' Function to show enrollments in DataGrid
-    Sub showenrollment()
-        Try
-            dt.Clear()
 
-            ' SQL query to get enrollments for the student using student_id
-            str = "SELECT * FROM STUDENT_ENROLLMENTS WHERE STUDENT_ID = @StudentID"
-            con.Open()
-            cmd.Connection = con
-            cmd.CommandText = str
-            cmd.Parameters.AddWithValue("@StudentID", student_id) ' Use student_id to filter enrollments
-            da.SelectCommand = cmd
-            da.Fill(dt)
+    Private Sub stp_datatable_SelectionChanged(sender As Object, e As EventArgs) Handles stp_datatable.SelectionChanged
+        If stp_datatable.SelectedRows.Count > 0 Then
+            Dim selectedRow As DataGridViewRow = stp_datatable.SelectedRows(0)
 
-            ' Bind data to DataGrid
-            stp_datatable.DataSource = dt
-        Catch ex As Exception
-            MessageBox.Show($"An error occurred: {ex.Message}")
-        Finally
-            If con.State = ConnectionState.Open Then
-                con.Close()
-            End If
-        End Try
+            Dim courseName As String = selectedRow.Cells("Course").Value?.ToString()
+            Dim courseCode As String = selectedRow.Cells("CourseCode").Value?.ToString()
+            Dim professorName As String = selectedRow.Cells("ProfessorName").Value?.ToString()
+            Dim term As String = selectedRow.Cells("Term").Value?.ToString()
+            Dim midtermGrade As String = selectedRow.Cells("MIDTERM_PERCENTAGE").Value?.ToString()
+            Dim finalGrade As String = selectedRow.Cells("Final_PERCENTAGE").Value?.ToString()
+            Dim semestralGrade As String = selectedRow.Cells("Semestral_PERCENTAGE").Value?.ToString()
+            Dim remarks As String = selectedRow.Cells("Remarks").Value?.ToString()
+
+            Dim midtermGWA As String = selectedRow.Cells("Midterm_GWA").Value?.ToString()
+            Dim finalGWA As String = selectedRow.Cells("Final_GWA").Value?.ToString()
+            Dim semestralGWA As String = selectedRow.Cells("GWA").Value?.ToString()
+
+            stp_coursename.Text = courseName
+            stp_coursecode.Text = courseCode
+            stp_professorname.Text = professorName
+            stp_semester.Text = term
+
+            stp_midtermpercentage.Text = midtermGrade
+            stp_finalspercentage.Text = finalGrade
+            stp_semestralpercentage.Text = semestralGrade
+
+            stp_midtermgwa.Text = midtermGWA
+            stp_finalsgwa.Text = finalGWA
+            stp_semestragwa.Text = semestralGWA
+
+            remarkslbl.Text = remarks
+        End If
     End Sub
 
-    ' Handle DataGrid click event to show enrollments
-    Private Sub stp_datatable_Click(sender As Object, e As EventArgs) Handles stp_datatable.Click
-        showenrollment()
-    End Sub
 
-    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
-        Me.Hide()
-        LoginRegPanel.Show()
-    End Sub
-
-    Private Sub STUDENT_NAME_Click(sender As Object, e As EventArgs) Handles STUDENT_NAME.Click
-
-    End Sub
 End Class
