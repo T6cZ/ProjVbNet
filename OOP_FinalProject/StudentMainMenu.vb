@@ -15,7 +15,7 @@ Public Class StudentMainMenu
 
     Private Sub LoadStudentInfo()
         Dim query As String = "SELECT DISTINCT " &
-                          "CONCAT(Student.Last_Name, ' ', Student.Middle_Name, ' ', Student.First_Name) AS FullName, " &
+                          "CONCAT(Student.Last_Name, ', ', Student.First_Name, ' ', Student.Middle_Name) AS FullName, " &
                           "Student.Student_ID, " &
                           "Student.Department AS Department_Name, " &
                           "Sections.Section_Name, " &
@@ -139,5 +139,6 @@ Public Class StudentMainMenu
             remarkslbl.Text = remarks
         End If
     End Sub
+
 
 End Class
