@@ -1,180 +1,236 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class ProfessorPanel
-    Private isAddingNewRow As Boolean = False
+    Private ReadOnly LoggedInProfessorID As String
 
-    Private Sub ProfessorPanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadDepartments()
+    Public Sub New(professorID As String)
+        InitializeComponent()
+        LoggedInProfessorID = professorID
     End Sub
 
-    Private Sub LoadDepartments()
-        Try
-            Dim query As String = "SELECT DEPARTMENT_NAME FROM DEPARTMENT;"
-            Using conn As MySqlConnection = GetConnection()
-                conn.Open()
-                Using cmd As New MySqlCommand(query, conn)
-                    Using reader As MySqlDataReader = cmd.ExecuteReader()
-                        prof_departmentdrop.Items.Clear()
-                        While reader.Read()
-                            prof_departmentdrop.Items.Add(reader("DEPARTMENT_NAME").ToString())
-                        End While
-                    End Using
-                End Using
-            End Using
-        Catch ex As Exception
-            MessageBox.Show($"Failed to load departments: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
+    Private Sub ProfessorMainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadProfessorInfo()
+        LoadSectionsForProfessor()
+        LoadStatisticsForProfessor()
+
+        If prof_sectiondrop.Items.Count > 0 Then
+            Dim selectedSection As String = prof_sectiondrop.SelectedValue?.ToString()
+            If selectedSection IsNot Nothing Then
+                LoadAssessmentsDataTable(selectedSection)
+            End If
+        End If
+
+        AddHandler listofstudentstable.SelectionChanged, AddressOf listofstudentstable_SelectionChanged
     End Sub
 
-    Private Sub prof_departmentdrop_SelectedIndexChanged(sender As Object, e As EventArgs) Handles prof_departmentdrop.SelectedIndexChanged
-        If prof_departmentdrop.SelectedItem IsNot Nothing Then
-            LoadSections(prof_departmentdrop.SelectedItem.ToString())
+    Private Sub LoadProfessorInfo()
+        Dim query As String = "SELECT DISTINCT 
+                               CONCAT(Professor.LAST_NAME, ' ', Professor.FIRST_NAME) AS FullName, 
+                               Professor.PROFESSOR_ID, 
+                               Professor.DEPARTMENT_ID, 
+                               Login.EMAIL AS EmailAddress
+                               FROM PROFESSOR 
+                               INNER JOIN LOGIN ON PROFESSOR.USER_ID = LOGIN.USER_ID 
+                               WHERE PROFESSOR.PROFESSOR_ID = @professorID"
+
+        Dim params As New Dictionary(Of String, Object) From {
+            {"@professorID", LoggedInProfessorID}
+        }
+
+        Dim professorRow As DataRow = databaseConnection.GetDataRow(query, params)
+
+        If professorRow IsNot Nothing Then
+            prof_profname.Text = professorRow("FullName").ToString()
+            lblprofid.Text = professorRow("PROFESSOR_ID").ToString()
+            lblemail.Text = professorRow("EmailAddress").ToString()
+
+            Dim deptQuery As String = "SELECT DEPARTMENT_NAME FROM DEPARTMENT WHERE DEPARTMENT_ID = @deptID"
+            Dim deptParams As New Dictionary(Of String, Object) From {
+                {"@deptID", professorRow("DEPARTMENT_ID").ToString()}
+            }
+            Dim deptRow As DataRow = databaseConnection.GetDataRow(deptQuery, deptParams)
+            If deptRow IsNot Nothing Then
+                lbldepartment.Text = deptRow("DEPARTMENT_NAME").ToString()
+            End If
+        Else
+            MessageBox.Show("Professor information not found.")
         End If
     End Sub
 
-    Private Sub LoadSections(selectedDepartment As String)
-        Try
-            Dim query As String = "
-                SELECT SECTION.YEAR_SECTION 
-                FROM SECTION 
-                INNER JOIN DEPARTMENT ON SECTION.DEPARTMENT_ID = DEPARTMENT.DEPARTMENT_ID
-                WHERE DEPARTMENT.DEPARTMENT_NAME = @DepartmentName;"
+    Private Sub LoadSectionsForProfessor()
+        Dim query As String = "SELECT DISTINCT Sections.Section_Name 
+                           FROM Sections    
+                           INNER JOIN Classes ON Sections.Section_ID = Classes.Section_ID 
+                           WHERE Classes.Professor_ID = @professorID"
 
-            Using conn As MySqlConnection = GetConnection()
-                conn.Open()
-                Using cmd As New MySqlCommand(query, conn)
-                    cmd.Parameters.AddWithValue("@DepartmentName", selectedDepartment)
-                    Using reader As MySqlDataReader = cmd.ExecuteReader()
-                        prof_sectiondrop.Items.Clear()
-                        While reader.Read()
-                            prof_sectiondrop.Items.Add(reader("YEAR_SECTION").ToString())
-                        End While
-                    End Using
-                End Using
-            End Using
+        Dim params As New Dictionary(Of String, Object) From {
+        {"@professorID", LoggedInProfessorID}
+    }
+
+        Try
+            ' Fetch sections only once
+            Dim sectionsTable As DataTable = databaseConnection.GetDataTable(query, params)
+
+            If sectionsTable.Rows.Count > 0 Then
+                ' Bind sections to comboboxsectionlistgrading
+                comboboxsectionlistgrading.DataSource = sectionsTable
+                comboboxsectionlistgrading.DisplayMember = "Section_Name"
+                comboboxsectionlistgrading.ValueMember = "Section_Name"
+
+                ' Bind sections to prof_sectiondrop
+                prof_sectiondrop.DataSource = sectionsTable
+                prof_sectiondrop.DisplayMember = "Section_Name"
+                prof_sectiondrop.ValueMember = "Section_Name"
+            Else
+                MessageBox.Show("No sections found for this professor.")
+            End If
         Catch ex As Exception
-            MessageBox.Show($"Failed to load sections: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show($"Failed to load sections: {ex.Message}")
         End Try
     End Sub
+
 
     Private Sub prof_sectiondrop_SelectedIndexChanged(sender As Object, e As EventArgs) Handles prof_sectiondrop.SelectedIndexChanged
-        If prof_departmentdrop.SelectedItem IsNot Nothing AndAlso prof_sectiondrop.SelectedItem IsNot Nothing Then
-            FilterStudentData()
+        If prof_sectiondrop.SelectedIndex >= 0 Then
+            LoadStudentsForSelectedSection(prof_sectiondrop.SelectedValue.ToString())
         End If
     End Sub
 
-    Private Sub FilterStudentData()
-        Try
-            Dim query As String = "
-                SELECT 
-                    STUDENTS.STUDENT_ID AS 'Student ID',
-                    STUDENTS.LAST_NAME AS 'Last Name',
-                    STUDENTS.MIDDLE_NAME AS 'Middle Name',
-                    STUDENTS.FIRST_NAME AS 'First Name',
-                    COURSES.SUBJECT_TITLE AS 'Subject Name',
-                    SECTION.YEAR_SECTION AS 'Section',
-                    STUDENT_GRADES.MIDTERM_GRADE AS 'Midterm Grade',
-                    STUDENT_GRADES.FINALS_GRADE AS 'Finals Grade',
-                    STUDENT_GRADES.SEMESTRAL_GRADE AS 'Semestral Grade',
-                    STUDENT_GRADES.REMARKS AS 'Remarks',
-                    STUDENT_GRADES.GRADE_EQUIVALENT AS 'Grade Equivalent'
-                FROM 
-                    STUDENTS
-                INNER JOIN 
-                    STUDENT_GRADES ON STUDENTS.STUDENT_ID = STUDENT_GRADES.STUDENT_ID
-                INNER JOIN 
-                    COURSES ON STUDENT_GRADES.SUBJECT_CODE = COURSES.SUBJECT_CODE
-                INNER JOIN 
-                    SECTION ON STUDENTS.YEAR_SECTION = SECTION.YEAR_SECTION
-                INNER JOIN 
-                    DEPARTMENT ON STUDENTS.DEPARTMENT_ID = DEPARTMENT.DEPARTMENT_ID
-                WHERE 
-                    DEPARTMENT.DEPARTMENT_NAME = @DepartmentName
-                    AND SECTION.YEAR_SECTION = @Section;"
+    Private Sub LoadStudentsForSelectedSection(sectionName As String)
+        Dim query As String = "SELECT 
+                              CONCAT(Student.LAST_NAME, ', ', Student.FIRST_NAME) AS Student_Name,
+                              Courses.COURSE_ID,
+                              Final_Grades.MIDTERM_PERCENTAGE,
+                              Final_Grades.FINAL_PERCENTAGE,
+                              Final_Grades.SEMESTRAL_PERCENTAGE,
+                              Final_Grades.MIDTERM_GWA,
+                              Final_Grades.FINAL_GWA,
+                              Final_Grades.SEMESTRAL_GWA,
+                              Final_Grades.REMARKS
+                          FROM Enrollments 
+                          INNER JOIN Student ON Enrollments.Student_ID = Student.Student_ID
+                          INNER JOIN Classes ON Enrollments.CLASS_ID = Classes.CLASS_ID
+                          INNER JOIN Sections ON Classes.Section_ID = Sections.Section_ID
+                          INNER JOIN Courses ON Sections.COURSE_ID = Courses.COURSE_ID
+                          LEFT JOIN Final_Grades ON Enrollments.CLASS_ID = Final_Grades.CLASS_ID
+                          WHERE Sections.Section_Name = @sectionName
+                          AND Classes.Professor_ID = @professorID"
 
-            Using conn As MySqlConnection = GetConnection()
-                conn.Open()
-                Using cmd As New MySqlCommand(query, conn)
-                    cmd.Parameters.AddWithValue("@DepartmentName", prof_departmentdrop.SelectedItem.ToString())
-                    cmd.Parameters.AddWithValue("@Section", prof_sectiondrop.SelectedItem.ToString())
-                    Dim adapter As New MySqlDataAdapter(cmd)
-                    Dim dt As New DataTable()
-                    adapter.Fill(dt)
-                    prof_datatable.DataSource = dt
-                End Using
-            End Using
+        Dim params As New Dictionary(Of String, Object) From {
+        {"@sectionName", sectionName},
+        {"@professorID", LoggedInProfessorID}
+    }
+
+        Try
+            Dim studentsTable As DataTable = databaseConnection.GetDataTable(query, params)
+            listofstudentstable.DataSource = studentsTable
+
+            For Each column As DataGridViewColumn In listofstudentstable.Columns
+                If column.Name <> "Student_Name" AndAlso column.Name <> "COURSE_ID" Then
+                    column.Visible = False
+                End If
+            Next
+
         Catch ex As Exception
-            MessageBox.Show($"Failed to filter student data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show($"Failed to load student data: {ex.Message}")
         End Try
     End Sub
 
-    Private Sub prof_datatable_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles prof_datatable.CellValueChanged
-        If e.ColumnIndex = prof_datatable.Columns("Midterm Grade").Index OrElse e.ColumnIndex = prof_datatable.Columns("Finals Grade").Index Then
-            Dim midtermGrade As Decimal
-            Dim finalsGrade As Decimal
+    Private Sub LoadStatisticsForProfessor()
+        Dim query As String = "SELECT 
+                               COUNT(Enrollments.Student_ID) AS Total_Students_Enrolled,
+                               SUM(CASE WHEN Final_Grades.Remarks = 'Passed' THEN 1 ELSE 0 END) AS Total_Passed,
+                               SUM(CASE WHEN Final_Grades.Remarks = 'Failed' THEN 1 ELSE 0 END) AS Total_Failed,
+                               SUM(CASE WHEN Final_Grades.Remarks = 'Incomplete' THEN 1 ELSE 0 END) AS Total_Incomplete
+                           FROM Enrollments
+                           INNER JOIN Classes ON Enrollments.CLASS_ID = Classes.CLASS_ID
+                           INNER JOIN Sections ON Classes.Section_ID = Sections.Section_ID
+                           LEFT JOIN Final_Grades ON Enrollments.CLASS_ID = Final_Grades.CLASS_ID
+                           WHERE Classes.Professor_ID = @professorID"
 
-            If Decimal.TryParse(prof_datatable.Rows(e.RowIndex).Cells("Midterm Grade").Value?.ToString(), midtermGrade) AndAlso
-               Decimal.TryParse(prof_datatable.Rows(e.RowIndex).Cells("Finals Grade").Value?.ToString(), finalsGrade) Then
+        Dim params As New Dictionary(Of String, Object) From {
+        {"@professorID", LoggedInProfessorID}
+    }
 
-                Dim semestralGrade = Math.Round((midtermGrade + finalsGrade) / 2, 2)
-                prof_datatable.Rows(e.RowIndex).Cells("Semestral Grade").Value = semestralGrade
-
-                Dim remarks As String = If(semestralGrade >= 3.0, "FAILED", "PASSED")
-                prof_datatable.Rows(e.RowIndex).Cells("Remarks").Value = remarks
-
-
-                Dim gradeEquivalent = TransmuteGrade(semestralGrade)
-                prof_datatable.Rows(e.RowIndex).Cells("Grade Equivalent").Value = gradeEquivalent
-            End If
-        End If
-    End Sub
-
-    Private Function TransmuteGrade(semestralGrade As Decimal) As Decimal
-
-        If semestralGrade >= 1.0 AndAlso semestralGrade <= 3.0 Then
-            Return semestralGrade
-        End If
-        Return 5.0
-    End Function
-
-    Private Sub prof_updateinfo_Click(sender As Object, e As EventArgs) Handles prof_updateinfo.Click
         Try
-            Dim dt As DataTable = TryCast(prof_datatable.DataSource, DataTable)
-            If dt IsNot Nothing Then
-                Using conn As MySqlConnection = GetConnection()
-                    conn.Open()
-                    Using transaction = conn.BeginTransaction()
-                        For Each row As DataRow In dt.Rows
-                            If row.RowState = DataRowState.Modified Then
-                                Dim updateQuery As String = "
-                                    UPDATE STUDENT_GRADES 
-                                    SET MIDTERM_GRADE = @MidtermGrade, FINALS_GRADE = @FinalsGrade, 
-                                        SEMESTRAL_GRADE = @SemestralGrade, REMARKS = @Remarks, 
-                                        GRADE_EQUIVALENT = @GradeEquivalent
-                                    WHERE STUDENT_ID = @StudentID;"
-                                Using cmd As New MySqlCommand(updateQuery, conn, transaction)
-                                    cmd.Parameters.AddWithValue("@StudentID", row("Student ID"))
-                                    cmd.Parameters.AddWithValue("@MidtermGrade", row("Midterm Grade"))
-                                    cmd.Parameters.AddWithValue("@FinalsGrade", row("Finals Grade"))
-                                    cmd.Parameters.AddWithValue("@SemestralGrade", row("Semestral Grade"))
-                                    cmd.Parameters.AddWithValue("@Remarks", row("Remarks"))
-                                    cmd.Parameters.AddWithValue("@GradeEquivalent", row("Grade Equivalent"))
-                                    cmd.ExecuteNonQuery()
-                                End Using
-                            End If
-                        Next
-                        transaction.Commit()
-                    End Using
-                End Using
-                MessageBox.Show("Changes saved successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Dim statsTable As DataTable = databaseConnection.GetDataTable(query, params)
+
+            If statsTable.Rows.Count > 0 Then
+                Dim row As DataRow = statsTable.Rows(0)
+                totalstudentenrolled.Text = row("Total_Students_Enrolled").ToString()
+                totalpassed.Text = row("Total_Passed").ToString()
+                totalfailed.Text = row("Total_Failed").ToString()
+                totalincomplete.Text = row("Total_Incomplete").ToString()
+            Else
+
+                totalstudentenrolled.Text = "0"
+                totalpassed.Text = "0"
+                totalfailed.Text = "0"
+                totalincomplete.Text = "0"
             End If
         Catch ex As Exception
-            MessageBox.Show($"Failed to save changes: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show($"Failed to load statistics: {ex.Message}")
         End Try
     End Sub
 
-    Private Sub prof_sblogout_Click(sender As Object, e As EventArgs) Handles prof_sblogout.Click
-        Me.Hide()
-        LoginRegPanel.Show()
+    Private Sub listofstudentstable_SelectionChanged(sender As Object, e As EventArgs) Handles listofstudentstable.SelectionChanged
+        If listofstudentstable.SelectedRows.Count > 0 Then
+            Dim selectedRow As DataGridViewRow = listofstudentstable.SelectedRows(0)
+
+            midtermpercent.Text = selectedRow.Cells("MIDTERM_PERCENTAGE")?.Value?.ToString()
+            midtermgwa.Text = selectedRow.Cells("MIDTERM_GWA")?.Value?.ToString()
+            finalspercentage.Text = selectedRow.Cells("FINAL_PERCENTAGE")?.Value?.ToString()
+            finalsgwa.Text = selectedRow.Cells("FINAL_GWA")?.Value?.ToString()
+            semestralpercent.Text = selectedRow.Cells("SEMESTRAL_PERCENTAGE")?.Value?.ToString()
+            semestralgwa.Text = selectedRow.Cells("SEMESTRAL_GWA")?.Value?.ToString()
+            remarkslbl.Text = selectedRow.Cells("Remarks")?.Value?.ToString()
+        End If
+    End Sub
+
+    Private Sub prof_sbdashboard_Click(sender As Object, e As EventArgs) Handles prof_sbdashboard.Click
+        profdashboard.Show()
+        profgrading.Hide()
+    End Sub
+
+    Private Sub prof_sbmanagegrade_Click(sender As Object, e As EventArgs) Handles prof_sbmanagegrade.Click
+        profdashboard.Hide()
+        profgrading.Show()
+    End Sub
+
+    '============================================================================================================
+
+    Private Sub LoadAssessmentsDataTable(sectionName As String)
+        Dim query As String = "SELECT 
+                            Assessments.ASSESSMENT_ID,
+                            Classes.CLASS_ID,
+                            Assessments.ASSESSMENT_NAME,
+                            Assessments.MAX_SCORE,
+                            Assessments.WEIGHT,
+                            Assessments.ASSESSMENT_DATE
+                        FROM Assessments
+                        INNER JOIN Classes ON Assessments.CLASS_ID = Classes.CLASS_ID
+                        WHERE Classes.SECTION_ID IN (
+                            SELECT SECTION_ID FROM Sections WHERE Section_Name = @sectionName
+                        )"
+
+        Dim params As New Dictionary(Of String, Object) From {
+        {"@sectionName", sectionName}
+    }
+
+        Try
+            Dim assessmentsTable As DataTable = databaseConnection.GetDataTable(query, params)
+            assessmentsDataTable.DataSource = assessmentsTable
+        Catch ex As Exception
+            MessageBox.Show($"Failed to load assessments for {sectionName}: {ex.Message}")
+        End Try
+    End Sub
+
+    Private Sub comboboxsectionlistgrading_SelectedIndexChanged(sender As Object, e As EventArgs) Handles comboboxsectionlistgrading.SelectedIndexChanged
+        If comboboxsectionlistgrading.SelectedIndex >= 0 Then
+            Dim selectedSection As String = comboboxsectionlistgrading.SelectedValue?.ToString()
+            If selectedSection IsNot Nothing Then
+                LoadAssessmentsDataTable(selectedSection)
+            End If
+        End If
     End Sub
 End Class
