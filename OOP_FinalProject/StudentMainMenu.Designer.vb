@@ -27,6 +27,7 @@ Partial Class StudentMainMenu
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StudentMainMenu))
         Me.FormBorder = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Drag_Control = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
@@ -1363,7 +1364,7 @@ Partial Class StudentMainMenu
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "StudentMainMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "StudentMainMenu"
+        Me.Text = resources.GetString("$this.Text")
         Me.TransparencyKey = System.Drawing.Color.SandyBrown
         Me.stp_container.ResumeLayout(False)
         Me.Guna2Panel2.ResumeLayout(False)
