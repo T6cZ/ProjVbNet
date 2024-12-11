@@ -432,12 +432,11 @@ Partial Class LoginRegPanel
         Me.Login_password.IconRightSize = New System.Drawing.Size(25, 25)
         Me.Login_password.Location = New System.Drawing.Point(79, 207)
         Me.Login_password.Name = "Login_password"
-        Me.Login_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
+        Me.Login_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Login_password.PlaceholderText = ""
         Me.Login_password.SelectedText = ""
         Me.Login_password.Size = New System.Drawing.Size(457, 45)
         Me.Login_password.TabIndex = 63
-        Me.Login_password.UseSystemPasswordChar = True
         '
         'Login_email
         '

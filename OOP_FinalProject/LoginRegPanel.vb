@@ -36,13 +36,22 @@ Public Class LoginRegPanel
                 studentDashboard.Show()
 
             ElseIf userRow("ROLE").ToString().ToUpper() = "ADMIN" Then
-                AdminPanel.Show()
+                Dim adminQuery As String = "SELECT ADMIN_ID FROM ADMIN WHERE USER_ID = @userID"
+                Dim adminParams As New Dictionary(Of String, Object) From {
+                 {"@userID", userID}
+                 }
 
-            Else
-                MessageBox.Show("Invalid role detected.")
+                Dim adminRow As DataRow = databaseConnection.GetDataRow(adminQuery, adminParams)
+
+                If adminRow IsNot Nothing Then
+                    Dim adminID As String = adminRow("ADMIN_ID").ToString()
+                    Dim adminDashboard As New AdminPanel(adminID)
+                    adminDashboard.Show()
+                    Me.Hide()
+                Else
+                    MessageBox.Show("Admin details not found.")
+                End If
             End If
-
-            Me.Hide()
 
         Else
             Login_invalidusername.Text = "Invalid username, email, or password."
