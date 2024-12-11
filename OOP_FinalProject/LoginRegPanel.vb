@@ -9,43 +9,43 @@ Public Class LoginRegPanel
             {"@password", Login_password.Text}
         }
 
-
         Dim userRow As DataRow = databaseConnection.GetDataRow(query, params)
 
         If userRow IsNot Nothing Then
             Dim userID As String = userRow("USER_ID").ToString()
+            Debug.WriteLine($"Logged-in USER_ID: {userID}")
 
             If userRow("ROLE").ToString().ToUpper() = "PROFESSOR" Then
-                Dim professorQuery As String = "SELECT PROFESSOR_ID FROM PROFESSOR WHERE USER_ID = @userID"
-                Dim professorParams As New Dictionary(Of String, Object) From {
-                    {"@userID", userID}
-                }
-
-                Dim professorRow As DataRow = databaseConnection.GetDataRow(professorQuery, professorParams)
-
-                If professorRow IsNot Nothing Then
-                    Dim professorID As String = professorRow("PROFESSOR_ID").ToString()
-                    Dim professorDashboard As New ProfessorPanel(professorID)
-                    professorDashboard.Show()
-                Else
-                    MessageBox.Show("Professor details not found.")
-                End If
+                Dim profDashboard As New ProfessorPanel(userID)
+                profDashboard.Show()  ' Corrected this line
+                Me.Hide()
 
             ElseIf userRow("ROLE").ToString().ToUpper() = "STUDENT" Then
                 Dim studentDashboard As New StudentMainMenu(userID)
                 studentDashboard.Show()
+                Me.Hide()
 
             ElseIf userRow("ROLE").ToString().ToUpper() = "ADMIN" Then
-                AdminPanel.Show()
+                Dim adminQuery As String = "SELECT ADMIN_ID FROM ADMIN WHERE USER_ID = @userID"
+                Dim adminParams As New Dictionary(Of String, Object) From {
+                    {"@userID", userID}
+                }
 
-            Else
-                MessageBox.Show("Invalid role detected.")
+                Dim adminRow As DataRow = databaseConnection.GetDataRow(adminQuery, adminParams)
+
+                If adminRow IsNot Nothing Then
+                    Dim adminID As String = adminRow("ADMIN_ID").ToString()
+                    Dim adminDashboard As New AdminPanel(adminID)
+                    adminDashboard.Show()
+                    Me.Hide()
+                Else
+                    MessageBox.Show("Admin details not found.")
+                End If
             End If
-
-            Me.Hide()
 
         Else
             Login_invalidusername.Text = "Invalid username, email, or password."
         End If
     End Sub
+
 End Class
