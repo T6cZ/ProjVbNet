@@ -48,4 +48,13 @@ Public Class LoginRegPanel
             Login_invalidusername.Text = "Invalid username, email, or password."
         End If
     End Sub
+    Private Sub login_showpass_CheckedChanged(sender As Object, e As EventArgs) Handles login_showpass.CheckedChanged
+        If login_showpass.Checked Then
+            Login_password.PasswordChar = ""
+        Else
+            Login_password.PasswordChar = "•"
+        End If
+    End Sub
+
+
 End Class

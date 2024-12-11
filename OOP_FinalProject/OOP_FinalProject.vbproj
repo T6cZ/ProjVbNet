@@ -114,13 +114,79 @@
     <Compile Include="Add Professor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ADD_ADMIN.Designer.vb">
+      <DependentUpon>ADD_ADMIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADD_ADMIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_CLASS.Designer.vb">
+      <DependentUpon>ADD_CLASS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADD_CLASS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_COURSES.Designer.vb">
+      <DependentUpon>ADD_COURSES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADD_COURSES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_ENROLLMENT.Designer.vb">
+      <DependentUpon>ADD_ENROLLMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADD_ENROLLMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_SECTION.Designer.vb">
+      <DependentUpon>ADD_SECTION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADD_SECTION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_STUDENT.Designer.vb">
+      <DependentUpon>ADD_STUDENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADD_STUDENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AdminPanel.Designer.vb">
       <DependentUpon>AdminPanel.vb</DependentUpon>
     </Compile>
     <Compile Include="AdminPanel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CLASSPANEL.Designer.vb">
+      <DependentUpon>CLASSPANEL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CLASSPANEL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COURSE_PANEL.Designer.vb">
+      <DependentUpon>COURSE_PANEL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COURSE_PANEL.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="databaseConnection.vb" />
+    <Compile Include="ADD_DEPARTMENT.Designer.vb">
+      <DependentUpon>ADD_DEPARTMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADD_DEPARTMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DEPARTMENT_PANEL.Designer.vb">
+      <DependentUpon>DEPARTMENT_PANEL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DEPARTMENT_PANEL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENROLLMENT_PANEL.Designer.vb">
+      <DependentUpon>ENROLLMENT_PANEL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENT_PANEL.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LoginRegPanel.Designer.vb">
       <DependentUpon>LoginRegPanel.vb</DependentUpon>
     </Compile>
@@ -149,6 +215,12 @@
     <Compile Include="ProfessorPanel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SECTION_PANEL.Designer.vb">
+      <DependentUpon>SECTION_PANEL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SECTION_PANEL.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="StudentMainMenu.Designer.vb">
       <DependentUpon>StudentMainMenu.vb</DependentUpon>
     </Compile>
@@ -160,8 +232,41 @@
     <EmbeddedResource Include="Add Professor.resx">
       <DependentUpon>Add Professor.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ADD_ADMIN.resx">
+      <DependentUpon>ADD_ADMIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD_CLASS.resx">
+      <DependentUpon>ADD_CLASS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD_COURSES.resx">
+      <DependentUpon>ADD_COURSES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD_ENROLLMENT.resx">
+      <DependentUpon>ADD_ENROLLMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD_SECTION.resx">
+      <DependentUpon>ADD_SECTION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD_STUDENT.resx">
+      <DependentUpon>ADD_STUDENT.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD_DEPARTMENT.resx">
+      <DependentUpon>ADD_DEPARTMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLASSPANEL.resx">
+      <DependentUpon>CLASSPANEL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COURSE_PANEL.resx">
+      <DependentUpon>COURSE_PANEL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEPARTMENT_PANEL.resx">
+      <DependentUpon>DEPARTMENT_PANEL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENT_PANEL.resx">
+      <DependentUpon>ENROLLMENT_PANEL.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginRegPanel.resx">
       <DependentUpon>LoginRegPanel.vb</DependentUpon>
@@ -174,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProfessorPanel.resx">
       <DependentUpon>ProfessorPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SECTION_PANEL.resx">
+      <DependentUpon>SECTION_PANEL.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentMainMenu.resx">
       <DependentUpon>StudentMainMenu.vb</DependentUpon>

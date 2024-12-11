@@ -1007,9 +1007,6 @@ Partial Class AdminPanel
         Me.CheckBoxRAD.BorderRadius = 10
         Me.CheckBoxRAD.TargetControl = Me.admin_courseCB
         '
-        'timer
-        '
-        '
         'AdminPanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)

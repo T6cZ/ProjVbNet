@@ -233,4 +233,8 @@ Public Class ProfessorPanel
             End If
         End If
     End Sub
+
+    Private Sub listofstudentstable_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles listofstudentstable.CellContentClick
+
+    End Sub
 End Class

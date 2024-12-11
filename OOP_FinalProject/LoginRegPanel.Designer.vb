@@ -48,7 +48,7 @@ Partial Class LoginRegPanel
         Me.Login_invalidpassword = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Login_invalidusername = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
+        Me.PASSWORDRECOVERY = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.passrec_showconfirmpassword = New Guna.UI2.WinForms.Guna2ToggleSwitch()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.passrec_showpassword = New Guna.UI2.WinForms.Guna2ToggleSwitch()
@@ -88,7 +88,7 @@ Partial Class LoginRegPanel
         CType(Me.Guna2PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
         Me.reg_logincont.SuspendLayout()
-        Me.Guna2ShadowPanel1.SuspendLayout()
+        Me.PASSWORDRECOVERY.SuspendLayout()
         Me.SuspendLayout()
         '
         'FormBorder
@@ -275,7 +275,7 @@ Partial Class LoginRegPanel
         Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Panel1.BorderRadius = 10
         Me.Guna2Panel1.Controls.Add(Me.reg_logincont)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2ShadowPanel1)
+        Me.Guna2Panel1.Controls.Add(Me.PASSWORDRECOVERY)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Guna2Panel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(189, Byte), Integer))
         Me.Guna2Panel1.Location = New System.Drawing.Point(392, 0)
@@ -432,12 +432,11 @@ Partial Class LoginRegPanel
         Me.Login_password.IconRightSize = New System.Drawing.Size(25, 25)
         Me.Login_password.Location = New System.Drawing.Point(79, 207)
         Me.Login_password.Name = "Login_password"
-        Me.Login_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
+        Me.Login_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Login_password.PlaceholderText = ""
         Me.Login_password.SelectedText = ""
         Me.Login_password.Size = New System.Drawing.Size(457, 45)
         Me.Login_password.TabIndex = 63
-        Me.Login_password.UseSystemPasswordChar = True
         '
         'Login_email
         '
@@ -525,40 +524,40 @@ Partial Class LoginRegPanel
         Me.Guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.TopCenter
         Me.Guna2HtmlLabel1.UseGdiPlusTextRendering = True
         '
-        'Guna2ShadowPanel1
+        'PASSWORDRECOVERY
         '
-        Me.Guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ShadowPanel1.Controls.Add(Me.passrec_showconfirmpassword)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel5)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.passrec_showpassword)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel34)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2TextBox4)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel6)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel15)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2TextBox1)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel30)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2TextBox3)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel32)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel4)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2Button1)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2Separator3)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2Button2)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2TextBox2)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Label1)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel16)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel28)
-        Me.Guna2ShadowPanel1.Controls.Add(Me.Guna2HtmlLabel29)
-        Me.Guna2ShadowPanel1.EdgeWidth = 50
-        Me.Guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
-        Me.Guna2ShadowPanel1.Location = New System.Drawing.Point(88, 55)
-        Me.Guna2ShadowPanel1.Name = "Guna2ShadowPanel1"
-        Me.Guna2ShadowPanel1.Radius = 5
-        Me.Guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black
-        Me.Guna2ShadowPanel1.ShadowDepth = 150
-        Me.Guna2ShadowPanel1.ShadowShift = 10
-        Me.Guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal
-        Me.Guna2ShadowPanel1.Size = New System.Drawing.Size(611, 635)
-        Me.Guna2ShadowPanel1.TabIndex = 76
+        Me.PASSWORDRECOVERY.BackColor = System.Drawing.Color.Transparent
+        Me.PASSWORDRECOVERY.Controls.Add(Me.passrec_showconfirmpassword)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2HtmlLabel5)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.passrec_showpassword)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2HtmlLabel34)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2TextBox4)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2HtmlLabel6)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2HtmlLabel15)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2TextBox1)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2HtmlLabel30)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2TextBox3)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2HtmlLabel32)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2HtmlLabel4)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2Button1)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2Separator3)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2Button2)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2TextBox2)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Label1)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2HtmlLabel16)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2HtmlLabel28)
+        Me.PASSWORDRECOVERY.Controls.Add(Me.Guna2HtmlLabel29)
+        Me.PASSWORDRECOVERY.EdgeWidth = 50
+        Me.PASSWORDRECOVERY.FillColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.PASSWORDRECOVERY.Location = New System.Drawing.Point(88, 55)
+        Me.PASSWORDRECOVERY.Name = "PASSWORDRECOVERY"
+        Me.PASSWORDRECOVERY.Radius = 5
+        Me.PASSWORDRECOVERY.ShadowColor = System.Drawing.Color.Black
+        Me.PASSWORDRECOVERY.ShadowDepth = 150
+        Me.PASSWORDRECOVERY.ShadowShift = 10
+        Me.PASSWORDRECOVERY.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal
+        Me.PASSWORDRECOVERY.Size = New System.Drawing.Size(611, 635)
+        Me.PASSWORDRECOVERY.TabIndex = 76
         '
         'passrec_showconfirmpassword
         '
@@ -1064,8 +1063,8 @@ Partial Class LoginRegPanel
         Me.Guna2Panel1.ResumeLayout(False)
         Me.reg_logincont.ResumeLayout(False)
         Me.reg_logincont.PerformLayout()
-        Me.Guna2ShadowPanel1.ResumeLayout(False)
-        Me.Guna2ShadowPanel1.PerformLayout()
+        Me.PASSWORDRECOVERY.ResumeLayout(False)
+        Me.PASSWORDRECOVERY.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1100,7 +1099,7 @@ Partial Class LoginRegPanel
     Friend WithEvents Login_invalidpassword As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Login_invalidusername As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2ShadowForm1 As Guna.UI2.WinForms.Guna2ShadowForm
-    Friend WithEvents Guna2ShadowPanel1 As Guna.UI2.WinForms.Guna2ShadowPanel
+    Friend WithEvents PASSWORDRECOVERY As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Separator3 As Guna.UI2.WinForms.Guna2Separator
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
