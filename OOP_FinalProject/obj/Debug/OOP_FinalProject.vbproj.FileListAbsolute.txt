@@ -141,3 +141,9 @@ C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProjec
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.xml
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.pdb
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.ADD_STUDENTS.resources
+C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.ADD_ADMIN.resources
+C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.ADD_DEPARTMENT.resources
+C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.ADD_SECTION.resources
+C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.ADD_COURSES.resources
+C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.ADD_CLASS.resources
+C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.ADD_ENROLLMENTS.resources

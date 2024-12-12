@@ -66,6 +66,29 @@ Module databaseConnection
             MessageBox.Show($"Database error: {ex.Message}")
         End Try
     End Sub
+
+    Public Function ExecuteQuery(query As String, params As Dictionary(Of String, Object)) As Integer
+        Dim rowsAffected As Integer = 0
+
+        Try
+            Using connection As New MySqlConnection(connectionString)
+                connection.Open()
+
+                Using command As New MySqlCommand(query, connection)
+                    For Each param In params
+                        command.Parameters.AddWithValue(param.Key, param.Value)
+                    Next
+
+                    rowsAffected = command.ExecuteNonQuery()
+                    Console.WriteLine($"Rows affected: {rowsAffected}")
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show($"Database error: {ex.Message}")
+        End Try
+
+        Return rowsAffected
+    End Function
 End Module
 
 

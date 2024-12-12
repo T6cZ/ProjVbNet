@@ -73,7 +73,4 @@ Public Class ADD_STUDENTS
         InsertStudentFromTextBoxes()
     End Sub
 
-    Private Sub studentid_TextChanged(sender As Object, e As EventArgs) Handles studentid.TextChanged
-
-    End Sub
 End Class
