@@ -22,6 +22,16 @@ OOP_FinalProject
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:OOP_FinalProject.My.Resources.Resources._class">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.admin">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:OOP_FinalProject.My.Resources.Resources.blob1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -38,6 +48,11 @@ OOP_FinalProject
 </summary>
 </member>
 <member name="P:OOP_FinalProject.My.Resources.Resources.Closed_Eye">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.course">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -68,6 +83,11 @@ OOP_FinalProject
 </summary>
 </member>
 <member name="P:OOP_FinalProject.My.Resources.Resources.Edu">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.enroll">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -188,6 +208,11 @@ OOP_FinalProject
 </summary>
 </member>
 <member name="P:OOP_FinalProject.My.Resources.Resources.Plus">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OOP_FinalProject.My.Resources.Resources.section">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

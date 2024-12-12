@@ -108,10 +108,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add Professor.Designer.vb">
+    <Compile Include="ADDUSERS\Add Professor.Designer.vb">
       <DependentUpon>Add Professor.vb</DependentUpon>
     </Compile>
-    <Compile Include="Add Professor.vb">
+    <Compile Include="ADDUSERS\Add Professor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADDUSERS\ADD_ADMIN.Designer.vb">
+      <DependentUpon>ADD_ADMIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADDUSERS\ADD_ADMIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADDUSERS\ADD_STUDENTS.Designer.vb">
+      <DependentUpon>ADD_STUDENTS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADDUSERS\ADD_STUDENTS.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminPanel.Designer.vb">
@@ -121,6 +133,36 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="databaseConnection.vb" />
+    <Compile Include="ENROLLMENTS\ADD_CLASS.Designer.vb">
+      <DependentUpon>ADD_CLASS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENTS\ADD_CLASS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENROLLMENTS\ADD_COURSES.Designer.vb">
+      <DependentUpon>ADD_COURSES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENTS\ADD_COURSES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENROLLMENTS\ADD_DEPARTMENT.Designer.vb">
+      <DependentUpon>ADD_DEPARTMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENTS\ADD_DEPARTMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENROLLMENTS\ADD_ENROLLMENTS.Designer.vb">
+      <DependentUpon>ADD_ENROLLMENTS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENTS\ADD_ENROLLMENTS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENROLLMENTS\ADD_SECTION.Designer.vb">
+      <DependentUpon>ADD_SECTION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENTS\ADD_SECTION.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LoginRegPanel.Designer.vb">
       <DependentUpon>LoginRegPanel.vb</DependentUpon>
     </Compile>
@@ -157,11 +199,32 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Add Professor.resx">
+    <EmbeddedResource Include="ADDUSERS\Add Professor.resx">
       <DependentUpon>Add Professor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADDUSERS\ADD_ADMIN.resx">
+      <DependentUpon>ADD_ADMIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADDUSERS\ADD_STUDENTS.resx">
+      <DependentUpon>ADD_STUDENTS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENTS\ADD_CLASS.resx">
+      <DependentUpon>ADD_CLASS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENTS\ADD_COURSES.resx">
+      <DependentUpon>ADD_COURSES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENTS\ADD_DEPARTMENT.resx">
+      <DependentUpon>ADD_DEPARTMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENTS\ADD_ENROLLMENTS.resx">
+      <DependentUpon>ADD_ENROLLMENTS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENTS\ADD_SECTION.resx">
+      <DependentUpon>ADD_SECTION.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginRegPanel.resx">
       <DependentUpon>LoginRegPanel.vb</DependentUpon>
@@ -315,6 +378,21 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\course.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\section.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enroll.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
