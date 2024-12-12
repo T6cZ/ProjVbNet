@@ -37,18 +37,17 @@ Partial Class Add_Professor
         Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.admin_txtcontactnum = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.admin_profyearandsection = New System.Windows.Forms.CheckedListBox()
-        Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.admin_courseCB = New System.Windows.Forms.CheckedListBox()
-        Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Department = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.admin_txtprofsem = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.user_id = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.admin_txtuserid = New Guna.UI2.WinForms.Guna2TextBox()
         Me.admin_comboxstatus = New System.Windows.Forms.ComboBox()
         Me.admin_comboxdeptid = New System.Windows.Forms.ComboBox()
         Me.admin_txtaddress = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.admin_txtpass = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.admin_txtemail = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel11 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.SuspendLayout()
         '
         'Guna2Elipse1
@@ -61,7 +60,7 @@ Partial Class Add_Professor
         Me.Guna2ControlBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2ControlBox1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2ControlBox1.IconColor = System.Drawing.Color.White
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(778, -1)
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(842, -1)
         Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
         Me.Guna2ControlBox1.Size = New System.Drawing.Size(45, 29)
         Me.Guna2ControlBox1.TabIndex = 0
@@ -84,7 +83,7 @@ Partial Class Add_Professor
         Me.admin_add.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.admin_add.ImageOffset = New System.Drawing.Point(-3, 0)
         Me.admin_add.ImageSize = New System.Drawing.Size(25, 25)
-        Me.admin_add.Location = New System.Drawing.Point(301, 577)
+        Me.admin_add.Location = New System.Drawing.Point(684, 248)
         Me.admin_add.Name = "admin_add"
         Me.admin_add.Size = New System.Drawing.Size(112, 45)
         Me.admin_add.TabIndex = 91
@@ -105,7 +104,7 @@ Partial Class Add_Professor
         Me.admin_txtprofid.Font = New System.Drawing.Font("Segoe UI Variable Text", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.admin_txtprofid.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.admin_txtprofid.HoverState.BorderColor = System.Drawing.Color.Black
-        Me.admin_txtprofid.Location = New System.Drawing.Point(239, 129)
+        Me.admin_txtprofid.Location = New System.Drawing.Point(265, 131)
         Me.admin_txtprofid.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_txtprofid.Name = "admin_txtprofid"
         Me.admin_txtprofid.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -124,7 +123,7 @@ Partial Class Add_Professor
         Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel5.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel5.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(111, 143)
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(137, 145)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
         Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(105, 23)
         Me.Guna2HtmlLabel5.TabIndex = 92
@@ -146,7 +145,7 @@ Partial Class Add_Professor
         Me.admin_txtproffirstname.Font = New System.Drawing.Font("Segoe UI Variable Text", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.admin_txtproffirstname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.admin_txtproffirstname.HoverState.BorderColor = System.Drawing.Color.Black
-        Me.admin_txtproffirstname.Location = New System.Drawing.Point(239, 176)
+        Me.admin_txtproffirstname.Location = New System.Drawing.Point(265, 178)
         Me.admin_txtproffirstname.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_txtproffirstname.Name = "admin_txtproffirstname"
         Me.admin_txtproffirstname.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -165,7 +164,7 @@ Partial Class Add_Professor
         Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel1.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel1.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(47, 187)
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(73, 189)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
         Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(169, 23)
         Me.Guna2HtmlLabel1.TabIndex = 94
@@ -187,7 +186,7 @@ Partial Class Add_Professor
         Me.admin_txtproflastname.Font = New System.Drawing.Font("Segoe UI Variable Text", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.admin_txtproflastname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.admin_txtproflastname.HoverState.BorderColor = System.Drawing.Color.Black
-        Me.admin_txtproflastname.Location = New System.Drawing.Point(239, 220)
+        Me.admin_txtproflastname.Location = New System.Drawing.Point(265, 217)
         Me.admin_txtproflastname.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_txtproflastname.Name = "admin_txtproflastname"
         Me.admin_txtproflastname.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -206,7 +205,7 @@ Partial Class Add_Professor
         Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel2.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel2.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(50, 231)
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(76, 228)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(166, 23)
         Me.Guna2HtmlLabel2.TabIndex = 96
@@ -228,7 +227,7 @@ Partial Class Add_Professor
         Me.admin_txtprofmiddlename.Font = New System.Drawing.Font("Segoe UI Variable Text", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.admin_txtprofmiddlename.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.admin_txtprofmiddlename.HoverState.BorderColor = System.Drawing.Color.Black
-        Me.admin_txtprofmiddlename.Location = New System.Drawing.Point(239, 264)
+        Me.admin_txtprofmiddlename.Location = New System.Drawing.Point(265, 261)
         Me.admin_txtprofmiddlename.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_txtprofmiddlename.Name = "admin_txtprofmiddlename"
         Me.admin_txtprofmiddlename.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -247,7 +246,7 @@ Partial Class Add_Professor
         Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel3.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel3.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(28, 275)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(54, 272)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
         Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(188, 23)
         Me.Guna2HtmlLabel3.TabIndex = 98
@@ -262,7 +261,7 @@ Partial Class Add_Professor
         Me.Guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel8.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel8.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(76, 397)
+        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(102, 394)
         Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
         Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(140, 23)
         Me.Guna2HtmlLabel8.TabIndex = 103
@@ -284,7 +283,7 @@ Partial Class Add_Professor
         Me.admin_txtcontactnum.Font = New System.Drawing.Font("Segoe UI Variable Text", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.admin_txtcontactnum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.admin_txtcontactnum.HoverState.BorderColor = System.Drawing.Color.Black
-        Me.admin_txtcontactnum.Location = New System.Drawing.Point(239, 386)
+        Me.admin_txtcontactnum.Location = New System.Drawing.Point(265, 383)
         Me.admin_txtcontactnum.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_txtcontactnum.Name = "admin_txtcontactnum"
         Me.admin_txtcontactnum.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -303,73 +302,13 @@ Partial Class Add_Professor
         Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel4.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel4.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(156, 514)
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(182, 511)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
         Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(60, 23)
         Me.Guna2HtmlLabel4.TabIndex = 107
         Me.Guna2HtmlLabel4.TabStop = False
         Me.Guna2HtmlLabel4.Text = "Status : "
         Me.Guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'admin_profyearandsection
-        '
-        Me.admin_profyearandsection.BackColor = System.Drawing.Color.Black
-        Me.admin_profyearandsection.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
-        Me.admin_profyearandsection.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.admin_profyearandsection.FormattingEnabled = True
-        Me.admin_profyearandsection.HorizontalScrollbar = True
-        Me.admin_profyearandsection.Items.AddRange(New Object() {""})
-        Me.admin_profyearandsection.Location = New System.Drawing.Point(601, 125)
-        Me.admin_profyearandsection.Name = "admin_profyearandsection"
-        Me.admin_profyearandsection.Size = New System.Drawing.Size(210, 235)
-        Me.admin_profyearandsection.Sorted = True
-        Me.admin_profyearandsection.TabIndex = 114
-        Me.admin_profyearandsection.UseCompatibleTextRendering = True
-        '
-        'Guna2HtmlLabel9
-        '
-        Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Segoe UI Variable Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.Guna2HtmlLabel9.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel9.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(452, 126)
-        Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
-        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(140, 23)
-        Me.Guna2HtmlLabel9.TabIndex = 113
-        Me.Guna2HtmlLabel9.TabStop = False
-        Me.Guna2HtmlLabel9.Text = "Year and Section : "
-        Me.Guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'admin_courseCB
-        '
-        Me.admin_courseCB.BackColor = System.Drawing.Color.Black
-        Me.admin_courseCB.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
-        Me.admin_courseCB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.admin_courseCB.FormattingEnabled = True
-        Me.admin_courseCB.HorizontalScrollbar = True
-        Me.admin_courseCB.Items.AddRange(New Object() {"ACTIVE ", "INACTIVE"})
-        Me.admin_courseCB.Location = New System.Drawing.Point(617, 491)
-        Me.admin_courseCB.Name = "admin_courseCB"
-        Me.admin_courseCB.Size = New System.Drawing.Size(174, 88)
-        Me.admin_courseCB.Sorted = True
-        Me.admin_courseCB.TabIndex = 112
-        Me.admin_courseCB.UseCompatibleTextRendering = True
-        '
-        'Guna2HtmlLabel10
-        '
-        Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Segoe UI Variable Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.Guna2HtmlLabel10.IsContextMenuEnabled = False
-        Me.Guna2HtmlLabel10.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(504, 67)
-        Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
-        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(72, 23)
-        Me.Guna2HtmlLabel10.TabIndex = 111
-        Me.Guna2HtmlLabel10.TabStop = False
-        Me.Guna2HtmlLabel10.Text = "Courses : "
-        Me.Guna2HtmlLabel10.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Department
         '
@@ -378,7 +317,7 @@ Partial Class Add_Professor
         Me.Department.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Department.IsContextMenuEnabled = False
         Me.Department.IsSelectionEnabled = False
-        Me.Department.Location = New System.Drawing.Point(94, 337)
+        Me.Department.Location = New System.Drawing.Point(120, 334)
         Me.Department.Name = "Department"
         Me.Department.Size = New System.Drawing.Size(122, 23)
         Me.Department.TabIndex = 101
@@ -386,84 +325,23 @@ Partial Class Add_Professor
         Me.Department.Text = "Department ID:"
         Me.Department.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'admin_txtprofsem
-        '
-        Me.admin_txtprofsem.AutoCompleteCustomSource.AddRange(New String() {"CS"})
-        Me.admin_txtprofsem.BackColor = System.Drawing.Color.Transparent
-        Me.admin_txtprofsem.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.admin_txtprofsem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.admin_txtprofsem.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.admin_txtprofsem.FocusedColor = System.Drawing.Color.Black
-        Me.admin_txtprofsem.FocusedState.BorderColor = System.Drawing.Color.Black
-        Me.admin_txtprofsem.Font = New System.Drawing.Font("Segoe UI Variable Text", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.admin_txtprofsem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.admin_txtprofsem.ItemHeight = 25
-        Me.admin_txtprofsem.Items.AddRange(New Object() {"CCS", "EDUC", "NURSING"})
-        Me.admin_txtprofsem.Location = New System.Drawing.Point(601, 424)
-        Me.admin_txtprofsem.Name = "admin_txtprofsem"
-        Me.admin_txtprofsem.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.admin_txtprofsem.Size = New System.Drawing.Size(166, 31)
-        Me.admin_txtprofsem.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
-        Me.admin_txtprofsem.TabIndex = 105
-        Me.admin_txtprofsem.TextOffset = New System.Drawing.Point(-5, 1)
-        '
-        'user_id
-        '
-        Me.user_id.BackColor = System.Drawing.Color.Transparent
-        Me.user_id.Font = New System.Drawing.Font("Segoe UI Variable Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.user_id.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.user_id.IsContextMenuEnabled = False
-        Me.user_id.IsSelectionEnabled = False
-        Me.user_id.Location = New System.Drawing.Point(150, 104)
-        Me.user_id.Name = "user_id"
-        Me.user_id.Size = New System.Drawing.Size(66, 23)
-        Me.user_id.TabIndex = 115
-        Me.user_id.TabStop = False
-        Me.user_id.Text = "User ID : "
-        Me.user_id.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'admin_txtuserid
-        '
-        Me.admin_txtuserid.Animated = True
-        Me.admin_txtuserid.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.admin_txtuserid.DefaultText = ""
-        Me.admin_txtuserid.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.admin_txtuserid.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.admin_txtuserid.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.admin_txtuserid.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.admin_txtuserid.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.admin_txtuserid.FocusedState.BorderColor = System.Drawing.Color.Black
-        Me.admin_txtuserid.Font = New System.Drawing.Font("Segoe UI Variable Text", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.admin_txtuserid.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
-        Me.admin_txtuserid.HoverState.BorderColor = System.Drawing.Color.Black
-        Me.admin_txtuserid.Location = New System.Drawing.Point(239, 93)
-        Me.admin_txtuserid.Margin = New System.Windows.Forms.Padding(4)
-        Me.admin_txtuserid.Name = "admin_txtuserid"
-        Me.admin_txtuserid.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.admin_txtuserid.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(111, Byte), Integer))
-        Me.admin_txtuserid.PlaceholderText = "user-01"
-        Me.admin_txtuserid.SelectedText = ""
-        Me.admin_txtuserid.Size = New System.Drawing.Size(166, 34)
-        Me.admin_txtuserid.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
-        Me.admin_txtuserid.TabIndex = 116
-        Me.admin_txtuserid.TextOffset = New System.Drawing.Point(-5, 1)
-        '
         'admin_comboxstatus
         '
+        Me.admin_comboxstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.admin_comboxstatus.FormattingEnabled = True
         Me.admin_comboxstatus.Items.AddRange(New Object() {"ACTIVE", "INACTIVE"})
-        Me.admin_comboxstatus.Location = New System.Drawing.Point(262, 516)
+        Me.admin_comboxstatus.Location = New System.Drawing.Point(265, 513)
         Me.admin_comboxstatus.Name = "admin_comboxstatus"
-        Me.admin_comboxstatus.Size = New System.Drawing.Size(121, 21)
+        Me.admin_comboxstatus.Size = New System.Drawing.Size(166, 21)
         Me.admin_comboxstatus.TabIndex = 118
         '
         'admin_comboxdeptid
         '
+        Me.admin_comboxdeptid.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.admin_comboxdeptid.FormattingEnabled = True
-        Me.admin_comboxdeptid.Items.AddRange(New Object() {"BUS", "CS", "ENG", "IT ", "MED"})
-        Me.admin_comboxdeptid.Location = New System.Drawing.Point(262, 337)
+        Me.admin_comboxdeptid.Location = New System.Drawing.Point(265, 334)
         Me.admin_comboxdeptid.Name = "admin_comboxdeptid"
-        Me.admin_comboxdeptid.Size = New System.Drawing.Size(121, 21)
+        Me.admin_comboxdeptid.Size = New System.Drawing.Size(166, 21)
         Me.admin_comboxdeptid.TabIndex = 119
         '
         'admin_txtaddress
@@ -480,12 +358,12 @@ Partial Class Add_Professor
         Me.admin_txtaddress.Font = New System.Drawing.Font("Segoe UI Variable Text", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.admin_txtaddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
         Me.admin_txtaddress.HoverState.BorderColor = System.Drawing.Color.Black
-        Me.admin_txtaddress.Location = New System.Drawing.Point(239, 445)
+        Me.admin_txtaddress.Location = New System.Drawing.Point(265, 442)
         Me.admin_txtaddress.Margin = New System.Windows.Forms.Padding(4)
         Me.admin_txtaddress.Name = "admin_txtaddress"
         Me.admin_txtaddress.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.admin_txtaddress.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(111, Byte), Integer))
-        Me.admin_txtaddress.PlaceholderText = "aaaaaaaaaaaaaaa"
+        Me.admin_txtaddress.PlaceholderText = "Enter Addrress"
         Me.admin_txtaddress.SelectedText = ""
         Me.admin_txtaddress.Size = New System.Drawing.Size(166, 34)
         Me.admin_txtaddress.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
@@ -499,7 +377,7 @@ Partial Class Add_Professor
         Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.Guna2HtmlLabel6.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel6.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(140, 456)
+        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(166, 453)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
         Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(76, 23)
         Me.Guna2HtmlLabel6.TabIndex = 120
@@ -507,25 +385,136 @@ Partial Class Add_Professor
         Me.Guna2HtmlLabel6.Text = "Address: :"
         Me.Guna2HtmlLabel6.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'admin_txtpass
+        '
+        Me.admin_txtpass.Animated = True
+        Me.admin_txtpass.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.admin_txtpass.DefaultText = ""
+        Me.admin_txtpass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.admin_txtpass.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.admin_txtpass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.admin_txtpass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.admin_txtpass.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.admin_txtpass.FocusedState.BorderColor = System.Drawing.Color.Black
+        Me.admin_txtpass.Font = New System.Drawing.Font("Segoe UI Variable Text", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.admin_txtpass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.admin_txtpass.HoverState.BorderColor = System.Drawing.Color.Black
+        Me.admin_txtpass.Location = New System.Drawing.Point(630, 178)
+        Me.admin_txtpass.Margin = New System.Windows.Forms.Padding(4)
+        Me.admin_txtpass.Name = "admin_txtpass"
+        Me.admin_txtpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.admin_txtpass.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(111, Byte), Integer))
+        Me.admin_txtpass.PlaceholderText = "Enter password"
+        Me.admin_txtpass.SelectedText = ""
+        Me.admin_txtpass.Size = New System.Drawing.Size(166, 31)
+        Me.admin_txtpass.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
+        Me.admin_txtpass.TabIndex = 125
+        Me.admin_txtpass.TextOffset = New System.Drawing.Point(-5, 1)
+        '
+        'Guna2HtmlLabel7
+        '
+        Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Segoe UI Variable Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.Guna2HtmlLabel7.IsContextMenuEnabled = False
+        Me.Guna2HtmlLabel7.IsSelectionEnabled = False
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(524, 186)
+        Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
+        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(83, 23)
+        Me.Guna2HtmlLabel7.TabIndex = 124
+        Me.Guna2HtmlLabel7.TabStop = False
+        Me.Guna2HtmlLabel7.Text = "Password :"
+        Me.Guna2HtmlLabel7.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'admin_txtemail
+        '
+        Me.admin_txtemail.Animated = True
+        Me.admin_txtemail.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.admin_txtemail.DefaultText = ""
+        Me.admin_txtemail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.admin_txtemail.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.admin_txtemail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.admin_txtemail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.admin_txtemail.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.admin_txtemail.FocusedState.BorderColor = System.Drawing.Color.Black
+        Me.admin_txtemail.Font = New System.Drawing.Font("Segoe UI Variable Text", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.admin_txtemail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(161, Byte), Integer))
+        Me.admin_txtemail.HoverState.BorderColor = System.Drawing.Color.Black
+        Me.admin_txtemail.Location = New System.Drawing.Point(630, 131)
+        Me.admin_txtemail.Margin = New System.Windows.Forms.Padding(4)
+        Me.admin_txtemail.Name = "admin_txtemail"
+        Me.admin_txtemail.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.admin_txtemail.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(111, Byte), Integer))
+        Me.admin_txtemail.PlaceholderText = "@plpasig.edu"
+        Me.admin_txtemail.SelectedText = ""
+        Me.admin_txtemail.Size = New System.Drawing.Size(166, 34)
+        Me.admin_txtemail.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
+        Me.admin_txtemail.TabIndex = 123
+        Me.admin_txtemail.TextOffset = New System.Drawing.Point(-5, 1)
+        '
+        'Guna2HtmlLabel9
+        '
+        Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Segoe UI Variable Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.Guna2HtmlLabel9.IsContextMenuEnabled = False
+        Me.Guna2HtmlLabel9.IsSelectionEnabled = False
+        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(557, 142)
+        Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
+        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(50, 23)
+        Me.Guna2HtmlLabel9.TabIndex = 122
+        Me.Guna2HtmlLabel9.TabStop = False
+        Me.Guna2HtmlLabel9.Text = "Email : "
+        Me.Guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Guna2HtmlLabel10
+        '
+        Me.Guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel10.Font = New System.Drawing.Font("Segoe UI Variable Display", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel10.ForeColor = System.Drawing.Color.Turquoise
+        Me.Guna2HtmlLabel10.IsContextMenuEnabled = False
+        Me.Guna2HtmlLabel10.IsSelectionEnabled = False
+        Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(521, 70)
+        Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
+        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(275, 38)
+        Me.Guna2HtmlLabel10.TabIndex = 126
+        Me.Guna2HtmlLabel10.TabStop = False
+        Me.Guna2HtmlLabel10.Text = "Account Credentials :"
+        Me.Guna2HtmlLabel10.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Guna2HtmlLabel11
+        '
+        Me.Guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel11.Font = New System.Drawing.Font("Segoe UI Variable Display", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel11.ForeColor = System.Drawing.Color.Turquoise
+        Me.Guna2HtmlLabel11.IsContextMenuEnabled = False
+        Me.Guna2HtmlLabel11.IsSelectionEnabled = False
+        Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(54, 70)
+        Me.Guna2HtmlLabel11.Name = "Guna2HtmlLabel11"
+        Me.Guna2HtmlLabel11.Size = New System.Drawing.Size(292, 38)
+        Me.Guna2HtmlLabel11.TabIndex = 127
+        Me.Guna2HtmlLabel11.TabStop = False
+        Me.Guna2HtmlLabel11.Text = "Professor Information :"
+        Me.Guna2HtmlLabel11.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Add_Professor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(823, 644)
+        Me.ClientSize = New System.Drawing.Size(887, 644)
+        Me.Controls.Add(Me.Guna2HtmlLabel11)
+        Me.Controls.Add(Me.Guna2HtmlLabel10)
+        Me.Controls.Add(Me.admin_txtpass)
+        Me.Controls.Add(Me.Guna2HtmlLabel7)
+        Me.Controls.Add(Me.admin_txtemail)
+        Me.Controls.Add(Me.Guna2HtmlLabel9)
         Me.Controls.Add(Me.admin_txtaddress)
         Me.Controls.Add(Me.Guna2HtmlLabel6)
         Me.Controls.Add(Me.admin_comboxdeptid)
         Me.Controls.Add(Me.admin_comboxstatus)
-        Me.Controls.Add(Me.admin_txtuserid)
-        Me.Controls.Add(Me.user_id)
-        Me.Controls.Add(Me.admin_profyearandsection)
-        Me.Controls.Add(Me.Guna2HtmlLabel9)
-        Me.Controls.Add(Me.admin_courseCB)
-        Me.Controls.Add(Me.Guna2HtmlLabel10)
         Me.Controls.Add(Me.Guna2HtmlLabel4)
         Me.Controls.Add(Me.admin_txtcontactnum)
-        Me.Controls.Add(Me.admin_txtprofsem)
         Me.Controls.Add(Me.Guna2HtmlLabel8)
         Me.Controls.Add(Me.Department)
         Me.Controls.Add(Me.admin_txtprofmiddlename)
@@ -560,16 +549,15 @@ Partial Class Add_Professor
     Friend WithEvents admin_txtcontactnum As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel8 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents admin_profyearandsection As CheckedListBox
-    Friend WithEvents Guna2HtmlLabel9 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents admin_courseCB As CheckedListBox
-    Friend WithEvents Guna2HtmlLabel10 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents admin_txtprofsem As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Department As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents admin_txtuserid As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents user_id As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents admin_comboxstatus As ComboBox
     Friend WithEvents admin_comboxdeptid As ComboBox
     Friend WithEvents admin_txtaddress As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents admin_txtpass As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents admin_txtemail As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2HtmlLabel9 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel10 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel11 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

@@ -1,4 +1,5 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Security.Cryptography.X509Certificates
+Imports MySql.Data.MySqlClient
 
 
 
@@ -36,7 +37,6 @@ Public Class AdminPanel
     Private Sub AdminPanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadProfessorData()
         PopulateDepartments()
-        PopulateSemesters()
 
         admin_profdatatable.ReadOnly = True
         admin_profdatatable.SelectionMode = DataGridViewSelectionMode.FullRowSelect
@@ -84,11 +84,7 @@ Public Class AdminPanel
     End Sub
 
 
-    Private Sub PopulateSemesters()
-        admin_txtprofsemester.Items.Clear()
-        admin_txtprofsemester.Items.Add("First Semester")
-        admin_txtprofsemester.Items.Add("Second Semester")
-    End Sub
+
 
     Private Sub admin_profdatatable_SelectionChanged(sender As Object, e As EventArgs) Handles admin_profdatatable.SelectionChanged
         If admin_profdatatable.SelectedRows.Count > 0 Then
@@ -97,8 +93,7 @@ Public Class AdminPanel
             admin_txtprofid.Text = selectedRow.Cells("Professor ID").Value.ToString()
             admin_txtprofname.Text = $"{selectedRow.Cells("First Name").Value} {selectedRow.Cells("Middle Name").Value} {selectedRow.Cells("Last Name").Value}"
             admin_txtprofdepartment.Text = selectedRow.Cells("Department Name").Value.ToString()
-            admin_txtprofsemester.Text = "" ' Leave empty unless tied to your logic
-            admin_txtprofacademicyear.Text = "" ' Leave empty unless tied to your logic
+            admin_txtprofacademicyear.Text = ""
             admin_statustgl.Checked = selectedRow.Cells("Status").Value.ToString() = "ACTIVE"
         End If
     End Sub
@@ -151,5 +146,57 @@ Public Class AdminPanel
 
         Add_Professor.Show()
 
+    End Sub
+
+    Private Sub admin_profdelete_Click(sender As Object, e As EventArgs) Handles admin_profdelete.Click
+        If admin_profdatatable.SelectedRows.Count > 0 Then
+            Dim selectedRow As DataGridViewRow = admin_profdatatable.SelectedRows(0)
+
+            Dim profID As String = selectedRow.Cells("PROFESSOR_ID").Value.ToString()
+            Dim profFirstName As String = selectedRow.Cells("FIRST_NAME").Value.ToString()
+            Dim profMiddleName As String = If(IsDBNull(selectedRow.Cells("MIDDLE_NAME").Value), "", selectedRow.Cells("MIDDLE_NAME").Value.ToString())
+            Dim profLastName As String = selectedRow.Cells("LAST_NAME").Value.ToString()
+            Dim deptID As String = selectedRow.Cells("DEPARTMENT_ID").Value.ToString()
+            Dim status As String = selectedRow.Cells("STATUS").Value.ToString()
+
+            Dim result As DialogResult = MessageBox.Show(
+            $"Are you sure you want to delete this professor?{vbNewLine}" &
+            $"ID: {profID}{vbNewLine}Name: {profFirstName} {profMiddleName} {profLastName} {vbNewLine}" &
+            $"Department: {deptID}{vbNewLine}Status: {status}",
+            "Confirm Deletion",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question)
+
+            If result = DialogResult.Yes Then
+                DeleteProf(profID, profFirstName, profMiddleName, profLastName, deptID, status, selectedRow.Index)
+            End If
+        Else
+            MessageBox.Show("No row selected. Please select a row to delete.", "Delete Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
+
+    Sub DeleteProf(profID As String, profFirstName As String, profMiddleName As String, profLastName As String, deptID As Integer, status As String, rowIndex As Integer)
+        Dim connectionString As String = "Server=localhost;user=root;Database=university_grading_system"
+        Try
+            Using connection As New MySqlConnection(connectionString)
+                connection.Open()
+
+                Dim deleteQuery As String = "DELETE FROM PROFESSOR WHERE PROFESSOR_ID = @professor_id AND FIRST_NAME = @first_name AND MIDDLE_NAME = @middle_name AND LAST_NAME = @last_name AND DEPARTMENT_ID = @DEPARTMENT_ID"
+                Using command As New MySqlCommand(deleteQuery, connection)
+                    command.Parameters.AddWithValue("@professor_id", profID)
+                    command.Parameters.AddWithValue("@first_name", profFirstName)
+                    command.Parameters.AddWithValue("@middle_name", profMiddleName)
+                    command.Parameters.AddWithValue("@last_name", profLastName)
+                    command.Parameters.AddWithValue("@department_id", deptID)
+                    command.Parameters.AddWithValue("@status", status)
+                    command.ExecuteNonQuery()
+                End Using
+
+                admin_profdatatable.Rows.RemoveAt(rowIndex)
+                MessageBox.Show("Professor deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 End Class
