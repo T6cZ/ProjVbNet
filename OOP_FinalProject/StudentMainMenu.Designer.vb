@@ -44,7 +44,7 @@ Partial Class StudentMainMenu
         Me.namelbl = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.stp_sidebar = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.BackToLogin = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.stp_dashboard = New Guna.UI2.WinForms.Guna2Panel()
@@ -358,7 +358,7 @@ Partial Class StudentMainMenu
         'stp_sidebar
         '
         Me.stp_sidebar.BorderRadius = 15
-        Me.stp_sidebar.Controls.Add(Me.Guna2Button2)
+        Me.stp_sidebar.Controls.Add(Me.BackToLogin)
         Me.stp_sidebar.Controls.Add(Me.Guna2Button1)
         Me.stp_sidebar.Controls.Add(Me.Guna2Button3)
         Me.stp_sidebar.CustomizableEdges.BottomRight = False
@@ -370,29 +370,29 @@ Partial Class StudentMainMenu
         Me.stp_sidebar.Size = New System.Drawing.Size(55, 750)
         Me.stp_sidebar.TabIndex = 0
         '
-        'Guna2Button2
+        'BackToLogin
         '
-        Me.Guna2Button2.Animated = True
-        Me.Guna2Button2.BorderColor = System.Drawing.Color.WhiteSmoke
-        Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.Guna2Button2.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.Guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.Guna2Button2.Image = Global.OOP_FinalProject.My.Resources.Resources.LoginOutIcon1
-        Me.Guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Guna2Button2.ImageOffset = New System.Drawing.Point(5, 0)
-        Me.Guna2Button2.ImageSize = New System.Drawing.Size(27, 27)
-        Me.Guna2Button2.Location = New System.Drawing.Point(0, 682)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(55, 45)
-        Me.Guna2Button2.TabIndex = 6
-        Me.Guna2Button2.TextOffset = New System.Drawing.Point(14, 0)
-        Me.Guna2Button2.UseTransparentBackground = True
+        Me.BackToLogin.Animated = True
+        Me.BackToLogin.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.BackToLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BackToLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BackToLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BackToLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BackToLogin.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.BackToLogin.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.BackToLogin.Font = New System.Drawing.Font("Segoe UI Variable Display", 10.5!, System.Drawing.FontStyle.Bold)
+        Me.BackToLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.BackToLogin.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.BackToLogin.Image = Global.OOP_FinalProject.My.Resources.Resources.LoginOutIcon1
+        Me.BackToLogin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.BackToLogin.ImageOffset = New System.Drawing.Point(5, 0)
+        Me.BackToLogin.ImageSize = New System.Drawing.Size(27, 27)
+        Me.BackToLogin.Location = New System.Drawing.Point(0, 682)
+        Me.BackToLogin.Name = "BackToLogin"
+        Me.BackToLogin.Size = New System.Drawing.Size(55, 45)
+        Me.BackToLogin.TabIndex = 6
+        Me.BackToLogin.TextOffset = New System.Drawing.Point(14, 0)
+        Me.BackToLogin.UseTransparentBackground = True
         '
         'Guna2Button1
         '
@@ -1456,7 +1456,7 @@ Partial Class StudentMainMenu
     Friend WithEvents stp_datatable As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Guna2HtmlLabel32 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents emailaddresslbl As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents BackToLogin As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents stp_clocktimer As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Timer1 As Timer
     Friend WithEvents stp_currentdate As Guna.UI2.WinForms.Guna2HtmlLabel

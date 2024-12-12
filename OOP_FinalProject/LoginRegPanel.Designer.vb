@@ -23,6 +23,7 @@ Partial Class LoginRegPanel
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginRegPanel))
         Me.FormBorder = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -36,9 +37,11 @@ Partial Class LoginRegPanel
         Me.Guna2PictureBox5 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.PasswordRecovery = New Guna.UI2.WinForms.Guna2ShadowPanel()
+        Me.rec_invalidpassword = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.rec_showconfirmpassword = New Guna.UI2.WinForms.Guna2ToggleSwitch()
-        Me.confirmpass_showhide = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.rec_showpassword = New Guna.UI2.WinForms.Guna2ToggleSwitch()
+        Me.rec_backtologin = New System.Windows.Forms.PictureBox()
+        Me.confirmpass_showhide = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel34 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.rec_confirmpass = New Guna.UI2.WinForms.Guna2TextBox()
         Me.newpass_showhide = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -46,13 +49,12 @@ Partial Class LoginRegPanel
         Me.rec_newpass = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel30 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.rec_Email = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.invalid_emailaccount = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.loginback = New Guna.UI2.WinForms.Guna2Button()
+        Me.rec_resetbutton = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Separator3 = New Guna.UI2.WinForms.Guna2Separator()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.rec_ID = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.invalid_IDaccount = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.rec_AccountChecker = New Guna.UI2.WinForms.Guna2Button()
+        Me.rec_AccountID = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.rec_invalidcredentials = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel29 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.LogIn = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Me.login_showpass = New Guna.UI2.WinForms.Guna2ToggleSwitch()
@@ -74,7 +76,7 @@ Partial Class LoginRegPanel
         Me.Guna2HtmlLabel38 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel36 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
-        Me.login_errortimer = New System.Windows.Forms.Timer(Me.components)
+        Me.errortimer = New System.Windows.Forms.Timer(Me.components)
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Login_panel_cont.SuspendLayout()
         CType(Me.Guna2PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,6 +87,7 @@ Partial Class LoginRegPanel
         CType(Me.Guna2PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
         Me.PasswordRecovery.SuspendLayout()
+        CType(Me.rec_backtologin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LogIn.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -284,9 +287,11 @@ Partial Class LoginRegPanel
         'PasswordRecovery
         '
         Me.PasswordRecovery.BackColor = System.Drawing.Color.Transparent
+        Me.PasswordRecovery.Controls.Add(Me.rec_invalidpassword)
         Me.PasswordRecovery.Controls.Add(Me.rec_showconfirmpassword)
-        Me.PasswordRecovery.Controls.Add(Me.confirmpass_showhide)
         Me.PasswordRecovery.Controls.Add(Me.rec_showpassword)
+        Me.PasswordRecovery.Controls.Add(Me.rec_backtologin)
+        Me.PasswordRecovery.Controls.Add(Me.confirmpass_showhide)
         Me.PasswordRecovery.Controls.Add(Me.Guna2HtmlLabel34)
         Me.PasswordRecovery.Controls.Add(Me.rec_confirmpass)
         Me.PasswordRecovery.Controls.Add(Me.newpass_showhide)
@@ -294,13 +299,12 @@ Partial Class LoginRegPanel
         Me.PasswordRecovery.Controls.Add(Me.rec_newpass)
         Me.PasswordRecovery.Controls.Add(Me.Guna2HtmlLabel30)
         Me.PasswordRecovery.Controls.Add(Me.rec_Email)
-        Me.PasswordRecovery.Controls.Add(Me.invalid_emailaccount)
         Me.PasswordRecovery.Controls.Add(Me.Guna2HtmlLabel4)
-        Me.PasswordRecovery.Controls.Add(Me.loginback)
+        Me.PasswordRecovery.Controls.Add(Me.rec_resetbutton)
         Me.PasswordRecovery.Controls.Add(Me.Guna2Separator3)
-        Me.PasswordRecovery.Controls.Add(Me.Guna2Button2)
-        Me.PasswordRecovery.Controls.Add(Me.rec_ID)
-        Me.PasswordRecovery.Controls.Add(Me.invalid_IDaccount)
+        Me.PasswordRecovery.Controls.Add(Me.rec_AccountChecker)
+        Me.PasswordRecovery.Controls.Add(Me.rec_AccountID)
+        Me.PasswordRecovery.Controls.Add(Me.rec_invalidcredentials)
         Me.PasswordRecovery.Controls.Add(Me.Guna2HtmlLabel29)
         Me.PasswordRecovery.EdgeWidth = 50
         Me.PasswordRecovery.FillColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
@@ -314,6 +318,22 @@ Partial Class LoginRegPanel
         Me.PasswordRecovery.Size = New System.Drawing.Size(611, 635)
         Me.PasswordRecovery.TabIndex = 76
         '
+        'rec_invalidpassword
+        '
+        Me.rec_invalidpassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.rec_invalidpassword.Font = New System.Drawing.Font("Segoe UI Variable Small", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rec_invalidpassword.ForeColor = System.Drawing.Color.Maroon
+        Me.rec_invalidpassword.IsContextMenuEnabled = False
+        Me.rec_invalidpassword.IsSelectionEnabled = False
+        Me.rec_invalidpassword.Location = New System.Drawing.Point(87, 454)
+        Me.rec_invalidpassword.Name = "rec_invalidpassword"
+        Me.rec_invalidpassword.Size = New System.Drawing.Size(196, 18)
+        Me.rec_invalidpassword.TabIndex = 109
+        Me.rec_invalidpassword.TabStop = False
+        Me.rec_invalidpassword.Text = "Password Mismatched. Try Again"
+        Me.rec_invalidpassword.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        Me.rec_invalidpassword.Visible = False
+        '
         'rec_showconfirmpassword
         '
         Me.rec_showconfirmpassword.Animated = True
@@ -324,7 +344,7 @@ Partial Class LoginRegPanel
         Me.rec_showconfirmpassword.CheckedState.InnerBorderColor = System.Drawing.Color.White
         Me.rec_showconfirmpassword.CheckedState.InnerBorderRadius = 3
         Me.rec_showconfirmpassword.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.rec_showconfirmpassword.Location = New System.Drawing.Point(453, 427)
+        Me.rec_showconfirmpassword.Location = New System.Drawing.Point(453, 418)
         Me.rec_showconfirmpassword.Name = "rec_showconfirmpassword"
         Me.rec_showconfirmpassword.Size = New System.Drawing.Size(30, 17)
         Me.rec_showconfirmpassword.TabIndex = 107
@@ -334,21 +354,7 @@ Partial Class LoginRegPanel
         Me.rec_showconfirmpassword.UncheckedState.InnerBorderColor = System.Drawing.Color.White
         Me.rec_showconfirmpassword.UncheckedState.InnerBorderRadius = 3
         Me.rec_showconfirmpassword.UncheckedState.InnerColor = System.Drawing.Color.White
-        '
-        'confirmpass_showhide
-        '
-        Me.confirmpass_showhide.BackColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
-        Me.confirmpass_showhide.Font = New System.Drawing.Font("Segoe UI Variable Display", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.confirmpass_showhide.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.confirmpass_showhide.IsContextMenuEnabled = False
-        Me.confirmpass_showhide.IsSelectionEnabled = False
-        Me.confirmpass_showhide.Location = New System.Drawing.Point(489, 425)
-        Me.confirmpass_showhide.Name = "confirmpass_showhide"
-        Me.confirmpass_showhide.Size = New System.Drawing.Size(34, 18)
-        Me.confirmpass_showhide.TabIndex = 106
-        Me.confirmpass_showhide.TabStop = False
-        Me.confirmpass_showhide.Text = "Show"
-        Me.confirmpass_showhide.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        Me.rec_showconfirmpassword.Visible = False
         '
         'rec_showpassword
         '
@@ -360,7 +366,7 @@ Partial Class LoginRegPanel
         Me.rec_showpassword.CheckedState.InnerBorderColor = System.Drawing.Color.White
         Me.rec_showpassword.CheckedState.InnerBorderRadius = 3
         Me.rec_showpassword.CheckedState.InnerColor = System.Drawing.Color.White
-        Me.rec_showpassword.Location = New System.Drawing.Point(453, 370)
+        Me.rec_showpassword.Location = New System.Drawing.Point(453, 359)
         Me.rec_showpassword.Name = "rec_showpassword"
         Me.rec_showpassword.Size = New System.Drawing.Size(30, 17)
         Me.rec_showpassword.TabIndex = 105
@@ -370,6 +376,34 @@ Partial Class LoginRegPanel
         Me.rec_showpassword.UncheckedState.InnerBorderColor = System.Drawing.Color.White
         Me.rec_showpassword.UncheckedState.InnerBorderRadius = 3
         Me.rec_showpassword.UncheckedState.InnerColor = System.Drawing.Color.White
+        Me.rec_showpassword.Visible = False
+        '
+        'rec_backtologin
+        '
+        Me.rec_backtologin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.rec_backtologin.Image = CType(resources.GetObject("rec_backtologin.Image"), System.Drawing.Image)
+        Me.rec_backtologin.Location = New System.Drawing.Point(509, 30)
+        Me.rec_backtologin.Name = "rec_backtologin"
+        Me.rec_backtologin.Size = New System.Drawing.Size(62, 61)
+        Me.rec_backtologin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.rec_backtologin.TabIndex = 108
+        Me.rec_backtologin.TabStop = False
+        '
+        'confirmpass_showhide
+        '
+        Me.confirmpass_showhide.BackColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.confirmpass_showhide.Font = New System.Drawing.Font("Segoe UI Variable Display", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.confirmpass_showhide.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.confirmpass_showhide.IsContextMenuEnabled = False
+        Me.confirmpass_showhide.IsSelectionEnabled = False
+        Me.confirmpass_showhide.Location = New System.Drawing.Point(489, 416)
+        Me.confirmpass_showhide.Name = "confirmpass_showhide"
+        Me.confirmpass_showhide.Size = New System.Drawing.Size(29, 18)
+        Me.confirmpass_showhide.TabIndex = 106
+        Me.confirmpass_showhide.TabStop = False
+        Me.confirmpass_showhide.Text = "Hide"
+        Me.confirmpass_showhide.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        Me.confirmpass_showhide.Visible = False
         '
         'Guna2HtmlLabel34
         '
@@ -378,13 +412,14 @@ Partial Class LoginRegPanel
         Me.Guna2HtmlLabel34.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
         Me.Guna2HtmlLabel34.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel34.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel34.Location = New System.Drawing.Point(89, 406)
+        Me.Guna2HtmlLabel34.Location = New System.Drawing.Point(89, 397)
         Me.Guna2HtmlLabel34.Name = "Guna2HtmlLabel34"
         Me.Guna2HtmlLabel34.Size = New System.Drawing.Size(107, 18)
         Me.Guna2HtmlLabel34.TabIndex = 85
         Me.Guna2HtmlLabel34.TabStop = False
         Me.Guna2HtmlLabel34.Text = "Confirm Password"
         Me.Guna2HtmlLabel34.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        Me.Guna2HtmlLabel34.Visible = False
         '
         'rec_confirmpass
         '
@@ -411,13 +446,15 @@ Partial Class LoginRegPanel
         Me.rec_confirmpass.IconRight = Global.OOP_FinalProject.My.Resources.Resources.Gray
         Me.rec_confirmpass.IconRightOffset = New System.Drawing.Point(15, 0)
         Me.rec_confirmpass.IconRightSize = New System.Drawing.Size(65, 25)
-        Me.rec_confirmpass.Location = New System.Drawing.Point(78, 414)
+        Me.rec_confirmpass.Location = New System.Drawing.Point(78, 405)
+        Me.rec_confirmpass.MaxLength = 15
         Me.rec_confirmpass.Name = "rec_confirmpass"
         Me.rec_confirmpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.rec_confirmpass.PlaceholderText = ""
         Me.rec_confirmpass.SelectedText = ""
         Me.rec_confirmpass.Size = New System.Drawing.Size(457, 45)
         Me.rec_confirmpass.TabIndex = 84
+        Me.rec_confirmpass.Visible = False
         '
         'newpass_showhide
         '
@@ -426,13 +463,14 @@ Partial Class LoginRegPanel
         Me.newpass_showhide.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
         Me.newpass_showhide.IsContextMenuEnabled = False
         Me.newpass_showhide.IsSelectionEnabled = False
-        Me.newpass_showhide.Location = New System.Drawing.Point(489, 368)
+        Me.newpass_showhide.Location = New System.Drawing.Point(489, 357)
         Me.newpass_showhide.Name = "newpass_showhide"
-        Me.newpass_showhide.Size = New System.Drawing.Size(34, 18)
+        Me.newpass_showhide.Size = New System.Drawing.Size(29, 18)
         Me.newpass_showhide.TabIndex = 83
         Me.newpass_showhide.TabStop = False
-        Me.newpass_showhide.Text = "Show"
+        Me.newpass_showhide.Text = "Hide"
         Me.newpass_showhide.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        Me.newpass_showhide.Visible = False
         '
         'Guna2HtmlLabel15
         '
@@ -441,13 +479,14 @@ Partial Class LoginRegPanel
         Me.Guna2HtmlLabel15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
         Me.Guna2HtmlLabel15.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel15.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel15.Location = New System.Drawing.Point(88, 348)
+        Me.Guna2HtmlLabel15.Location = New System.Drawing.Point(88, 337)
         Me.Guna2HtmlLabel15.Name = "Guna2HtmlLabel15"
         Me.Guna2HtmlLabel15.Size = New System.Drawing.Size(86, 18)
         Me.Guna2HtmlLabel15.TabIndex = 81
         Me.Guna2HtmlLabel15.TabStop = False
         Me.Guna2HtmlLabel15.Text = "New Password"
         Me.Guna2HtmlLabel15.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        Me.Guna2HtmlLabel15.Visible = False
         '
         'rec_newpass
         '
@@ -474,13 +513,15 @@ Partial Class LoginRegPanel
         Me.rec_newpass.IconRight = Global.OOP_FinalProject.My.Resources.Resources.Gray
         Me.rec_newpass.IconRightOffset = New System.Drawing.Point(15, 0)
         Me.rec_newpass.IconRightSize = New System.Drawing.Size(65, 25)
-        Me.rec_newpass.Location = New System.Drawing.Point(77, 356)
+        Me.rec_newpass.Location = New System.Drawing.Point(77, 345)
+        Me.rec_newpass.MaxLength = 15
         Me.rec_newpass.Name = "rec_newpass"
         Me.rec_newpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.rec_newpass.PlaceholderText = ""
         Me.rec_newpass.SelectedText = ""
         Me.rec_newpass.Size = New System.Drawing.Size(457, 45)
         Me.rec_newpass.TabIndex = 80
+        Me.rec_newpass.Visible = False
         '
         'Guna2HtmlLabel30
         '
@@ -489,7 +530,7 @@ Partial Class LoginRegPanel
         Me.Guna2HtmlLabel30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
         Me.Guna2HtmlLabel30.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel30.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel30.Location = New System.Drawing.Point(89, 194)
+        Me.Guna2HtmlLabel30.Location = New System.Drawing.Point(87, 183)
         Me.Guna2HtmlLabel30.Name = "Guna2HtmlLabel30"
         Me.Guna2HtmlLabel30.Size = New System.Drawing.Size(32, 18)
         Me.Guna2HtmlLabel30.TabIndex = 77
@@ -517,28 +558,14 @@ Partial Class LoginRegPanel
         Me.rec_Email.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.rec_Email.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(203, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(213, Byte), Integer))
         Me.rec_Email.HoverState.ForeColor = System.Drawing.Color.Black
-        Me.rec_Email.Location = New System.Drawing.Point(79, 203)
+        Me.rec_Email.Location = New System.Drawing.Point(77, 193)
+        Me.rec_Email.MaxLength = 30
         Me.rec_Email.Name = "rec_Email"
         Me.rec_Email.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.rec_Email.PlaceholderText = ""
         Me.rec_Email.SelectedText = ""
         Me.rec_Email.Size = New System.Drawing.Size(457, 45)
         Me.rec_Email.TabIndex = 76
-        '
-        'invalid_emailaccount
-        '
-        Me.invalid_emailaccount.BackColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
-        Me.invalid_emailaccount.Font = New System.Drawing.Font("Segoe UI Variable Small", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.invalid_emailaccount.ForeColor = System.Drawing.Color.Maroon
-        Me.invalid_emailaccount.IsContextMenuEnabled = False
-        Me.invalid_emailaccount.IsSelectionEnabled = False
-        Me.invalid_emailaccount.Location = New System.Drawing.Point(86, 249)
-        Me.invalid_emailaccount.Name = "invalid_emailaccount"
-        Me.invalid_emailaccount.Size = New System.Drawing.Size(141, 18)
-        Me.invalid_emailaccount.TabIndex = 79
-        Me.invalid_emailaccount.TabStop = False
-        Me.invalid_emailaccount.Text = "Invalid Email. Try again."
-        Me.invalid_emailaccount.TextAlignment = System.Drawing.ContentAlignment.TopCenter
         '
         'Guna2HtmlLabel4
         '
@@ -547,7 +574,7 @@ Partial Class LoginRegPanel
         Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
         Me.Guna2HtmlLabel4.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel4.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(89, 118)
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(87, 127)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
         Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(65, 18)
         Me.Guna2HtmlLabel4.TabIndex = 72
@@ -555,95 +582,98 @@ Partial Class LoginRegPanel
         Me.Guna2HtmlLabel4.Text = "Account ID"
         Me.Guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.TopCenter
         '
-        'loginback
+        'rec_resetbutton
         '
-        Me.loginback.Animated = True
-        Me.loginback.AnimatedGIF = True
-        Me.loginback.BorderRadius = 5
-        Me.loginback.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.loginback.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.loginback.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.loginback.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.loginback.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.loginback.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(29, Byte), Integer))
-        Me.loginback.Font = New System.Drawing.Font("Segoe UI Variable Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.loginback.ForeColor = System.Drawing.Color.White
-        Me.loginback.Location = New System.Drawing.Point(78, 475)
-        Me.loginback.Name = "loginback"
-        Me.loginback.Size = New System.Drawing.Size(457, 45)
-        Me.loginback.TabIndex = 68
-        Me.loginback.Text = "Reset Password"
+        Me.rec_resetbutton.Animated = True
+        Me.rec_resetbutton.AnimatedGIF = True
+        Me.rec_resetbutton.BorderRadius = 5
+        Me.rec_resetbutton.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.rec_resetbutton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.rec_resetbutton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.rec_resetbutton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.rec_resetbutton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.rec_resetbutton.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(29, Byte), Integer))
+        Me.rec_resetbutton.Font = New System.Drawing.Font("Segoe UI Variable Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rec_resetbutton.ForeColor = System.Drawing.Color.White
+        Me.rec_resetbutton.Location = New System.Drawing.Point(78, 487)
+        Me.rec_resetbutton.Name = "rec_resetbutton"
+        Me.rec_resetbutton.Size = New System.Drawing.Size(457, 45)
+        Me.rec_resetbutton.TabIndex = 68
+        Me.rec_resetbutton.Text = "Reset Password"
+        Me.rec_resetbutton.Visible = False
         '
         'Guna2Separator3
         '
         Me.Guna2Separator3.FillColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
         Me.Guna2Separator3.FillThickness = 2
-        Me.Guna2Separator3.Location = New System.Drawing.Point(77, 547)
+        Me.Guna2Separator3.Location = New System.Drawing.Point(77, 552)
         Me.Guna2Separator3.Name = "Guna2Separator3"
         Me.Guna2Separator3.Size = New System.Drawing.Size(459, 17)
         Me.Guna2Separator3.TabIndex = 66
         '
-        'Guna2Button2
+        'rec_AccountChecker
         '
-        Me.Guna2Button2.Animated = True
-        Me.Guna2Button2.AnimatedGIF = True
-        Me.Guna2Button2.BorderRadius = 5
-        Me.Guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(29, Byte), Integer))
-        Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI Variable Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.Location = New System.Drawing.Point(78, 294)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(457, 45)
-        Me.Guna2Button2.TabIndex = 64
-        Me.Guna2Button2.Text = "Check Credentials"
+        Me.rec_AccountChecker.Animated = True
+        Me.rec_AccountChecker.AnimatedGIF = True
+        Me.rec_AccountChecker.BorderRadius = 5
+        Me.rec_AccountChecker.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.rec_AccountChecker.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.rec_AccountChecker.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.rec_AccountChecker.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.rec_AccountChecker.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.rec_AccountChecker.FillColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(29, Byte), Integer))
+        Me.rec_AccountChecker.Font = New System.Drawing.Font("Segoe UI Variable Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rec_AccountChecker.ForeColor = System.Drawing.Color.White
+        Me.rec_AccountChecker.Location = New System.Drawing.Point(77, 278)
+        Me.rec_AccountChecker.Name = "rec_AccountChecker"
+        Me.rec_AccountChecker.Size = New System.Drawing.Size(457, 45)
+        Me.rec_AccountChecker.TabIndex = 64
+        Me.rec_AccountChecker.Text = "Check Credentials"
         '
-        'rec_ID
+        'rec_AccountID
         '
-        Me.rec_ID.AcceptsTab = True
-        Me.rec_ID.Animated = True
-        Me.rec_ID.BorderColor = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(189, Byte), Integer))
-        Me.rec_ID.BorderRadius = 5
-        Me.rec_ID.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.rec_ID.DefaultText = ""
-        Me.rec_ID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.rec_ID.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.rec_ID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.rec_ID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.rec_ID.FillColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
-        Me.rec_ID.FocusedState.BorderColor = System.Drawing.Color.Black
-        Me.rec_ID.FocusedState.FillColor = System.Drawing.Color.Transparent
-        Me.rec_ID.FocusedState.ForeColor = System.Drawing.Color.Black
-        Me.rec_ID.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rec_ID.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.rec_ID.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(203, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(213, Byte), Integer))
-        Me.rec_ID.HoverState.ForeColor = System.Drawing.Color.Black
-        Me.rec_ID.Location = New System.Drawing.Point(79, 127)
-        Me.rec_ID.Name = "rec_ID"
-        Me.rec_ID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.rec_ID.PlaceholderText = ""
-        Me.rec_ID.SelectedText = ""
-        Me.rec_ID.Size = New System.Drawing.Size(457, 45)
-        Me.rec_ID.TabIndex = 62
+        Me.rec_AccountID.AcceptsTab = True
+        Me.rec_AccountID.Animated = True
+        Me.rec_AccountID.BorderColor = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(189, Byte), Integer))
+        Me.rec_AccountID.BorderRadius = 5
+        Me.rec_AccountID.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.rec_AccountID.DefaultText = ""
+        Me.rec_AccountID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.rec_AccountID.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.rec_AccountID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.rec_AccountID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.rec_AccountID.FillColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.rec_AccountID.FocusedState.BorderColor = System.Drawing.Color.Black
+        Me.rec_AccountID.FocusedState.FillColor = System.Drawing.Color.Transparent
+        Me.rec_AccountID.FocusedState.ForeColor = System.Drawing.Color.Black
+        Me.rec_AccountID.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rec_AccountID.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.rec_AccountID.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(203, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(213, Byte), Integer))
+        Me.rec_AccountID.HoverState.ForeColor = System.Drawing.Color.Black
+        Me.rec_AccountID.Location = New System.Drawing.Point(77, 136)
+        Me.rec_AccountID.MaxLength = 12
+        Me.rec_AccountID.Name = "rec_AccountID"
+        Me.rec_AccountID.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.rec_AccountID.PlaceholderText = ""
+        Me.rec_AccountID.SelectedText = ""
+        Me.rec_AccountID.Size = New System.Drawing.Size(457, 45)
+        Me.rec_AccountID.TabIndex = 62
         '
-        'invalid_IDaccount
+        'rec_invalidcredentials
         '
-        Me.invalid_IDaccount.BackColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
-        Me.invalid_IDaccount.Font = New System.Drawing.Font("Segoe UI Variable Small", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.invalid_IDaccount.ForeColor = System.Drawing.Color.Maroon
-        Me.invalid_IDaccount.IsContextMenuEnabled = False
-        Me.invalid_IDaccount.IsSelectionEnabled = False
-        Me.invalid_IDaccount.Location = New System.Drawing.Point(86, 174)
-        Me.invalid_IDaccount.Name = "invalid_IDaccount"
-        Me.invalid_IDaccount.Size = New System.Drawing.Size(174, 18)
-        Me.invalid_IDaccount.TabIndex = 73
-        Me.invalid_IDaccount.TabStop = False
-        Me.invalid_IDaccount.Text = "Invalid Account ID. Try again."
-        Me.invalid_IDaccount.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        Me.rec_invalidcredentials.BackColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.rec_invalidcredentials.Font = New System.Drawing.Font("Segoe UI Variable Small", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rec_invalidcredentials.ForeColor = System.Drawing.Color.Maroon
+        Me.rec_invalidcredentials.IsContextMenuEnabled = False
+        Me.rec_invalidcredentials.IsSelectionEnabled = False
+        Me.rec_invalidcredentials.Location = New System.Drawing.Point(87, 242)
+        Me.rec_invalidcredentials.Name = "rec_invalidcredentials"
+        Me.rec_invalidcredentials.Size = New System.Drawing.Size(178, 18)
+        Me.rec_invalidcredentials.TabIndex = 73
+        Me.rec_invalidcredentials.TabStop = False
+        Me.rec_invalidcredentials.Text = "Invalid Credentials. Try Again."
+        Me.rec_invalidcredentials.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        Me.rec_invalidcredentials.Visible = False
         '
         'Guna2HtmlLabel29
         '
@@ -652,7 +682,7 @@ Partial Class LoginRegPanel
         Me.Guna2HtmlLabel29.ForeColor = System.Drawing.Color.Black
         Me.Guna2HtmlLabel29.IsContextMenuEnabled = False
         Me.Guna2HtmlLabel29.IsSelectionEnabled = False
-        Me.Guna2HtmlLabel29.Location = New System.Drawing.Point(79, 55)
+        Me.Guna2HtmlLabel29.Location = New System.Drawing.Point(78, 72)
         Me.Guna2HtmlLabel29.Name = "Guna2HtmlLabel29"
         Me.Guna2HtmlLabel29.Size = New System.Drawing.Size(339, 51)
         Me.Guna2HtmlLabel29.TabIndex = 0
@@ -717,10 +747,10 @@ Partial Class LoginRegPanel
         Me.login_showhide.IsSelectionEnabled = False
         Me.login_showhide.Location = New System.Drawing.Point(496, 200)
         Me.login_showhide.Name = "login_showhide"
-        Me.login_showhide.Size = New System.Drawing.Size(34, 18)
+        Me.login_showhide.Size = New System.Drawing.Size(29, 18)
         Me.login_showhide.TabIndex = 106
         Me.login_showhide.TabStop = False
-        Me.login_showhide.Text = "Show"
+        Me.login_showhide.Text = "Hide"
         Me.login_showhide.TextAlignment = System.Drawing.ContentAlignment.TopCenter
         '
         'Guna2HtmlLabel2
@@ -807,6 +837,7 @@ Partial Class LoginRegPanel
         Me.Login_password.IconRightOffset = New System.Drawing.Point(15, 0)
         Me.Login_password.IconRightSize = New System.Drawing.Size(25, 25)
         Me.Login_password.Location = New System.Drawing.Point(79, 188)
+        Me.Login_password.MaxLength = 15
         Me.Login_password.Name = "Login_password"
         Me.Login_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.Login_password.PlaceholderText = ""
@@ -835,6 +866,7 @@ Partial Class LoginRegPanel
         Me.Login_email.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(203, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(213, Byte), Integer))
         Me.Login_email.HoverState.ForeColor = System.Drawing.Color.Black
         Me.Login_email.Location = New System.Drawing.Point(79, 127)
+        Me.Login_email.MaxLength = 20
         Me.Login_email.Name = "Login_email"
         Me.Login_email.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Login_email.PlaceholderText = ""
@@ -984,9 +1016,9 @@ Partial Class LoginRegPanel
         Me.Guna2HtmlLabel36.Text = "Password"
         Me.Guna2HtmlLabel36.TextAlignment = System.Drawing.ContentAlignment.TopCenter
         '
-        'login_errortimer
+        'errortimer
         '
-        Me.login_errortimer.Interval = 2500
+        Me.errortimer.Interval = 2500
         '
         'LoginRegPanel
         '
@@ -1014,6 +1046,7 @@ Partial Class LoginRegPanel
         Me.Guna2Panel1.ResumeLayout(False)
         Me.PasswordRecovery.ResumeLayout(False)
         Me.PasswordRecovery.PerformLayout()
+        CType(Me.rec_backtologin, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LogIn.ResumeLayout(False)
         Me.LogIn.PerformLayout()
         Me.ResumeLayout(False)
@@ -1052,16 +1085,15 @@ Partial Class LoginRegPanel
     Friend WithEvents PasswordRecovery As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Separator3 As Guna.UI2.WinForms.Guna2Separator
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents rec_ID As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents rec_AccountChecker As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents rec_AccountID As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel29 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel30 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents rec_Email As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents invalid_emailaccount As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents invalid_IDaccount As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents rec_invalidcredentials As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents login_showpass As Guna.UI2.WinForms.Guna2ToggleSwitch
     Friend WithEvents login_showhide As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents login_errortimer As Timer
+    Friend WithEvents errortimer As Timer
     Friend WithEvents rec_showconfirmpassword As Guna.UI2.WinForms.Guna2ToggleSwitch
     Friend WithEvents confirmpass_showhide As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents rec_showpassword As Guna.UI2.WinForms.Guna2ToggleSwitch
@@ -1070,5 +1102,7 @@ Partial Class LoginRegPanel
     Friend WithEvents newpass_showhide As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel15 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents rec_newpass As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents loginback As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents rec_resetbutton As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents rec_backtologin As PictureBox
+    Friend WithEvents rec_invalidpassword As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
