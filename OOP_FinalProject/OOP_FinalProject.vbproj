@@ -108,10 +108,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add Professor.Designer.vb">
+    <Compile Include="ADDUSERS\Add Professor.Designer.vb">
       <DependentUpon>Add Professor.vb</DependentUpon>
     </Compile>
-    <Compile Include="Add Professor.vb">
+    <Compile Include="ADDUSERS\Add Professor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADDUSERS\ADD_STUDENTS.Designer.vb">
+      <DependentUpon>ADD_STUDENTS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADDUSERS\ADD_STUDENTS.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminPanel.Designer.vb">
@@ -157,8 +163,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Add Professor.resx">
+    <EmbeddedResource Include="ADDUSERS\Add Professor.resx">
       <DependentUpon>Add Professor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADDUSERS\ADD_STUDENTS.resx">
+      <DependentUpon>ADD_STUDENTS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.vb</DependentUpon>
@@ -315,6 +324,21 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\course.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\section.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enroll.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
