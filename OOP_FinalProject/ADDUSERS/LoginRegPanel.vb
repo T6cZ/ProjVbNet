@@ -14,35 +14,36 @@ Public Class LoginRegPanel
 
         If userRow IsNot Nothing Then
             Dim userID As String = userRow("USER_ID").ToString()
-            Debug.WriteLine($"Logged-in USER_ID: {userID}")
 
             If userRow("ROLE").ToString().ToUpper() = "PROFESSOR" Then
-                Dim profDashboard As New ProfessorPanel(userID)
-                profDashboard.Show()
-                Me.Hide()
+                Dim professorQuery As String = "SELECT PROFESSOR_ID FROM PROFESSOR WHERE USER_ID = @userID"
+                Dim professorParams As New Dictionary(Of String, Object) From {
+                    {"@userID", userID}
+                }
+
+                Dim professorRow As DataRow = databaseConnection.GetDataRow(professorQuery, professorParams)
+
+                If professorRow IsNot Nothing Then
+                    Dim professorID As String = professorRow("PROFESSOR_ID").ToString()
+                    Dim professorDashboard As New ProfessorPanel(professorID)
+                    professorDashboard.Show()
+                Else
+                    MessageBox.Show("Professor details not found.")
+                End If
 
             ElseIf userRow("ROLE").ToString().ToUpper() = "STUDENT" Then
                 Dim studentDashboard As New StudentMainMenu(userID)
                 studentDashboard.Show()
-                Me.Hide()
 
             ElseIf userRow("ROLE").ToString().ToUpper() = "ADMIN" Then
-                Dim adminQuery As String = "SELECT ADMIN_ID FROM ADMIN WHERE USER_ID = @userID"
-                Dim adminParams As New Dictionary(Of String, Object) From {
-                    {"@userID", userID}
-                }
+                AdminPanel.Show()
 
-                Dim adminRow As DataRow = databaseConnection.GetDataRow(adminQuery, adminParams)
-
-                If adminRow IsNot Nothing Then
-                    Dim adminID As String = adminRow("ADMIN_ID").ToString()
-                    Dim adminDashboard As New AdminPanel(adminID)
-                    adminDashboard.Show()
-                    Me.Hide()
-                Else
-                    MessageBox.Show("Admin details not found.")
-                End If
+            Else
+                MessageBox.Show("Invalid role detected.")
             End If
+
+            Me.Hide()
+            clear()
 
         Else
             Login_invalidcredentials.Visible = True
