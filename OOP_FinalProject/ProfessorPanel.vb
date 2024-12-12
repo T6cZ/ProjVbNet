@@ -101,6 +101,13 @@ Public Class ProfessorPanel
             Dim sectionTable As DataTable = databaseConnection.GetDataTable(query, params)
 
             If sectionTable IsNot Nothing AndAlso sectionTable.Rows.Count > 0 Then
+                sectionlistsgrading.DataSource = sectionTable
+                sectionlistsgrading.DisplayMember = "SECTION_NAME"
+                sectionlistsgrading.ValueMember = "SECTION_NAME"
+                sectionlistsgrading.SelectedIndex = -1
+            End If
+
+            If sectionTable IsNot Nothing AndAlso sectionTable.Rows.Count > 0 Then
                 prof_sectiondrop.DataSource = sectionTable
                 prof_sectiondrop.DisplayMember = "SECTION_NAME"
                 prof_sectiondrop.ValueMember = "SECTION_NAME"
@@ -178,5 +185,63 @@ Public Class ProfessorPanel
             semestralgwa.Text = If(selectedRow.Cells("SEMESTRAL_GWA").Value IsNot DBNull.Value, selectedRow.Cells("SEMESTRAL_GWA").Value.ToString(), "0")
             remarkslbl.Text = If(selectedRow.Cells("REMARKS").Value IsNot DBNull.Value, selectedRow.Cells("REMARKS").Value.ToString(), "N/A")
         End If
+    End Sub
+
+    Private Sub loadstudentgrades(selectedSectiongrading As String)
+
+        If String.IsNullOrEmpty(selectedSectiongrading) Then Exit Sub
+
+        Dim query As String =
+        "SELECT " &
+        "    CONCAT(s.LAST_NAME, ', ', s.FIRST_NAME, ' ', IFNULL(s.MIDDLE_NAME, '')) AS FullName, " &
+        "    c.COURSE_ID, " &
+        "    at.ASSESSMENT_NAME AS AssessmentType, " &
+        "    a.ITEM_NAME, " &
+        "    sg.SCORE_OBTAINED, " &
+        "    a.MAX_SCORE " &
+        "FROM " &
+        "    ENROLLMENTS e " &
+        "INNER JOIN STUDENT s ON e.STUDENT_ID = s.STUDENT_ID " &
+        "INNER JOIN CLASSES c ON e.CLASS_ID = c.CLASS_ID " &
+        "INNER JOIN ASSESSMENTS a ON c.CLASS_ID = a.CLASS_ID " &
+        "INNER JOIN ASSESSMENT_TYPES at ON a.ASSESSMENT_TYPE_ID = at.ASSESSMENT_TYPE_ID " &
+        "INNER JOIN STUDENT_GRADES sg ON e.STUDENT_ID = sg.STUDENT_ID AND a.ASSESSMENT_ID = sg.ASSESSMENT_ID " &
+        "WHERE " &
+        "    c.SECTION_ID = (SELECT SECTION_ID FROM SECTIONS WHERE SECTION_NAME = @sectionName)"
+
+        Dim params As New Dictionary(Of String, Object) From {
+        {"@sectionName", selectedSectiongrading}
+    }
+
+        Try
+            Dim assessmentsDataTable As DataTable = databaseConnection.GetDataTable(query, params)
+
+            If assessmentsDataTable Is Nothing OrElse assessmentsDataTable.Rows.Count = 0 Then
+                MessageBox.Show("No student grades found for this section.")
+                ' Optionally, clear the data binding to the UI control
+            Else
+                ' Bind studentGradesTable to the UI control (e.g., assessmentsDataTable)
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show($"Failed to load student grades: {ex.Message}")
+        End Try
+    End Sub
+
+    Private Sub sectionlistsgrading_SelectedIndexChanged(sender As Object, e As EventArgs) Handles sectionlistsgrading.SelectedIndexChanged
+        If sectionlistsgrading.SelectedIndex <> -1 Then
+            Dim selectedSectiongrading As String = sectionlistsgrading.SelectedValue.ToString()
+            loadstudentgrades(selectedSectiongrading)
+        End If
+    End Sub
+
+    Private Sub prof_sbdashboard_Click(sender As Object, e As EventArgs) Handles prof_sbdashboard.Click
+        profdashboard.BringToFront()
+
+    End Sub
+
+    Private Sub prof_sbmanagegrade_Click(sender As Object, e As EventArgs) Handles prof_sbmanagegrade.Click
+        profgrading.BringToFront()
+
     End Sub
 End Class
