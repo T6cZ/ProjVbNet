@@ -274,8 +274,8 @@ Partial Class LoginRegPanel
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Panel1.BorderRadius = 10
-        Me.Guna2Panel1.Controls.Add(Me.PasswordRecovery)
         Me.Guna2Panel1.Controls.Add(Me.LogIn)
+        Me.Guna2Panel1.Controls.Add(Me.PasswordRecovery)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Guna2Panel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(189, Byte), Integer))
         Me.Guna2Panel1.Location = New System.Drawing.Point(392, 0)

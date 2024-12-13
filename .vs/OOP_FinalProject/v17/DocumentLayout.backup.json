@@ -1,18 +1,101 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\",
+  "WorkspaceRootPath": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\mando\\source\\repos\\projvbnet\\itofinalnalegit\\oop_finalproject\\adminpanel.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\adminpanel.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\source\\repos\\projvbnet\\oop_finalproject\\enrollments\\add_enrollments.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\mando\\source\\repos\\projvbnet\\itofinalnalegit\\oop_finalproject\\addusers\\add_students.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\addusers\\add_students.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\mando\\source\\repos\\projvbnet\\itofinalnalegit\\oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\databaseconnection.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\databaseconnection.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\loginregpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\addusers\\add_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\addusers\\add_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\addusers\\add_students.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\addusers\\add_students.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\enrollments\\add_courses.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\enrollments\\add_courses.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\enrollments\\add_enrollments.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\enrollments\\add_enrollments.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\enrollments\\add_class.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\enrollments\\add_class.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\mando\\source\\repos\\projvbnet\\itofinalnalegit\\oop_finalproject\\addusers\\add_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\addusers\\add_admin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\enrollments\\add_department.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\enrollments\\add_department.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\my project\\application.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\my project\\application.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\addusers\\add professor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\addusers\\add professor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\enrollments\\add_section.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\enrollments\\add_section.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\mando\\source\\repos\\projvbnet\\itofinalnalegit\\oop_finalproject\\enrollments\\add_section.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\enrollments\\add_section.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\addusers\\add professor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\addusers\\add professor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\enrollments\\add_department.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\enrollments\\add_department.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\enrollments\\add_enrollments.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\enrollments\\add_enrollments.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|OOP_FinalProject||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\studentmainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,15 +105,19 @@
       "DocumentGroups": [
         {
           "DockedHeight": 596,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -38,24 +125,282 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ADD_ENROLLMENTS.vb",
-              "DocumentMoniker": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\ENROLLMENTS\\ADD_ENROLLMENTS.vb",
+              "DocumentIndex": 0,
+              "Title": "AdminPanel.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\AdminPanel.Designer.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\AdminPanel.Designer.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\AdminPanel.Designer.vb",
+              "RelativeToolTip": "OOP_FinalProject\\AdminPanel.Designer.vb",
+              "ViewState": "AgIAAHoRAAAAAAAAAAAYwJIRAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-13T00:26:57.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginRegPanel.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\LoginRegPanel.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\LoginRegPanel.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\LoginRegPanel.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\LoginRegPanel.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-13T00:04:40.443Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ADD_ADMIN.vb",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ADDUSERS\\ADD_ADMIN.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ADDUSERS\\ADD_ADMIN.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ADDUSERS\\ADD_ADMIN.vb",
+              "RelativeToolTip": "OOP_FinalProject\\ADDUSERS\\ADD_ADMIN.vb",
+              "ViewState": "AgIAADUAAAAAAAAAAAAuwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T23:38:41.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ADD_STUDENTS.vb",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ADDUSERS\\ADD_STUDENTS.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ADDUSERS\\ADD_STUDENTS.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ADDUSERS\\ADD_STUDENTS.vb",
+              "RelativeToolTip": "OOP_FinalProject\\ADDUSERS\\ADD_STUDENTS.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T22:38:30.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ADD_ENROLLMENTS.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_ENROLLMENTS.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\ENROLLMENTS\\ADD_ENROLLMENTS.vb",
-              "ToolTip": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\ENROLLMENTS\\ADD_ENROLLMENTS.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_ENROLLMENTS.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\ENROLLMENTS\\ADD_ENROLLMENTS.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T21:42:35.115Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ADD_COURSES.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_COURSES.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ENROLLMENTS\\ADD_COURSES.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_COURSES.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\ENROLLMENTS\\ADD_COURSES.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T21:42:33.823Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ADD_CLASS.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_CLASS.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ENROLLMENTS\\ADD_CLASS.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_CLASS.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\ENROLLMENTS\\ADD_CLASS.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T21:42:32.492Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ADD_ADMIN.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ADDUSERS\\ADD_ADMIN.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ADDUSERS\\ADD_ADMIN.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ADDUSERS\\ADD_ADMIN.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\ADDUSERS\\ADD_ADMIN.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T21:42:26.288Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ADD_STUDENTS.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ADDUSERS\\ADD_STUDENTS.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ADDUSERS\\ADD_STUDENTS.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ADDUSERS\\ADD_STUDENTS.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\ADDUSERS\\ADD_STUDENTS.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T21:42:25.118Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ADD_SECTION.vb",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_SECTION.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ENROLLMENTS\\ADD_SECTION.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_SECTION.vb",
+              "RelativeToolTip": "OOP_FinalProject\\ENROLLMENTS\\ADD_SECTION.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA6wB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T17:27:59.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ADD_SECTION.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_SECTION.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ENROLLMENTS\\ADD_SECTION.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_SECTION.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\ENROLLMENTS\\ADD_SECTION.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T17:27:56.629Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ADD_DEPARTMENT.vb",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_DEPARTMENT.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ENROLLMENTS\\ADD_DEPARTMENT.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_DEPARTMENT.vb",
+              "RelativeToolTip": "OOP_FinalProject\\ENROLLMENTS\\ADD_DEPARTMENT.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T14:34:25.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Add Professor.vb",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ADDUSERS\\Add Professor.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ADDUSERS\\Add Professor.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ADDUSERS\\Add Professor.vb",
+              "RelativeToolTip": "OOP_FinalProject\\ADDUSERS\\Add Professor.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T14:04:44.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Add Professor.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ADDUSERS\\Add Professor.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ADDUSERS\\Add Professor.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ADDUSERS\\Add Professor.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\ADDUSERS\\Add Professor.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T14:03:58.175Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ADD_DEPARTMENT.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_DEPARTMENT.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ENROLLMENTS\\ADD_DEPARTMENT.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_DEPARTMENT.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\ENROLLMENTS\\ADD_DEPARTMENT.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T14:00:14.33Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Application.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\My Project\\Application.Designer.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\My Project\\Application.Designer.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\My Project\\Application.Designer.vb",
+              "RelativeToolTip": "OOP_FinalProject\\My Project\\Application.Designer.vb",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAawBkAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T13:42:15.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OOP_FinalProject",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\OOP_FinalProject.vbproj",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\OOP_FinalProject.vbproj",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\OOP_FinalProject.vbproj*",
+              "RelativeToolTip": "OOP_FinalProject\\OOP_FinalProject.vbproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-12T13:40:50.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProfessorPanel.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ProfessorPanel.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ProfessorPanel.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ProfessorPanel.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\ProfessorPanel.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T13:03:49.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "databaseConnection.vb",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\databaseConnection.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\databaseConnection.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\databaseConnection.vb",
+              "RelativeToolTip": "OOP_FinalProject\\databaseConnection.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T13:03:34.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StudentMainMenu.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\StudentMainMenu.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\StudentMainMenu.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\StudentMainMenu.vb [Design]",
+              "RelativeToolTip": "OOP_FinalProject\\StudentMainMenu.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T13:03:39.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginRegPanel.vb",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\LoginRegPanel.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\LoginRegPanel.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\LoginRegPanel.vb",
+              "RelativeToolTip": "OOP_FinalProject\\LoginRegPanel.vb",
+              "ViewState": "AgIAANIAAAAAAAAAAAAgwOQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-12T08:37:34.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ADD_ENROLLMENTS.vb",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_ENROLLMENTS.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\ENROLLMENTS\\ADD_ENROLLMENTS.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\ENROLLMENTS\\ADD_ENROLLMENTS.vb",
               "RelativeToolTip": "OOP_FinalProject\\ENROLLMENTS\\ADD_ENROLLMENTS.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA6wBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-12-12T07:55:46.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AdminPanel.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\AdminPanel.vb",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\AdminPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\AdminPanel.vb",
-              "ToolTip": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\AdminPanel.vb [Design]",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\AdminPanel.vb [Design]",
               "RelativeToolTip": "OOP_FinalProject\\AdminPanel.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-12-04T13:28:49.248Z",
@@ -63,13 +408,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AdminPanel.vb",
-              "DocumentMoniker": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\AdminPanel.vb",
+              "DocumentMoniker": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\AdminPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\AdminPanel.vb",
-              "ToolTip": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\AdminPanel.vb",
+              "ToolTip": "C:\\Users\\mando\\source\\repos\\ProjVbNet\\itofinalnalegit\\OOP_FinalProject\\AdminPanel.vb",
               "RelativeToolTip": "OOP_FinalProject\\AdminPanel.vb",
-              "ViewState": "AgIAANwBAAAAAAAAAAApwAMCAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAB4DAAAAAAAAAAAlwDEDAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-12-04T13:28:49.247Z",
               "EditorCaption": ""

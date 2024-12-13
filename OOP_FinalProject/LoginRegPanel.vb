@@ -4,11 +4,14 @@ Imports MySql.Data.MySqlClient
 Public Class LoginRegPanel
 
     Private Sub Login_loginbutton_Click(sender As Object, e As EventArgs) Handles Login_loginbutton.Click
-        Dim query As String = "SELECT * FROM LOGIN WHERE (EMAIL = @input OR USER_ID = @input) AND Password = @password"
+        Dim inputEmail As String = Login_email.Text.Trim()
+        Dim inputPassword As String = Login_password.Text.Trim()
+
+        Dim query As String = "SELECT * FROM login WHERE BINARY EMAIL = @Email AND BINARY PASSWORD = @Password"
         Dim params As New Dictionary(Of String, Object) From {
-            {"@input", Login_email.Text},
-            {"@password", Login_password.Text}
-        }
+        {"@Email", inputEmail},
+        {"@Password", inputPassword}
+    }
 
         Dim userRow As DataRow = databaseConnection.GetDataRow(query, params)
 
@@ -19,11 +22,13 @@ Public Class LoginRegPanel
             If userRow("ROLE").ToString().ToUpper() = "PROFESSOR" Then
                 Dim profDashboard As New ProfessorPanel(userID)
                 profDashboard.Show()
+                clear()
                 Me.Hide()
 
             ElseIf userRow("ROLE").ToString().ToUpper() = "STUDENT" Then
                 Dim studentDashboard As New StudentMainMenu(userID)
                 studentDashboard.Show()
+                clear()
                 Me.Hide()
 
             ElseIf userRow("ROLE").ToString().ToUpper() = "ADMIN" Then
@@ -38,6 +43,7 @@ Public Class LoginRegPanel
                     Dim adminID As String = adminRow("ADMIN_ID").ToString()
                     Dim adminDashboard As New AdminPanel(adminID)
                     adminDashboard.Show()
+                    clear()
                     Me.Hide()
                 Else
                     MessageBox.Show("Admin details not found.")
@@ -109,11 +115,10 @@ Public Class LoginRegPanel
 
     Private Function ValidateCredentials(accountID As String, email As String) As Boolean
         Try
-            ' Step 1: Get the role of the user
-            Dim roleQuery As String = "SELECT ROLE, USER_ID FROM login WHERE EMAIL = @Email"
+            Dim roleQuery As String = "SELECT ROLE, USER_ID FROM login WHERE BINARY EMAIL = @Email"
             Dim roleParams As New Dictionary(Of String, Object) From {
-                {"@Email", email}
-            }
+            {"@Email", email}
+        }
             Dim roleRow As DataRow = databaseConnection.GetDataRow(roleQuery, roleParams)
 
             If roleRow Is Nothing Then Return False
@@ -121,7 +126,6 @@ Public Class LoginRegPanel
             Dim role As String = roleRow("ROLE").ToString().ToUpper()
             Dim userID As String = roleRow("USER_ID").ToString()
 
-            ' Step 2: Validate against the corresponding table
             If role = "STUDENT" Then
                 Dim studentQuery As String = "SELECT * FROM student WHERE STUDENT_ID = @AccountID AND USER_ID = @UserID"
                 Dim studentParams As New Dictionary(Of String, Object) From {
@@ -131,11 +135,11 @@ Public Class LoginRegPanel
                 Return databaseConnection.GetDataRow(studentQuery, studentParams) IsNot Nothing
 
             ElseIf role = "PROFESSOR" Then
-                Dim professorQuery As String = "SELECT * FROM professor WHERE PROFESSOR_ID = @AccountID AND USER_ID = @UserID"
+                Dim professorQuery As String = "SELECT * FROM professor WHERE BINARY PROFESSOR_ID = @AccountID AND BINARY USER_ID = @UserID"
                 Dim professorParams As New Dictionary(Of String, Object) From {
-                    {"@AccountID", accountID},
-                    {"@UserID", userID}
-                }
+                {"@AccountID", accountID},
+                {"@UserID", userID}
+            }
                 Return databaseConnection.GetDataRow(professorQuery, professorParams) IsNot Nothing
 
             End If

@@ -73,4 +73,12 @@ Public Class ADD_STUDENTS
         InsertStudentFromTextBoxes()
     End Sub
 
+    Private Sub gender_SelectedIndexChanged(sender As Object, e As EventArgs) Handles gender.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        Me.Hide()
+
+    End Sub
 End Class

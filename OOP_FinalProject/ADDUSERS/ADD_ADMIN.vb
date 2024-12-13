@@ -71,4 +71,8 @@ Public Class ADD_ADMIN
         insertNewAdmin()
 
     End Sub
+
+    Private Sub ADD_ADMIN_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
