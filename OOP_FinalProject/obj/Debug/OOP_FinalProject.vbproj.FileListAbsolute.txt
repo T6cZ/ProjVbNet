@@ -129,7 +129,6 @@ C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProjec
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.vbproj.SuggestedBindingRedirects.cache
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.exe.config
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.Add_Professor.resources
-C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.AdminPanel.resources
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.Resources.resources
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.ProfessorPanel.resources
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.StudentMainMenu.resources
@@ -147,3 +146,4 @@ C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProjec
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.ADD_CLASS.resources
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.ADD_ENROLLMENTS.resources
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.LoginPanel.resources
+C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.Admin_Panel.resources
