@@ -3,27 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\oop_finalproject\\dashboard\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\dashboard\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|OOP_FinalProject||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\source\\repos\\projvbnet\\oop_finalproject\\dashboard\\loginpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\dashboard\\loginpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\source\\repos\\projvbnet\\oop_finalproject\\dashboard\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\dashboard\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\source\\repos\\projvbnet\\oop_finalproject\\dashboard\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\dashboard\\adminpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\source\\repos\\projvbnet\\oop_finalproject\\dashboard\\loginpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\dashboard\\loginpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\source\\repos\\projvbnet\\oop_finalproject\\dashboard\\loginpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\dashboard\\loginpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|OOP_FinalProject||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\oop_finalproject\\dashboard\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|solutionrelative:oop_finalproject\\dashboard\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90099951-37D8-4F15-8144-8968A8855494}|OOP_FinalProject\\OOP_FinalProject.vbproj|c:\\users\\aimvr\\source\\repos\\projvbnet\\oop_finalproject\\dashboard\\professorpanel.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -44,7 +40,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 510,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -60,32 +56,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "OOP_FinalProject",
               "DocumentMoniker": "C:\\Users\\aimvr\\Source\\Repos\\ProjVbNet\\OOP_FinalProject\\OOP_FinalProject.vbproj",
               "RelativeDocumentMoniker": "OOP_FinalProject\\OOP_FinalProject.vbproj",
-              "ToolTip": "C:\\Users\\aimvr\\Source\\Repos\\ProjVbNet\\OOP_FinalProject\\OOP_FinalProject.vbproj",
-              "RelativeToolTip": "OOP_FinalProject\\OOP_FinalProject.vbproj",
+              "ToolTip": "C:\\Users\\aimvr\\Source\\Repos\\ProjVbNet\\OOP_FinalProject\\OOP_FinalProject.vbproj*",
+              "RelativeToolTip": "OOP_FinalProject\\OOP_FinalProject.vbproj*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-12-13T00:12:12.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "LoginPanel.vb",
               "DocumentMoniker": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\DASHBOARD\\LoginPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\DASHBOARD\\LoginPanel.vb",
               "ToolTip": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\DASHBOARD\\LoginPanel.vb",
               "RelativeToolTip": "OOP_FinalProject\\DASHBOARD\\LoginPanel.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-12-13T00:10:48.806Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "LoginPanel.vb [Design]",
               "DocumentMoniker": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\DASHBOARD\\LoginPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\DASHBOARD\\LoginPanel.vb",
@@ -97,32 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminPanel.vb",
-              "DocumentMoniker": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\DASHBOARD\\AdminPanel.vb",
-              "RelativeDocumentMoniker": "OOP_FinalProject\\DASHBOARD\\AdminPanel.vb",
-              "ToolTip": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\DASHBOARD\\AdminPanel.vb",
-              "RelativeToolTip": "OOP_FinalProject\\DASHBOARD\\AdminPanel.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-13T00:10:37.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdminPanel.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\DASHBOARD\\AdminPanel.vb",
-              "RelativeDocumentMoniker": "OOP_FinalProject\\DASHBOARD\\AdminPanel.vb",
-              "ToolTip": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\DASHBOARD\\AdminPanel.vb [Design]",
-              "RelativeToolTip": "OOP_FinalProject\\DASHBOARD\\AdminPanel.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-13T00:10:31.15Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "databaseConnection.vb",
               "DocumentMoniker": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\databaseConnection.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\databaseConnection.vb",
@@ -134,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ProfessorPanel.vb [Design]",
               "DocumentMoniker": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\DASHBOARD\\ProfessorPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\DASHBOARD\\ProfessorPanel.vb",
@@ -146,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "ProfessorPanel.vb",
               "DocumentMoniker": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\DASHBOARD\\ProfessorPanel.vb",
               "RelativeDocumentMoniker": "OOP_FinalProject\\DASHBOARD\\ProfessorPanel.vb",
@@ -161,8 +132,21 @@
         },
         {
           "DockedHeight": 156,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminPanel.vb",
+              "DocumentMoniker": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\DASHBOARD\\AdminPanel.vb",
+              "RelativeDocumentMoniker": "OOP_FinalProject\\DASHBOARD\\AdminPanel.vb",
+              "ToolTip": "C:\\Users\\aimvr\\source\\repos\\ProjVbNet\\OOP_FinalProject\\DASHBOARD\\AdminPanel.vb",
+              "RelativeToolTip": "OOP_FinalProject\\DASHBOARD\\AdminPanel.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-13T00:36:30.445Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"

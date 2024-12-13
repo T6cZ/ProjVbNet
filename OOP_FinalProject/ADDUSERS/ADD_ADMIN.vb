@@ -1,6 +1,4 @@
 ﻿Imports MySql.Data.MySqlClient
-Imports System.Net
-Imports System.Net.Mail
 
 Public Class ADD_ADMIN
 

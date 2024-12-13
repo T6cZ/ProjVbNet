@@ -1,6 +1,4 @@
-﻿Imports MySql.Data.MySqlClient
-
-Public Class StudentMainMenu
+﻿Public Class StudentMainMenu
     Private ReadOnly LoggedInStudentID As String
 
     Public Sub New(studentID As String)

@@ -1,6 +1,4 @@
-﻿Imports System.Net.Mail
-Imports System.Web.UI.WebControls
-Imports MySql.Data.MySqlClient
+﻿Imports MySql.Data.MySqlClient
 
 Public Class ADD_PROFESSOR
 

@@ -1,7 +1,4 @@
-﻿Imports System.Data.SqlClient
-Imports MySql.Data.MySqlClient
-
-Public Class LoginPanel
+﻿Public Class LoginPanel
 
     Private Sub Login_loginbutton_Click(sender As Object, e As EventArgs) Handles Login_loginbutton.Click
         Dim inputEmail As String = Login_email.Text.Trim()

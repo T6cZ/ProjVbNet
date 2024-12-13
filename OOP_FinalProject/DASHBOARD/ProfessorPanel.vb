@@ -1,6 +1,4 @@
-﻿Imports MySql.Data.MySqlClient
-
-Public Class ProfessorPanel
+﻿Public Class ProfessorPanel
     Private WithEvents timer1 As New Timer
     Private ReadOnly LoggedInProfessorID As String
 
