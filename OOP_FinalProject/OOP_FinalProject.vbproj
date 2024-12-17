@@ -77,6 +77,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -126,10 +127,10 @@
     <Compile Include="ADDUSERS\ADD_STUDENTS.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminPanel.Designer.vb">
+    <Compile Include="DASHBOARD\AdminPanel.Designer.vb">
       <DependentUpon>AdminPanel.vb</DependentUpon>
     </Compile>
-    <Compile Include="AdminPanel.vb">
+    <Compile Include="DASHBOARD\AdminPanel.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="databaseConnection.vb" />
@@ -163,10 +164,10 @@
     <Compile Include="ENROLLMENTS\ADD_SECTION.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginRegPanel.Designer.vb">
-      <DependentUpon>LoginRegPanel.vb</DependentUpon>
+    <Compile Include="DASHBOARD\LoginPanel.Designer.vb">
+      <DependentUpon>LoginPanel.vb</DependentUpon>
     </Compile>
-    <Compile Include="LoginRegPanel.vb">
+    <Compile Include="DASHBOARD\LoginPanel.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\Application.Designer.vb">
@@ -185,16 +186,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ProfessorPanel.Designer.vb">
+    <Compile Include="DASHBOARD\ProfessorPanel.Designer.vb">
       <DependentUpon>ProfessorPanel.vb</DependentUpon>
     </Compile>
-    <Compile Include="ProfessorPanel.vb">
+    <Compile Include="DASHBOARD\ProfessorPanel.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentMainMenu.Designer.vb">
+    <Compile Include="DASHBOARD\StudentMainMenu.Designer.vb">
       <DependentUpon>StudentMainMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="StudentMainMenu.vb">
+    <Compile Include="DASHBOARD\StudentMainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -208,7 +209,7 @@
     <EmbeddedResource Include="ADDUSERS\ADD_STUDENTS.resx">
       <DependentUpon>ADD_STUDENTS.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminPanel.resx">
+    <EmbeddedResource Include="DASHBOARD\AdminPanel.resx">
       <DependentUpon>AdminPanel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ENROLLMENTS\ADD_CLASS.resx">
@@ -226,8 +227,8 @@
     <EmbeddedResource Include="ENROLLMENTS\ADD_SECTION.resx">
       <DependentUpon>ADD_SECTION.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginRegPanel.resx">
-      <DependentUpon>LoginRegPanel.vb</DependentUpon>
+    <EmbeddedResource Include="DASHBOARD\LoginPanel.resx">
+      <DependentUpon>LoginPanel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -235,10 +236,10 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProfessorPanel.resx">
+    <EmbeddedResource Include="DASHBOARD\ProfessorPanel.resx">
       <DependentUpon>ProfessorPanel.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentMainMenu.resx">
+    <EmbeddedResource Include="DASHBOARD\StudentMainMenu.resx">
       <DependentUpon>StudentMainMenu.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -393,6 +394,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\enroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bookadd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
