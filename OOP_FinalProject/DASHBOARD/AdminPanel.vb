@@ -12,6 +12,9 @@ Public Class AdminPanel
         ShowClasses()
         ShowEnrollments()
         ShowStudents()
+        ShowAdmins()
+
+
 
 
         LoadProfessorData()
@@ -26,6 +29,18 @@ Public Class AdminPanel
     Private Sub timer_Tick(sender As Object, e As EventArgs) Handles timer.Tick
         admin_currenttime.Text = DateTime.Now.ToString("hh:mm:ss tt")
         admin_currentdate.Text = DateTime.Now.ToString("MM/dd/yyyy dddd")
+    End Sub
+
+    Public Sub ShowAdmins()
+        Dim query As String = "SELECT ADMIN_ID, FIRST_NAME, MIDDLE_NAME, LAST_NAME, CONTACT_NUMBER, ADDRESS, REMARKS FROM ADMIN"
+
+        Dim dt As DataTable = databaseConnection.GetDataTable(query, New Dictionary(Of String, Object)())
+
+        If dt IsNot Nothing AndAlso dt.Rows.Count > 0 Then
+            ADMINSTABLE.DataSource = dt
+        Else
+            MessageBox.Show("No admin data found.")
+        End If
     End Sub
 
     Private Sub LoadDepartments()
@@ -266,7 +281,7 @@ Public Class AdminPanel
     End Sub
 
     Private Sub admin_addnewprof_Click(sender As Object, e As EventArgs) Handles admin_addnewprof.Click
-        ADD_PROFESSOR.Show()
+        Add_Professor.Show()
 
     End Sub
 

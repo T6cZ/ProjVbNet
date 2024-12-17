@@ -1,4 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.Net
+Imports System.Net.Mail
 
 Public Class ADD_ADMIN
 
@@ -67,6 +69,10 @@ Public Class ADD_ADMIN
 
     Private Sub addnewAdmin_Click(sender As Object, e As EventArgs) Handles addnewAdmin.Click
         insertNewAdmin()
+
+    End Sub
+
+    Private Sub ADD_ADMIN_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

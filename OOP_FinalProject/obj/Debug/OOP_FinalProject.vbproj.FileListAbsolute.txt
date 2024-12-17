@@ -146,5 +146,4 @@ C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProjec
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.ADD_CLASS.resources
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.ADD_ENROLLMENTS.resources
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.LoginPanel.resources
-C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.Admin_Panel.resources
 C:\Users\aimvr\Source\Repos\ProjVbNet\OOP_FinalProject\obj\Debug\OOP_FinalProject.AdminPanel.resources
